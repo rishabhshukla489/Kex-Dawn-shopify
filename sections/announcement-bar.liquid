@@ -79,7 +79,7 @@
             data-speed="{{ section.settings.change_slides_speed }}"
           > {% endcomment %}
             {%- for block in section.blocks -%}
-              <div
+              {% comment %} <div
                 class="slideshow__slide slider__slide grid__item grid--1-col"
                 id="Slide-{{ section.id }}-{{ forloop.index }}"
                 {{ block.shopify_attributes }}
@@ -87,7 +87,7 @@
                 aria-roledescription="{{ 'sections.announcements.announcement' | t }}"
                 aria-label="{{ forloop.index }} {{ 'general.slider.of' | t }} {{ forloop.length }}"
                 tabindex="-1"
-              >
+              > {% endcomment %}
                 <div
                   class="announcement-bar__announcement"
                   role="region"
@@ -112,9 +112,9 @@
                     {%- endif -%}
                   {%- endif -%}
                 </div>
-              </div>
+              {% comment %} </div> {% endcomment %}
             {%- endfor -%}
-          </div>
+          {% comment %} </div> {% endcomment %}
           {% comment %} <button
             type="button"
             class="slider-button slider-button--next"
