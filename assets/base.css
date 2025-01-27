@@ -2149,6 +2149,7 @@ input[type='checkbox'] {
   display: flex;
   justify-content: center; /* Center the items within the container */
   align-items: center; /* Vertically align if there's a height */
+  flex-wrap: wrap;
   gap: 10px; /* Reduce space between the announcement blocks */
   width: 100%; /* Take full width of the parent */
   height: 100%; /* Full height of the parent */
@@ -2156,15 +2157,22 @@ input[type='checkbox'] {
 } 
 
 .announcement-bar__announcement {
-  flex: 0 1 auto; /* Prevent announcements from stretching too much */
+  flex: 0 1 calc(50% - 10px); /* Prevent announcements from stretching too much */
   display: flex;
   justify-content: center; /* Center the content within each announcement */
   align-items: center; /* Vertically align text or elements */
   padding: 10px 20px; /* Adjust padding for better spacing inside */
   text-align: center; /* Center the text */
   white-space: nowrap; /* Prevent text from wrapping */
+  /* box-sizing: border-box; */
 }
 
+@media (max-width: 600px) {
+  .announcement-bar__announcement {
+    flex: 0 1 100%; /* Stack announcements vertically on smaller screens */
+    white-space: normal; /* Allow text to wrap if needed */
+  }
+}
 /* .announcement-bar ,
 .announcement-bar__announcement {
   color: rgb(var(--color-foreground));
