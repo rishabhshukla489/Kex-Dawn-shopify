@@ -52,7 +52,7 @@
         {%- endif -%}
       </div>
     {%- elsif section.blocks.size > 1 -%}
-      {% comment %} <slideshow-component
+       <slideshow-component
         class="announcement-bar"
         role="region"
         aria-roledescription="{{ 'sections.announcements.carousel' | t }}"
@@ -77,10 +77,10 @@
             aria-atomic="true"
             data-autoplay="{{ section.settings.auto_rotate }}"
             data-speed="{{ section.settings.change_slides_speed }}"
-          > {% endcomment %}
-          <div  class="announcement-bar">
+          > 
+          {% comment %} <div  class="announcement-bar"> {% endcomment %}
             {%- for block in section.blocks -%}
-              {% comment %} <div
+               <div
                 class="slideshow__slide slider__slide grid__item grid--1-col"
                 id="Slide-{{ section.id }}-{{ forloop.index }}"
                 {{ block.shopify_attributes }}
@@ -88,7 +88,7 @@
                 aria-roledescription="{{ 'sections.announcements.announcement' | t }}"
                 aria-label="{{ forloop.index }} {{ 'general.slider.of' | t }} {{ forloop.length }}"
                 tabindex="-1"
-              > {% endcomment %}
+              > 
               <div
                   class="announcement-bar__announcement"
                   role="region"
@@ -113,10 +113,11 @@
                     {%- endif -%}
                   {%- endif -%}
                 </div>
-              {% comment %} </div> {% endcomment %}
-            {%- endfor -%}</div>  
-          {% comment %} </div> {% endcomment %}
-          {% comment %} <button
+              </div> 
+            {%- endfor -%}
+            {% comment %} </div>   {% endcomment %}
+          </div>
+           <button
             type="button"
             class="slider-button slider-button--next"
             name="next"
@@ -128,7 +129,7 @@
             </span>
           </button>
         </div>
-      </slideshow-component> {% endcomment %}
+      </slideshow-component> 
       {%- if request.design_mode -%}
         <script src="{{ 'theme-editor.js' | asset_url }}" defer="defer"></script>
         <style>

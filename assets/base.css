@@ -2145,35 +2145,40 @@ input[type='checkbox'] {
   }
 }
 
-.announcement-bar {
+/* .announcement-bar {
   display: flex;
-  justify-content: center; /* Center the items within the container */
-  align-items: center; /* Vertically align if there's a height */
+  justify-content: center; 
+  align-items: center; 
   flex-wrap: wrap;
-  gap: 10px; /* Reduce space between the announcement blocks */
-  width: 100%; /* Take full width of the parent */
-  height: 100%; /* Full height of the parent */
-  grid-area: announcements; /* Keeps the grid area assignment */
+  gap: 10px; 
+  width: 100%; 
+  height: auto; 
+  grid-area: announcements; 
 } 
 
 .announcement-bar__announcement {
-  flex: 0 1 calc(50% - 10px); /* Prevent announcements from stretching too much */
+  flex: 0 1 calc(50% - 10px); 
   display: flex;
-  justify-content: center; /* Center the content within each announcement */
-  align-items: center; /* Vertically align text or elements */
-  padding: 10px 20px; /* Adjust padding for better spacing inside */
-  text-align: center; /* Center the text */
-  white-space: nowrap; /* Prevent text from wrapping */
-  /* box-sizing: border-box; */
+  justify-content: center; 
+  align-items: center; 
+  padding: 10px 20px; 
+  text-align: center; 
+  white-space: nowrap; 
+  box-sizing: border-box;
+  margin: 0;
 }
 
 @media (max-width: 600px) {
   .announcement-bar__announcement {
-    flex: 0 1 100%; /* Stack announcements vertically on smaller screens */
-    white-space: normal; /* Allow text to wrap if needed */
+    flex: 0 1 100%; 
+    white-space: normal;
+    margin-bottom: 0px; 
   }
-}
-/* .announcement-bar ,
+  .announcement-bar {
+    gap: 1px; 
+  }
+} */
+.announcement-bar ,
 .announcement-bar__announcement {
   color: rgb(var(--color-foreground));
   width: 100%;
@@ -2183,7 +2188,7 @@ input[type='checkbox'] {
   flex-wrap: wrap;
   align-content: center;
   grid-area: announcements;
-} */
+}
 
 .announcement-bar .slider--everywhere {
   margin-bottom: 0;
