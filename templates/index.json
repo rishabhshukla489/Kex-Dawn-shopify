@@ -15,8 +15,15 @@
         "heading": {
           "type": "heading",
           "settings": {
-            "heading": "Browse our latest products",
+            "heading": "Your Crazy Era",
             "heading_size": "hxxl"
+          }
+        },
+        "text_deJ6VF": {
+          "type": "text",
+          "settings": {
+            "text": "Get Peck comfy-chic with new winter essentials.",
+            "text_style": "body"
           }
         },
         "button": {
@@ -33,16 +40,18 @@
       },
       "block_order": [
         "heading",
+        "text_deJ6VF",
         "button"
       ],
+      "custom_css": [],
       "settings": {
         "image": "shopify://shop_images/f9c8fb173c.png",
         "image_overlay_opacity": 40,
         "image_height": "adapt",
-        "desktop_content_position": "bottom-center",
+        "desktop_content_position": "middle-right",
         "show_text_box": false,
         "desktop_content_alignment": "center",
-        "color_scheme": "scheme-3",
+        "color_scheme": "scheme-6",
         "image_behavior": "none",
         "mobile_content_alignment": "center",
         "stack_images_on_mobile": false,
