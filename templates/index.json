@@ -46,7 +46,7 @@
       "custom_css": [],
       "settings": {
         "image": "shopify://shop_images/f9c8fb173c.png",
-        "image_overlay_opacity": 40,
+        "image_overlay_opacity": 10,
         "image_height": "adapt",
         "desktop_content_position": "middle-right",
         "show_text_box": false,
