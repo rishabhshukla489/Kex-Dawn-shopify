@@ -17,16 +17,24 @@
         "announcement-bar-0": {
           "type": "announcement",
           "settings": {
-            "text": "Exclusiveee",
+            "text": "Get Early access to offer and launches.",
+            "link": ""
+          }
+        },
+        "announcement_HVidYr": {
+          "type": "announcement",
+          "settings": {
+            "text": "Sign up for 10% off.",
             "link": ""
           }
         }
       },
       "block_order": [
-        "announcement-bar-0"
+        "announcement-bar-0",
+        "announcement_HVidYr"
       ],
       "settings": {
-        "color_scheme": "scheme-1",
+        "color_scheme": "scheme-6",
         "show_line_separator": true,
         "show_social": false,
         "auto_rotate": false,
