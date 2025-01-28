@@ -1,6 +1,43 @@
+<section>
+  <div style="overflow: hidden; width: 100%; background: #f9f9f9; padding: 10px 0;">
+    <div style="display: flex; white-space: nowrap; animation: scroll-left 15s linear infinite;">
+      {% for i in (1..10) %}
+        <span style="font-weight: 600; font-size: 16px; padding: 5px 10px;">{{ section.settings.heading }}</span>
+      {% endfor %}
+    </div>
+  </div>
+
+  <style>
+    @keyframes scroll-left {
+      0% {
+        transform: translateX(100%);
+      }
+      100% {
+        transform: translateX(-100%);
+      }
+    }
+
+    div[style*="animation: scroll-left"] {
+      animation: scroll-left 15s linear infinite;
+    }
+  </style>
+</section>
+
 {% schema %}
   {
-    "name": "Section name",
-    "settings": []
+    "name": "text-scoller",
+    "settings": [
+      {
+        "type": "text",
+        "id": "heading",
+        "label" : "Heading",
+        "default" : "My Custom Heading"
+      }
+    ]
   }
 {% endschema %}
+
+
+    
+
+
