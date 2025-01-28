@@ -74,6 +74,15 @@
         "padding_bottom": 0
       }
     },
+    "marquee_gePGpJ": {
+      "type": "marquee",
+      "settings": {
+        "text": "Welcome to our store",
+        "colorBackground": "#000",
+        "colorText": "#fff",
+        "link": ""
+      }
+    },
     "collection_list_M4LbtM": {
       "type": "collection-list",
       "blocks": {
@@ -467,6 +476,7 @@
   "order": [
     "slideshow_pxDALG",
     "custom_liquid_whqYUE",
+    "marquee_gePGpJ",
     "collection_list_M4LbtM",
     "image_banner_BWxL4R",
     "multicolumn_xYcnmf",
