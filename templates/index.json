@@ -83,6 +83,13 @@
         "padding_bottom": 52
       }
     },
+    "text_scroller_bbDziX": {
+      "type": "text-scroller",
+      "settings": {
+        "heading": "My Custom Heading",
+        "color_scheme": "scheme-e94787f9-cfbc-4b8f-94d5-4601a837f560"
+      }
+    },
     "collection_list_M4LbtM": {
       "type": "collection-list",
       "blocks": {
@@ -468,6 +475,7 @@
     "slideshow_pxDALG",
     "custom_liquid_whqYUE",
     "custom_liquid_FHDpUK",
+    "text_scroller_bbDziX",
     "collection_list_M4LbtM",
     "image_banner_BWxL4R",
     "multicolumn_xYcnmf",
