@@ -66,6 +66,7 @@
     },
     "custom_liquid_whqYUE": {
       "type": "custom-liquid",
+      "disabled": true,
       "custom_css": [],
       "settings": {
         "custom_liquid": "<div class=\"scrolling-text\">\n  <div>\n    New Collection New Collection New Collection New Collection New Collection\n  </div>\n</div>\n\n<style>\n  .scrolling-text {\n    overflow: hidden;\n    width: 100%;\n    white-space: nowrap;\n    position: relative;\n  }\n\n  .scrolling-text div {\n    display: inline-block;\n    font-size: 42px;\n    font-weight: 600;\n    animation: marquee 4s linear infinite;\n    text-transform: uppercase;\n    white-space: nowrap;\n  }\n\n  .scrolling-text div::after {\n    content: \" New Collection New Collection New Collection New Collection\";\n  }\n\n  @keyframes scroll-left {\n    from {\n      transform: translateX(100%);\n    }\n    to {\n      transform: translateX(-100%);\n    }\n  }\n</style>",
@@ -74,8 +75,18 @@
         "padding_bottom": 0
       }
     },
+    "custom_liquid_MEzPVQ": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<div class=\"scrolling-text\">\n  <div class=\"track\">\n    <span>New Collection New Collection New Collection New Collection</span>\n    <span>New Collection New Collection New Collection New Collection</span>\n  </div>\n</div>\n\n<style>\n  .scrolling-text {\n    overflow: hidden;\n    width: 100%;\n    white-space: nowrap;\n    position: relative;\n  }\n\n  .scrolling-text .track {\n    display: inline-flex;\n    animation: marquee 2s linear infinite;\n  }\n\n  .scrolling-text span {\n    display: inline-block;\n    font-size: 42px;\n    font-weight: 600;\n    text-transform: uppercase;\n    padding: 0 1rem;\n  }\n\n  @keyframes marquee {\n    from {\n      transform: translateX(0);\n    }\n    to {\n      transform: translateX(-20%);\n    }\n  }\n</style>",
+        "color_scheme": "",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
     "marquee_gePGpJ": {
       "type": "marquee",
+      "disabled": true,
       "settings": {
         "text": "NEW COLLECTION | NEW COLLECTION | NEW COLLECTION | NEW COLLECTION | NEW COLLECTION | NEW COLLECTION | NEW COLLECTION | NEW COLLECTION | NEW COLLECTION |",
         "colorBackground": "#000000",
@@ -476,6 +487,7 @@
   "order": [
     "slideshow_pxDALG",
     "custom_liquid_whqYUE",
+    "custom_liquid_MEzPVQ",
     "marquee_gePGpJ",
     "collection_list_M4LbtM",
     "image_banner_BWxL4R",
