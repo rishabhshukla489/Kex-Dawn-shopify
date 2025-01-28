@@ -9,61 +9,67 @@
  */
 {
   "sections": {
-    "image_banner": {
-      "type": "image-banner",
+    "slideshow_pxDALG": {
+      "type": "slideshow",
       "blocks": {
-        "heading": {
-          "type": "heading",
+        "slide_UJPCNq": {
+          "type": "slide",
           "settings": {
-            "heading": "Your Crazy Era",
-            "heading_size": "hxxl"
+            "image": "shopify://shop_images/f9c8fb173c_1.png",
+            "heading": "<strong>Your Crazy Era</strong>",
+            "heading_size": "hxxl",
+            "subheading": "<strong>Get Peck comfy-chic with new winter essentials.</strong>",
+            "button_label": "Shop Now",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "middle-right",
+            "show_text_box": false,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "scheme-9",
+            "text_alignment_mobile": "center"
           }
         },
-        "text_deJ6VF": {
-          "type": "text",
+        "slide_8ahAdB": {
+          "type": "slide",
           "settings": {
-            "text": "Get Peck comfy-chic with new winter essentials.",
-            "text_style": "body"
-          }
-        },
-        "button": {
-          "type": "buttons",
-          "settings": {
-            "button_label_1": "Shop all",
-            "button_link_1": "shopify://collections/all",
-            "button_style_secondary_1": false,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
+            "image": "shopify://shop_images/minimalist-retail-clothing-display.jpg",
+            "heading": "<strong>Clothing Essential</strong>",
+            "heading_size": "hxxl",
+            "subheading": "",
+            "button_label": "Explore",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "show_text_box": false,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "scheme-9",
+            "text_alignment_mobile": "center"
           }
         }
       },
       "block_order": [
-        "heading",
-        "text_deJ6VF",
-        "button"
+        "slide_UJPCNq",
+        "slide_8ahAdB"
       ],
-      "custom_css": [],
       "settings": {
-        "image": "shopify://shop_images/f9c8fb173c_1.png",
-        "image_overlay_opacity": 10,
-        "image_height": "adapt",
-        "desktop_content_position": "middle-right",
-        "show_text_box": false,
-        "desktop_content_alignment": "center",
-        "color_scheme": "scheme-9",
+        "layout": "full_bleed",
+        "slide_height": "large",
+        "slider_visual": "dots",
+        "auto_rotate": true,
+        "change_slides_speed": 9,
         "image_behavior": "none",
-        "mobile_content_alignment": "center",
-        "stack_images_on_mobile": false,
-        "show_text_below": false
+        "show_text_below": false,
+        "accessibility_info": "Slideshow about our brand"
       }
     },
     "custom_liquid_whqYUE": {
       "type": "custom-liquid",
       "custom_css": [],
       "settings": {
-        "custom_liquid": "<div class=\"scrolling-text\">\n  <div>\n    New Collection New Collection New Collection New Collection New Collection\n  </div>\n</div>\n\n<style>\n  .scrolling-text {\n    overflow: hidden;\n    width: 100%;\n    white-space: nowrap;\n    background: #f9f9f9;\n    position: relative;\n  }\n\n  .scrolling-text div {\n    display: inline-block;\n    font-size: 36px;\n    font-weight: 600;\n    animation: scroll-left 10s linear infinite;\n    text-transform: uppercase;\n    white-space: nowrap;\n  }\n\n  .scrolling-text div::after {\n    content: \" New Collection New Collection New Collection New Collection\";\n  }\n\n  @keyframes scroll-left {\n    from {\n      transform: translateX(100%);\n    }\n    to {\n      transform: translateX(-100%);\n    }\n  }\n</style>",
-        "color_scheme": "scheme-9",
+        "custom_liquid": "<div class=\"scrolling-text\">\n  <div>\n    New Collection New Collection New Collection New Collection New Collection\n  </div>\n</div>\n\n<style>\n  .scrolling-text {\n    overflow: hidden;\n    width: 100%;\n    white-space: nowrap;\n    position: relative;\n  }\n\n  .scrolling-text div {\n    display: inline-block;\n    font-size: 36px;\n    font-weight: 600;\n    animation: scroll-left 10s linear infinite;\n    text-transform: uppercase;\n    white-space: nowrap;\n  }\n\n  .scrolling-text div::after {\n    content: \" New Collection New Collection New Collection New Collection\";\n  }\n\n  @keyframes scroll-left {\n    from {\n      transform: translateX(100%);\n    }\n    to {\n      transform: translateX(-100%);\n    }\n  }\n</style>",
+        "color_scheme": "scheme-e94787f9-cfbc-4b8f-94d5-4601a837f560",
         "padding_top": 0,
         "padding_bottom": 0
       }
@@ -98,7 +104,7 @@
     }
   },
   "order": [
-    "image_banner",
+    "slideshow_pxDALG",
     "custom_liquid_whqYUE",
     "featured_collection"
   ]

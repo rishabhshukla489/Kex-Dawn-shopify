@@ -239,7 +239,18 @@
           "text": "#2e3742",
           "button": "#fc6600",
           "button_label": "#ffffff",
-          "secondary_button_label": "#ffffff",
+          "secondary_button_label": "#fc6600",
+          "shadow": "#121212"
+        }
+      },
+      "scheme-e94787f9-cfbc-4b8f-94d5-4601a837f560": {
+        "settings": {
+          "background": "#fc6600",
+          "background_gradient": "linear-gradient(267deg, rgba(170, 57, 0, 1) 4%, rgba(252, 102, 0, 1) 100%)",
+          "text": "#e6e0e0",
+          "button": "#121212",
+          "button_label": "#ffffff",
+          "secondary_button_label": "#121212",
           "shadow": "#121212"
         }
       }
