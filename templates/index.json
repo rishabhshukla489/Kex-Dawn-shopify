@@ -68,44 +68,126 @@
       "type": "custom-liquid",
       "custom_css": [],
       "settings": {
-        "custom_liquid": "<div class=\"scrolling-text\">\n  <div>\n    New Collection New Collection New Collection New Collection New Collection\n  </div>\n</div>\n\n<style>\n  .scrolling-text {\n    overflow: hidden;\n    width: 100%;\n    white-space: nowrap;\n    position: relative;\n  }\n\n  .scrolling-text div {\n    display: inline-block;\n    font-size: 36px;\n    font-weight: 600;\n    animation: scroll-left 10s linear infinite;\n    text-transform: uppercase;\n    white-space: nowrap;\n  }\n\n  .scrolling-text div::after {\n    content: \" New Collection New Collection New Collection New Collection\";\n  }\n\n  @keyframes scroll-left {\n    from {\n      transform: translateX(100%);\n    }\n    to {\n      transform: translateX(-100%);\n    }\n  }\n</style>",
+        "custom_liquid": "<div class=\"scrolling-text\">\n  <div>\n    New Collection New Collection New Collection New Collection New Collection\n  </div>\n</div>\n\n<style>\n  .scrolling-text {\n    overflow: hidden;\n    width: 100%;\n    white-space: nowrap;\n    position: relative;\n  }\n\n  .scrolling-text div {\n    display: inline-block;\n    font-size: 42px;\n    font-weight: 600;\n    animation: scroll-left 10s linear infinite;\n    text-transform: uppercase;\n    white-space: nowrap;\n  }\n\n  .scrolling-text div::after {\n    content: \" New Collection New Collection New Collection New Collection\";\n  }\n\n  @keyframes scroll-left {\n    from {\n      transform: translateX(100%);\n    }\n    to {\n      transform: translateX(-100%);\n    }\n  }\n</style>",
         "color_scheme": "scheme-e94787f9-cfbc-4b8f-94d5-4601a837f560",
         "padding_top": 0,
         "padding_bottom": 0
       }
     },
-    "featured_collection": {
-      "type": "featured-collection",
+    "collection_list_M4LbtM": {
+      "type": "collection-list",
+      "blocks": {
+        "featured_collection_i68AzQ": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "tank-tops"
+          }
+        },
+        "featured_collection_6AhL9J": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "leggings"
+          }
+        },
+        "featured_collection_iGyHga": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "tees"
+          }
+        },
+        "featured_collection_cKAhfy": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "trousers"
+          }
+        },
+        "featured_collection_TJCaBj": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "shorts"
+          }
+        },
+        "featured_collection_FPzgTg": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "thermals"
+          }
+        }
+      },
+      "block_order": [
+        "featured_collection_i68AzQ",
+        "featured_collection_6AhL9J",
+        "featured_collection_iGyHga",
+        "featured_collection_cKAhfy",
+        "featured_collection_TJCaBj",
+        "featured_collection_FPzgTg"
+      ],
       "settings": {
-        "title": "Featured products",
-        "heading_size": "h2",
-        "description": "",
-        "show_description": false,
-        "description_style": "body",
-        "collection": "all",
-        "products_to_show": 8,
-        "columns_desktop": 4,
-        "full_width": false,
-        "show_view_all": true,
-        "view_all_style": "solid",
-        "enable_desktop_slider": false,
+        "title": "Shop by <strong>Category</strong>",
+        "heading_size": "h0",
+        "image_ratio": "square",
+        "columns_desktop": 6,
         "color_scheme": "scheme-8",
-        "image_ratio": "adapt",
-        "image_shape": "default",
-        "show_secondary_image": true,
-        "show_vendor": false,
-        "show_rating": false,
-        "quick_add": "none",
+        "show_view_all": false,
         "columns_mobile": "2",
-        "swipe_on_mobile": false,
-        "padding_top": 44,
+        "swipe_on_mobile": true,
+        "padding_top": 36,
         "padding_bottom": 36
+      }
+    },
+    "image_banner_BWxL4R": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_CdmAzr": {
+          "type": "heading",
+          "settings": {
+            "heading": "The Ultimate Comfort",
+            "heading_size": "h1"
+          }
+        },
+        "text_D4nNMK": {
+          "type": "text",
+          "settings": {
+            "text": "Give customers details about the banner image(s) or content on the template.",
+            "text_style": "subtitle"
+          }
+        },
+        "buttons_geqjxR": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "LEARN MORE",
+            "button_link_1": "",
+            "button_style_secondary_1": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_CdmAzr",
+        "text_D4nNMK",
+        "buttons_geqjxR"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/c454b4bf1f.jpg",
+        "image_overlay_opacity": 40,
+        "image_height": "small",
+        "desktop_content_position": "middle-center",
+        "show_text_box": false,
+        "desktop_content_alignment": "center",
+        "color_scheme": "scheme-7a743403-3230-4bd2-bbe6-79674ff85238",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": false
       }
     }
   },
   "order": [
     "slideshow_pxDALG",
     "custom_liquid_whqYUE",
-    "featured_collection"
+    "collection_list_M4LbtM",
+    "image_banner_BWxL4R"
   ]
 }
