@@ -182,12 +182,69 @@
         "stack_images_on_mobile": true,
         "show_text_below": false
       }
+    },
+    "multicolumn_xYcnmf": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_RUmEXG": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/43abd9e55c.jpg",
+            "title": "The Essential Co-ord Set",
+            "text": "<p>Light Turquoise</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_Rtf88x": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/aa46e0f3a8.jpg",
+            "title": "The Slim Stretchable Organic Tank Top",
+            "text": "<p>Light Peach</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_F4W9KT": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/e221529ed2.png",
+            "title": "Super Hoodies",
+            "text": "<p>Beige</p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_RUmEXG",
+        "column_Rtf88x",
+        "column_F4W9KT"
+      ],
+      "settings": {
+        "title": "Favourites",
+        "heading_size": "h0",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "center",
+        "background_style": "primary",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "scheme-9",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
     "slideshow_pxDALG",
     "custom_liquid_whqYUE",
     "collection_list_M4LbtM",
-    "image_banner_BWxL4R"
+    "image_banner_BWxL4R",
+    "multicolumn_xYcnmf"
   ]
 }
