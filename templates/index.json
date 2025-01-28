@@ -260,6 +260,199 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "multicolumn_8C9Q34": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_e6TCcE": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Group_2.png",
+            "title": "Locally Owned",
+            "text": "<p>We have local business and sell best quality clothes</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_3MXxVT": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Vector-1.png",
+            "title": "Fast Delivery",
+            "text": "<p>We provide fast delivery to our customers</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_dCy8nD": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Group_2.png",
+            "title": "Easy Return",
+            "text": "<p>We provide easy return policy</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_D8eFHA": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Vector_2.png",
+            "title": "Online Support",
+            "text": "<p>We give 24/7 online support</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_cqqJC6": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Vector.png",
+            "title": "Best Offers",
+            "text": "<p>We give best offers to our customers</p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_e6TCcE",
+        "column_3MXxVT",
+        "column_dCy8nD",
+        "column_D8eFHA",
+        "column_cqqJC6"
+      ],
+      "settings": {
+        "title": "",
+        "heading_size": "h2",
+        "image_width": "third",
+        "image_ratio": "adapt",
+        "columns_desktop": 5,
+        "column_alignment": "center",
+        "background_style": "none",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "scheme-1",
+        "columns_mobile": "2",
+        "swipe_on_mobile": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "multicolumn_xrJDbx": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_aLLXRg": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/a7f0b3ff7c.png",
+            "title": "",
+            "text": "<p>Men Activewear</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_9RVaPR": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/8ba130db61.jpg",
+            "title": "",
+            "text": "<p><strong>Women Activewear</strong></p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_aqHgrQ": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/49c1e84217.jpg",
+            "title": "",
+            "text": "<p>Womens Essentials</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_9jy337": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/e221529ed2.jpg",
+            "title": "",
+            "text": "<p>Men Essentials</p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_aLLXRg",
+        "column_9RVaPR",
+        "column_aqHgrQ",
+        "column_9jy337"
+      ],
+      "settings": {
+        "title": "Popular <strong>Categories</strong>",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "portrait",
+        "columns_desktop": 4,
+        "column_alignment": "center",
+        "background_style": "none",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "scheme-1",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "image_banner_hhFPbe": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_AGtDtF": {
+          "type": "heading",
+          "settings": {
+            "heading": "<strong>Season's Best</strong>",
+            "heading_size": "hxxl"
+          }
+        },
+        "text_fqgqTk": {
+          "type": "text",
+          "settings": {
+            "text": "<strong>Dive into the our exclusive premium collection</strong>",
+            "text_style": "subtitle"
+          }
+        },
+        "buttons_FUbmtV": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "Button label",
+            "button_link_1": "",
+            "button_style_secondary_1": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_AGtDtF",
+        "text_fqgqTk",
+        "buttons_FUbmtV"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/Group_47690.png",
+        "image_overlay_opacity": 0,
+        "image_height": "large",
+        "desktop_content_position": "middle-center",
+        "show_text_box": false,
+        "desktop_content_alignment": "left",
+        "color_scheme": "scheme-d740678e-b2db-488e-b188-c7e902e83c4b",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "stack_images_on_mobile": true,
+        "show_text_below": false
+      }
     }
   },
   "order": [
@@ -267,6 +460,9 @@
     "custom_liquid_whqYUE",
     "collection_list_M4LbtM",
     "image_banner_BWxL4R",
-    "multicolumn_xYcnmf"
+    "multicolumn_xYcnmf",
+    "multicolumn_8C9Q34",
+    "multicolumn_xrJDbx",
+    "image_banner_hhFPbe"
   ]
 }
