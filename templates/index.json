@@ -77,9 +77,9 @@
     "marquee_gePGpJ": {
       "type": "marquee",
       "settings": {
-        "text": "Welcome to our store",
-        "colorBackground": "#000",
-        "colorText": "#fff",
+        "text": "NEW COLLECTION | NEW COLLECTION | NEW COLLECTION | NEW COLLECTION | NEW COLLECTION | NEW COLLECTION",
+        "colorBackground": "#000000",
+        "colorText": "#ffffff",
         "link": ""
       }
     },
