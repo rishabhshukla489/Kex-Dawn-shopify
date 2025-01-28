@@ -186,6 +186,26 @@
     "multicolumn_xYcnmf": {
       "type": "multicolumn",
       "blocks": {
+        "column_tbQiAF": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/5381ae4c18.jpg",
+            "title": "Bomber Suit",
+            "text": "<p>Matt Pink</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_f8cdJk": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/49c1e84217.jpg",
+            "title": "Athleisure",
+            "text": "<p>Neon green</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
         "column_RUmEXG": {
           "type": "column",
           "settings": {
@@ -218,6 +238,8 @@
         }
       },
       "block_order": [
+        "column_tbQiAF",
+        "column_f8cdJk",
         "column_RUmEXG",
         "column_Rtf88x",
         "column_F4W9KT"
@@ -226,15 +248,15 @@
         "title": "Favourites",
         "heading_size": "h0",
         "image_width": "full",
-        "image_ratio": "adapt",
-        "columns_desktop": 3,
-        "column_alignment": "center",
-        "background_style": "primary",
+        "image_ratio": "portrait",
+        "columns_desktop": 5,
+        "column_alignment": "left",
+        "background_style": "none",
         "button_label": "",
         "button_link": "",
         "color_scheme": "scheme-9",
-        "columns_mobile": "1",
-        "swipe_on_mobile": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": true,
         "padding_top": 36,
         "padding_bottom": 36
       }
