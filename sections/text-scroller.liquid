@@ -1,8 +1,8 @@
 
-  <!-- <div style="overflow: hidden; width: 100%; padding: 10px 0;" class="color-{{ section.settings.color_scheme }}">
+  <div style="overflow: hidden; width: 100%; padding: 10px 0;" class="color-{{ section.settings.color_scheme }}">
     <div style="display: flex; white-space: nowrap; animation: scroll-left 15s linear infinite;" >
       {% for i in (1..100) %}
-        <span style="font-weight: 600; font-size: 16px; padding: 5px 10px;"></span>
+        <span style="font-weight: 600; font-size: 16px; padding: 5px 10px;">{{ section.settings.heading }}</span>
       {% endfor %}
     </div>
   </div>
@@ -20,45 +20,7 @@
     div[style*="animation: scroll-left"] {
       animation: scroll-left 15s linear infinite;
     }
-  </style> -->
-
-
-  <div class="scrolling-text color-{{ section.settings.color_scheme }}">
-  <div>
-    {{ section.settings.heading }}
-  </div>
-</div>
-
-<style>
-  .scrolling-text {
-    overflow: hidden;
-    width: 100%;
-    white-space: nowrap;
-    position: relative;
-  }
-
-  .scrolling-text div {
-    display: inline-block;
-    font-size: 42px;
-    font-weight: 600;
-    animation: scroll-left 10s linear infinite;
-    text-transform: uppercase;
-    white-space: nowrap;
-  }
-
-  .scrolling-text div::after {
-    content: " New Collection New Collection New Collection New Collection";
-  }
-
-  @keyframes scroll-left {
-    from {
-      transform: translateX(100%);
-    }
-    to {
-      transform: translateX(-100%);
-    }
-  }
-</style>
+  </style>
 
 
 {% schema %}
