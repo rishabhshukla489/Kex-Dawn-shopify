@@ -1,53 +1,61 @@
-
-  <div style="overflow: hidden; width: 100%; padding: 10px 0;" class="color-{{ section.settings.color_scheme }}">
-    <div style="display: flex; white-space: nowrap; animation: scroll-left 15s linear infinite;" >
-      {% for i in (1..100) %}
-        <span style="font-weight: 600; font-size: 16px; padding: 5px 10px;">{{ section.settings.heading }}</span>
-      {% endfor %}
-    </div>
+<div class="scroll-container color-{{ section.settings.color_scheme }}">
+  <div class="scroll-content">
+    {% for i in (1..100) %}
+      <span class="scroll-item">{{ section.settings.heading }}</span>
+    {% endfor %}
   </div>
+</div>
 
-  <style>
-    @keyframes scroll-left {
-      0% {
-        transform: translateX(100%);
-      }
-      100% {
-        transform: translateX(-100%);
-      }
+<style>
+  .scroll-container {
+    overflow: hidden;
+    width: 100%;
+    padding: 10px 0;
+  }
+
+  .scroll-content {
+    display: flex;
+    white-space: nowrap;
+    animation: scroll-left 15s linear infinite;
+  }
+
+  .scroll-item {
+    font-weight: 600;
+    font-size: 16px;
+    padding: 5px 10px;
+  }
+
+  @keyframes scroll-left {
+    0% {
+      transform: translateX(100%);
     }
-
-    div[style*="animation: scroll-left"] {
-      animation: scroll-left 15s linear infinite;
+    100% {
+      transform: translateX(-100%);
     }
-  </style>
-
+  }
+</style>
 
 {% schema %}
-  {
-    "name": "text-scoller",
-    "settings": [
-      {
-        "type": "text",
-        "id": "heading",
-        "label" : "Heading",
-        "default" : "My Custom Heading"
-      },
-      {
+{
+  "name": "text-scoller",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label" : "Heading",
+      "default" : "My Custom Heading"
+    },
+    {
       "type": "color_scheme",
       "id": "color_scheme",
       "label": "t:sections.all.colors.label",
       "default": "scheme-4"
     }
-    ],
-    "presets": [
-      {
-        "name": "text-scoller"
-      }]
-  }
+  ],
+  "presets": [
+    {
+      "name": "text-scoller"
+    }
+  ]
+}
 {% endschema %}
-
-
-    
-
-
