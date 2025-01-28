@@ -34,7 +34,7 @@
     }
   }
 </style>
-  <div class="custom-marquee " role="region" {{ block.shopify_attributes }}>
+  <div class="custom-marquee color-{{ section.settings.color_scheme }} gradient" role="region" {{ block.shopify_attributes }}>
     {%- if section.settings.text != blank -%}
       {%- if section.settings.link != blank -%}
         <a href="{{ section.settings.link }}" class="">
@@ -78,6 +78,12 @@ for (let i = 0; i < marquees.length; i++) {
       "id": "text",
       "default": "Welcome to our store",
       "label": "Add text to display"
+    },
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "t:sections.all.colors.label",
+      "default": "scheme-1"
     },
     {
       "type": "color",
