@@ -196,7 +196,7 @@
         ".banner {background-color: #f5f5f5;}"
       ],
       "settings": {
-        "image_2": "shopify://shop_images/Frame_1_d4bdaaba-ea74-4c9c-b3ea-c3a7973de34b.png",
+        "image": "shopify://shop_images/abs-workout-tire.jpg",
         "image_overlay_opacity": 0,
         "image_height": "small",
         "desktop_content_position": "middle-center",
