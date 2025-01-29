@@ -11,8 +11,15 @@
   "name": "t:sections.footer.name",
   "type": "footer",
   "sections": {
+    "custom_image_section_eJAjqM": {
+      "type": "custom-image-section",
+      "settings": {
+        "image": "shopify://shop_images/Group_47692_b97529d4-ca49-46c7-860a-0d3b51a61587.png"
+      }
+    },
     "footer": {
       "type": "footer",
+      "disabled": true,
       "settings": {
         "color_scheme": "scheme-3",
         "newsletter_enable": true,
@@ -30,6 +37,7 @@
     }
   },
   "order": [
+    "custom_image_section_eJAjqM",
     "footer"
   ]
 }
