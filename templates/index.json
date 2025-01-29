@@ -90,6 +90,9 @@
     },
     "marquee_gePGpJ": {
       "type": "marquee",
+      "custom_css": [
+        ".custom-marquee{}"
+      ],
       "settings": {
         "text": "NEW COLLECTION | NEW COLLECTION | NEW COLLECTION | NEW COLLECTION | NEW COLLECTION | NEW COLLECTION | NEW COLLECTION | NEW COLLECTION | NEW COLLECTION |",
         "color_scheme": "scheme-e94787f9-cfbc-4b8f-94d5-4601a837f560",
