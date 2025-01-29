@@ -53,6 +53,9 @@
         "slide_UJPCNq",
         "slide_8ahAdB"
       ],
+      "custom_css": [
+        ".slideshow__controls{display:none;}"
+      ],
       "settings": {
         "layout": "full_bleed",
         "slide_height": "large",
