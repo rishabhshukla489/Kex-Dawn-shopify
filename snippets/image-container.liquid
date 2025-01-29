@@ -2,7 +2,7 @@
   <div class="image-container">
     <img src="{{ section.settings.image | img_url: 'master' }}" 
          alt="{{ section.settings.image.alt | escape }}"
-         class="responsive-image">
+         class="full-width-image">
   </div>
 {%- else -%}
   <p>No image selected.</p>
@@ -10,15 +10,18 @@
 
 <style>
   .image-container {
-    display: inline-block;
-    width: auto; /* Automatically adapts to image width */
-    height: auto; /* Automatically adapts to image height */
+    width: 100vw; /* Full viewport width */
+    max-width: 100%; /* Prevents overflow */
+    height: auto; /* Adapts to the image height */
     overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
-  .responsive-image {
-    width: 100%;
-    height: auto; /* Maintain aspect ratio */
+  .full-width-image {
+    width: 100%; /* Takes full container width */
+    height: auto; /* Maintains aspect ratio */
     display: block;
   }
 </style>
