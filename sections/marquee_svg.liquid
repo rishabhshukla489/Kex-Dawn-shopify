@@ -51,16 +51,16 @@
       <a href="{{ section.settings.link }}" class="">
     {%- endif -%}
     <div class="track">
-      <span class="content marquee-text">{{ section.settings.text | raw }}</span>
-      <span class="content marquee-text">{{ section.settings.text | raw }}</span>
-      <span class="content marquee-text">{{ section.settings.text | raw }}</span>
-      <span class="content marquee-text">{{ section.settings.text | raw }}</span>
-      <span class="content marquee-text">{{ section.settings.text | raw }}</span>
-      <span class="content marquee-text">{{ section.settings.text | raw }}</span>
-      <span class="content marquee-text">{{ section.settings.text | raw }}</span>
-      <span class="content marquee-text">{{ section.settings.text | raw }}</span>
-      <span class="content marquee-text">{{ section.settings.text | raw }}</span>
-      <span class="content marquee-text">{{ section.settings.text | raw }}</span>
+      <span class="content marquee-text">{{ section.settings.text | escape }}</span>
+      <span class="content marquee-text">{{ section.settings.text | escape }}</span>
+      <span class="content marquee-text">{{ section.settings.text | escape }}</span>
+      <span class="content marquee-text">{{ section.settings.text | escape }}</span>
+      <span class="content marquee-text">{{ section.settings.text | escape }}</span>
+      <span class="content marquee-text">{{ section.settings.text | escape }}</span>
+      <span class="content marquee-text">{{ section.settings.text | escape }}</span>
+      <span class="content marquee-text">{{ section.settings.text | escape }}</span>
+      <span class="content marquee-text">{{ section.settings.text | escape }}</span>
+      <span class="content marquee-text">{{ section.settings.text | escape }}</span>
       {%- if section.settings.link != blank -%}
         {% render 'icon-arrow' %}
       {%- endif -%}
@@ -109,7 +109,7 @@ document.addEventListener('DOMContentLoaded', function() {
   ],
   "presets": [
     {
-      "name": "SVG banner"
+      "name": "Marquee"
     }
   ]
 }
