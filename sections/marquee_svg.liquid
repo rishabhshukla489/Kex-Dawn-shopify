@@ -82,12 +82,12 @@ document.addEventListener('DOMContentLoaded', function() {
 </script>
 {% schema %}
 {
-  "name": "SVG banner",
+  "name": "Marquee Announcement",
   "settings": [
     {
-      "type": "text",
+      "type": "richtext",
       "id": "text",
-      "default": "Welcome to our store | Check out our latest offers",
+      "default": "<p>Welcome to our store | Check out our latest offers</p>",
       "label": "Add text to display"
     },
     {
@@ -109,7 +109,7 @@ document.addEventListener('DOMContentLoaded', function() {
   ],
   "presets": [
     {
-      "name": "SVG banner"
+      "name": "Marquee"
     }
   ]
 }
