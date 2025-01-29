@@ -33,7 +33,7 @@
         "slide_8ahAdB": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/minimalist-retail-clothing-display.jpg",
+            "image": "shopify://shop_images/woman-in-white-dress-outside.jpg",
             "heading": "<strong>Clothing Essential</strong>",
             "heading_size": "hxxl",
             "subheading": "",
@@ -54,7 +54,7 @@
         "slide_8ahAdB"
       ],
       "custom_css": [
-        ".slideshow__controls{display:none;}"
+        ".slideshow__controls {display: none;}"
       ],
       "settings": {
         "layout": "full_bleed",
