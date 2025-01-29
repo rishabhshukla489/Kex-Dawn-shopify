@@ -1,6 +1,19 @@
 {% schema %}
-  {
-    "name": "Section name",
-    "settings": []
-  }
+{
+  "name": "Custom Image Section",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Upload Image"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Image Container"
+    }
+  ]
+}
 {% endschema %}
+
+{% render '1-image-container' %}
