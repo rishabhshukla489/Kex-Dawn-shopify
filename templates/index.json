@@ -368,7 +368,9 @@
         "column_cqqJC6"
       ],
       "custom_css": [
-        "img {height: 50px;}"
+        "img {height: 50px;}",
+        ".multicolumn-card__info{font-size:19px}",
+        ".inline-richtext{font-size:25px; font-weight:bold }"
       ],
       "settings": {
         "title": "",
@@ -437,6 +439,7 @@
         "column_aqHgrQ",
         "column_9jy337"
       ],
+      "custom_css": [],
       "settings": {
         "title": "Popular <strong>Categories</strong>",
         "heading_size": "h1",
