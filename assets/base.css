@@ -3632,3 +3632,25 @@ details-disclosure > details {
 }
 
 .announcement
+
+
+
+  /* Style Configuration to Align the Section Headings */
+.heading_alignment_center{
+    width: 100%;
+    text-align: center;
+    display: block;
+}
+
+.heading_alignment_left{
+    width: 100%;
+    text-align: left;
+    display: block;
+}
+
+.heading_alignment_right{
+    width: 100%;
+    text-align: right;
+    display: block;
+}
+    
