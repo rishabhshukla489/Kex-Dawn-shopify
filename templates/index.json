@@ -369,8 +369,8 @@
       ],
       "custom_css": [
         "img {height: 50px;}",
-        ".multicolumn-card__info{font-size:19px}",
-        ".inline-richtext{font-size:25px; font-weight:bold }"
+        ".multicolumn-card__info {font-size: 19px;}",
+        ".inline-richtext {font-size: 25px; font-weight: bold;}"
       ],
       "settings": {
         "title": "",
@@ -477,7 +477,7 @@
         "buttons_FUbmtV": {
           "type": "buttons",
           "settings": {
-            "button_label_1": "Button label",
+            "button_label_1": "SHOP COLLECTION",
             "button_link_1": "",
             "button_style_secondary_1": false,
             "button_label_2": "",
