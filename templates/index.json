@@ -289,6 +289,15 @@
         "padding_bottom": 0
       }
     },
+    "svg_banner_NC6di3": {
+      "type": "SVG-banner",
+      "settings": {
+        "text": "<p>Keep it Clean | Do right by people | Keep it Clear</p>",
+        "color_scheme": "",
+        "link": "",
+        "image": "shopify://shop_images/recyclable-bag.svg"
+      }
+    },
     "multicolumn_8C9Q34": {
       "type": "multicolumn",
       "blocks": {
@@ -492,6 +501,7 @@
     "image_banner_BWxL4R",
     "multicolumn_xYcnmf",
     "custom_liquid_FHDpUK",
+    "svg_banner_NC6di3",
     "multicolumn_8C9Q34",
     "multicolumn_xrJDbx",
     "image_banner_hhFPbe"
