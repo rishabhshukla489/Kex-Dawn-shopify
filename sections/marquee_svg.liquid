@@ -21,7 +21,7 @@
     position: absolute;
     white-space: nowrap;
     will-change: transform;
-    animation: marquee 5s linear infinite;
+    animation: marquee 12s linear infinite;
     padding: 0;
     margin: 0;
   }
@@ -34,7 +34,7 @@
   }
   .custom-marquee .content img {
     height: 40px; /* Adjust as needed */
-    margin-right: 10px; /* Adjust as needed */
+    margin: 0 10px; /* Adjust as needed */
   }
   @keyframes marquee {
     from {
@@ -51,19 +51,16 @@
       <a href="{{ section.settings.link }}" class="">
     {%- endif -%}
     <div class="track">
-      <span class="content marquee-text">
-        {%- if section.settings.image != blank -%}
-          <img src="{{ section.settings.image | image_url }}" alt="Marquee Image">
-        {%- endif -%}
-        {{ section.settings.text | escape }}
-      </span>
-      <span class="content marquee-text">
-        {%- if section.settings.image != blank -%}
-          <img src="{{ section.settings.image | image_url }}" alt="Marquee Image">
-        {%- endif -%}
-        {{ section.settings.text | escape }}
-      </span>
-      <!-- Repeat the content as needed -->
+      <span class="content marquee-text">{{ section.settings.text | escape }}</span>
+      <span class="content marquee-text">{{ section.settings.text | escape }}</span>
+      <span class="content marquee-text">{{ section.settings.text | escape }}</span>
+      <span class="content marquee-text">{{ section.settings.text | escape }}</span>
+      <span class="content marquee-text">{{ section.settings.text | escape }}</span>
+      <span class="content marquee-text">{{ section.settings.text | escape }}</span>
+      <span class="content marquee-text">{{ section.settings.text | escape }}</span>
+      <span class="content marquee-text">{{ section.settings.text | escape }}</span>
+      <span class="content marquee-text">{{ section.settings.text | escape }}</span>
+      <span class="content marquee-text">{{ section.settings.text | escape }}</span>
       {%- if section.settings.link != blank -%}
         {% render 'icon-arrow' %}
       {%- endif -%}
@@ -74,21 +71,23 @@
   {%- endif -%}
 </div>
 <script>
-var marquees = document.getElementsByClassName("marquee-text");
-for (let i = 0; i < marquees.length; i++) {
-  let str = marquees.item(i).innerHTML;
-  let improvedText = str.replaceAll("|", "            ");
-  marquees.item(i).innerHTML = improvedText;
-}
+document.addEventListener('DOMContentLoaded', function() {
+  var marquees = document.getElementsByClassName("marquee-text");
+  for (let i = 0; i < marquees.length; i++) {
+    let str = marquees.item(i).innerHTML;
+    let improvedText = str.replaceAll("|", " <img src='{{ section.settings.image | image_url }}' alt='Marquee Image'> ");
+    marquees.item(i).innerHTML = improvedText;
+  }
+});
 </script>
 {% schema %}
 {
-  "name": "Marquee Announcement",
+  "name": "SVG banner",
   "settings": [
     {
       "type": "text",
       "id": "text",
-      "default": "Welcome to our store",
+      "default": "Welcome to our store | Check out our latest offers",
       "label": "Add text to display"
     },
     {
@@ -110,7 +109,7 @@ for (let i = 0; i < marquees.length; i++) {
   ],
   "presets": [
     {
-      "name": "Marquee"
+      "name": "SVG banner"
     }
   ]
 }
