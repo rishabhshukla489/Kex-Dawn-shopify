@@ -13,6 +13,13 @@
 
 
 <style>
+  {% if section.settings.center-main-nav %}
+    .header {
+      display: flex !important;
+      justify-content: space-between;
+      align-items: center;
+    }
+    {% endif %}
   header-drawer {
     justify-self: start;
     margin-left: -1.2rem;
