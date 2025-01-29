@@ -178,7 +178,7 @@
           "type": "buttons",
           "settings": {
             "button_label_1": "LEARN MORE",
-            "button_link_1": "",
+            "button_link_1": "shopify://blogs/news",
             "button_style_secondary_1": false,
             "button_label_2": "",
             "button_link_2": "",
@@ -217,8 +217,8 @@
           "settings": {
             "image": "shopify://shop_images/5381ae4c18.jpg",
             "title": "Bomber Suit",
-            "text": "<p>Matt Pink</p>",
-            "link_label": "",
+            "text": "",
+            "link_label": "Light pink",
             "link": "shopify://products/adjustable-camisole"
           }
         },
@@ -227,8 +227,8 @@
           "settings": {
             "image": "shopify://shop_images/49c1e84217.jpg",
             "title": "Athleisure",
-            "text": "<p>Neon green</p>",
-            "link_label": "",
+            "text": "",
+            "link_label": "Neon green",
             "link": "shopify://products/pocket-legging"
           }
         },
@@ -236,9 +236,9 @@
           "type": "column",
           "settings": {
             "image": "shopify://shop_images/43abd9e55c.jpg",
-            "title": "The Essential Co-ord Set",
-            "text": "<p>Light Turquoise</p>",
-            "link_label": "",
+            "title": "The Hip Co-ord Set",
+            "text": "",
+            "link_label": "Light Turquoise",
             "link": ""
           }
         },
@@ -246,9 +246,9 @@
           "type": "column",
           "settings": {
             "image": "shopify://shop_images/aa46e0f3a8.jpg",
-            "title": "The Slim Stretchable Organic Tank Top",
-            "text": "<p>Light Peach</p>",
-            "link_label": "",
+            "title": "The Slim  Tank Top",
+            "text": "",
+            "link_label": "Light Peach",
             "link": ""
           }
         },
@@ -257,8 +257,8 @@
           "settings": {
             "image": "shopify://shop_images/e221529ed2.png",
             "title": "Super Hoodies",
-            "text": "<p>Beige</p>",
-            "link_label": "",
+            "text": "",
+            "link_label": "Beige",
             "link": ""
           }
         }
@@ -397,8 +397,8 @@
           "settings": {
             "image": "shopify://shop_images/a7f0b3ff7c.png",
             "title": "",
-            "text": "<p>Men Activewear</p>",
-            "link_label": "",
+            "text": "",
+            "link_label": "Men Activewear",
             "link": "shopify://collections/shorts"
           }
         },
@@ -407,8 +407,8 @@
           "settings": {
             "image": "shopify://shop_images/8ba130db61.jpg",
             "title": "",
-            "text": "<p>Women Activewear</p>",
-            "link_label": "",
+            "text": "",
+            "link_label": "Women Activewear",
             "link": "shopify://collections/thermals"
           }
         },
@@ -417,8 +417,8 @@
           "settings": {
             "image": "shopify://shop_images/49c1e84217.jpg",
             "title": "",
-            "text": "<p>Womens Essentials</p>",
-            "link_label": "",
+            "text": "",
+            "link_label": "Womens Essentials",
             "link": "shopify://collections/tees"
           }
         },
@@ -427,8 +427,8 @@
           "settings": {
             "image": "shopify://shop_images/e221529ed2.jpg",
             "title": "",
-            "text": "<p>Men Essentials</p>",
-            "link_label": "",
+            "text": "",
+            "link_label": "Men Essentials",
             "link": "shopify://collections/trousers"
           }
         }
@@ -478,7 +478,7 @@
           "type": "buttons",
           "settings": {
             "button_label_1": "SHOP COLLECTION",
-            "button_link_1": "",
+            "button_link_1": "shopify://collections",
             "button_style_secondary_1": false,
             "button_label_2": "",
             "button_link_2": "",
