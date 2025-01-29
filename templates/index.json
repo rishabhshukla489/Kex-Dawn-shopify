@@ -195,7 +195,7 @@
         ".banner__media,img {border-radius: 90px; background-color: white; padding: 40px; margin: 0;}"
       ],
       "settings": {
-        "image": "shopify://shop_images/cross-fit-rope-workout.jpg",
+        "image": "shopify://shop_images/abs-workout-tire.jpg",
         "image_overlay_opacity": 0,
         "image_height": "small",
         "desktop_content_position": "middle-center",
