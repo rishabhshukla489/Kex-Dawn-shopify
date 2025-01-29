@@ -32,7 +32,7 @@
   >
     {%- unless section.settings.title == blank -%}
       <div class="title-wrapper-with-link title-wrapper--self-padded-mobile title-wrapper--no-top-margin multicolumn__title">
-        <h2 class="title inline-richtext {{ section.settings.heading_size }} {{section.settings.heading_alignment}}">
+        <h2 class="title inline-richtext {{ section.settings.heading_size }}{{ section.settings.heading_alignment }}">
           {{ section.settings.title }}
         </h2>
         {%- if section.settings.button_label != blank and show_mobile_slider -%}
@@ -199,29 +199,6 @@
     "groups": ["header", "footer"]
   },
   "settings": [
-
-
-  {
-      "type": "select",
-      "id": "heading_alignment",
-      "options": [
-        {
-          "value": "heading_alignment_left",
-          "label": "Left"
-        },
-        {
-          "value": "heading_alignment_center",
-          "label": "Centre"
-        },
-        {
-          "value": "heading_alignment_right",
-          "label": "Right"
-        }
-      ],
-      "default": "heading_alignment_left",
-      "label": "Heading allignment"
-    },
-
     {
       "type": "inline_richtext",
       "id": "title",
@@ -255,6 +232,26 @@
       ],
       "default": "h1",
       "label": "t:sections.all.heading_size.label"
+    },
+    {
+      "type": "select",
+      "id": "heading_alignment",
+      "options": [
+        {
+          "value": "heading_alignment_left",
+          "label": "Left"
+        },
+        {
+          "value": "heading_alignment_center",
+          "label": "Centre"
+        },
+        {
+          "value": "heading_alignment_right",
+          "label": "Right"
+        }
+      ],
+      "default": "heading_alignment_left",
+      "label": "Heading allignment"
     },
     {
       "type": "select",
