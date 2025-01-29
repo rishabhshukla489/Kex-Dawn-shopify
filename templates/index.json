@@ -170,7 +170,7 @@
         "text_D4nNMK": {
           "type": "text",
           "settings": {
-            "text": "Give customers details about the banner image(s) or content on the template.",
+            "text": "Pioneering in comfortable high quality everyday apparel",
             "text_style": "subtitle"
           }
         },
@@ -191,9 +191,12 @@
         "text_D4nNMK",
         "buttons_geqjxR"
       ],
+      "custom_css": [
+        ".banner__media,img {border-radius: 90px; background-color: white; padding: 40px; margin: 0;}"
+      ],
       "settings": {
-        "image": "shopify://shop_images/c454b4bf1f.jpg",
-        "image_overlay_opacity": 40,
+        "image": "shopify://shop_images/cross-fit-rope-workout.jpg",
+        "image_overlay_opacity": 0,
         "image_height": "small",
         "desktop_content_position": "middle-center",
         "show_text_box": false,
