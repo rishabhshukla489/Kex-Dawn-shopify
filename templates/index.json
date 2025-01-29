@@ -20,7 +20,7 @@
             "heading_size": "hxxl",
             "subheading": "<strong>Get Peck comfy-chic with new winter essentials.</strong>",
             "button_label": "Shop Now",
-            "link": "",
+            "link": "shopify://collections",
             "button_style_secondary": false,
             "box_align": "middle-right",
             "show_text_box": false,
@@ -38,7 +38,7 @@
             "heading_size": "hxxl",
             "subheading": "",
             "button_label": "Explore",
-            "link": "",
+            "link": "shopify://collections",
             "button_style_secondary": false,
             "box_align": "middle-center",
             "show_text_box": false,
@@ -192,7 +192,8 @@
         "buttons_geqjxR"
       ],
       "custom_css": [
-        ".banner__media,img {border-radius: 90px; background-color: white; padding: 40px; margin: 0;}"
+        ".banner__media,img {border-radius: 90px; background-color: white; padding: 40px; margin: 0; background-color: #f5f5f5;}",
+        ".banner {background-color: #f5f5f5;}"
       ],
       "settings": {
         "image": "shopify://shop_images/abs-workout-tire.jpg",
@@ -365,6 +366,9 @@
         "column_dCy8nD",
         "column_D8eFHA",
         "column_cqqJC6"
+      ],
+      "custom_css": [
+        "img {height: 50px;}"
       ],
       "settings": {
         "title": "",

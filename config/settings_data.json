@@ -256,7 +256,7 @@
       },
       "scheme-7a743403-3230-4bd2-bbe6-79674ff85238": {
         "settings": {
-          "background": "#ffffff",
+          "background": "#ededed",
           "background_gradient": "",
           "text": "#ffffff",
           "button": "#ffffff",
@@ -513,5 +513,8 @@
         }
       }
     }
+  },
+  "platform_customizations": {
+    "custom_css": []
   }
 }
