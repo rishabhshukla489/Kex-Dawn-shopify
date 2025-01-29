@@ -314,6 +314,12 @@
         "image": "shopify://shop_images/recyclable-bag.svg"
       }
     },
+    "custom_image_section_84wjBx": {
+      "type": "custom-image-section",
+      "settings": {
+        "image": "shopify://shop_images/Untitled.png"
+      }
+    },
     "multicolumn_8C9Q34": {
       "type": "multicolumn",
       "blocks": {
@@ -531,6 +537,7 @@
     "multicolumn_xYcnmf",
     "custom_liquid_FHDpUK",
     "svg_banner_NC6di3",
+    "custom_image_section_84wjBx",
     "multicolumn_8C9Q34",
     "multicolumn_xrJDbx",
     "image_banner_hhFPbe"
