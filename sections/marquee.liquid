@@ -5,15 +5,15 @@
     max-width: 100%;
     height: 60px;
     overflow-x: hidden;
-    background:{{section.settings.colorBackground}}; 
-    color:{{section.settings.colorText}}; 
+    background:{{section.settings.colorBackground}};
+    color:{{section.settings.colorText}};
     font-size: 42px;
     font-weight: 600;
     padding: 0;
     margin: 0
   }
   .custom-marquee a {
-    color:{{section.settings.colorText}}; 
+    color:{{section.settings.colorText}};
     padding: 0;
     margin: 0
   }
@@ -22,7 +22,7 @@
       /* bottom: 6px; */
       white-space: nowrap;
       will-change: transform;
-      animation: marquee 12s linear infinite;
+      animation: marquee 15s linear infinite;
       padding: 0;
       margin: 0;
   }
@@ -40,40 +40,44 @@
     }
   }
 </style>
-  <div class="custom-marquee color-{{ section.settings.color_scheme }} gradient" role="region" {{ block.shopify_attributes }}>
-    {%- if section.settings.text != blank -%}
-      {%- if section.settings.link != blank -%}
-        <a href="{{ section.settings.link }}" class="">
-      {%- endif -%}
-          <div class="track ">
-            <span class="content marquee-text">{{ section.settings.text | escape }}</span>
-            <span class="content marquee-text">{{ section.settings.text | escape }}</span>
-            <span class="content marquee-text">{{ section.settings.text | escape }}</span>
-            <span class="content marquee-text">{{ section.settings.text | escape }}</span>
-            <span class="content marquee-text">{{ section.settings.text | escape }}</span>
-            <span class="content marquee-text">{{ section.settings.text | escape }}</span>
-            <span class="content marquee-text">{{ section.settings.text | escape }}</span>
-            <span class="content marquee-text">{{ section.settings.text | escape }}</span>
-            <span class="content marquee-text">{{ section.settings.text | escape }}</span>
-            <span class="content marquee-text">{{ section.settings.text | escape }}</span>
-            {%- if section.settings.link != blank -%}
-              {% render 'icon-arrow' %}
-            {%- endif -%}
-          </div>
-          {%- if section.settings.link != blank -%}
-        </a>
-      {%- endif -%}
+<div
+  class="custom-marquee color-{{ section.settings.color_scheme }} gradient"
+  role="region"
+  {{ block.shopify_attributes }}
+>
+  {%- if section.settings.text != blank -%}
+    {%- if section.settings.link != blank -%}
+      <a href="{{ section.settings.link }}" class="">
     {%- endif -%}
-  </div>
+    <div class="track ">
+      <span class="content marquee-text">{{ section.settings.text | escape }}</span>
+      <span class="content marquee-text">{{ section.settings.text | escape }}</span>
+      <span class="content marquee-text">{{ section.settings.text | escape }}</span>
+      <span class="content marquee-text">{{ section.settings.text | escape }}</span>
+      <span class="content marquee-text">{{ section.settings.text | escape }}</span>
+      <span class="content marquee-text">{{ section.settings.text | escape }}</span>
+      <span class="content marquee-text">{{ section.settings.text | escape }}</span>
+      <span class="content marquee-text">{{ section.settings.text | escape }}</span>
+      <span class="content marquee-text">{{ section.settings.text | escape }}</span>
+      <span class="content marquee-text">{{ section.settings.text | escape }}</span>
+      {%- if section.settings.link != blank -%}
+        {% render 'icon-arrow' %}
+      {%- endif -%}
+    </div>
+    {%- if section.settings.link != blank -%}
+      </a>
+    {%- endif -%}
+  {%- endif -%}
+</div>
 <script>
-var marquees = document.getElementsByClassName("marquee-text");
-for (let i = 0; i < marquees.length; i++) {
-   // console.log(marquees.item(i));
-  let str = marquees.item(i).innerHTML;
-  let improvedText = str.replaceAll("|", "            ")
-  console.log(improvedText)
-  marquees.item(i).innerHTML = improvedText
-}
+  var marquees = document.getElementsByClassName("marquee-text");
+  for (let i = 0; i < marquees.length; i++) {
+     // console.log(marquees.item(i));
+    let str = marquees.item(i).innerHTML;
+    let improvedText = str.replaceAll("|", "            ")
+    console.log(improvedText)
+    marquees.item(i).innerHTML = improvedText
+  }
 </script>
 {% schema %}
 {
