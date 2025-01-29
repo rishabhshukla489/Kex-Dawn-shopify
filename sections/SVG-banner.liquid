@@ -1,9 +1,9 @@
 <style>
-  .custom-marquee {
+  .custom-marquee-svg {
     position: relative;
     width: 100vw;
     max-width: 100%;
-    height: 60px;
+    height: 200px;
     overflow-x: hidden;
     background:{{section.settings.colorBackground}}; 
     color:{{section.settings.colorText}}; 
@@ -12,12 +12,12 @@
     padding: 0;
     margin: 0;
   }
-  .custom-marquee a {
+  .custom-marquee-svg a {
     color:{{section.settings.colorText}}; 
     padding: 0;
     margin: 0;
   }
-  .custom-marquee .track {
+  .custom-marquee-svg .track {
     position: absolute;
     white-space: nowrap;
     will-change: transform;
@@ -25,14 +25,14 @@
     padding: 0;
     margin: 0;
   }
-  .custom-marquee .content {
+  .custom-marquee-svg .content {
     display: inline-flex;
     align-items: center;
     margin-left: 4px;
     padding: 0;
     margin: 0;
   }
-  .custom-marquee .content img {
+  .custom-marquee-svg .content img {
     height: 40px; /* Adjust as needed */
     margin: 0 10px; /* Adjust as needed */
   }
@@ -45,7 +45,7 @@
     }
   }
 </style>
-<div class="custom-marquee color-{{ section.settings.color_scheme }} gradient" role="region" {{ block.shopify_attributes }}>
+<div class="custom-marquee-svg color-{{ section.settings.color_scheme }} gradient" role="region" {{ block.shopify_attributes }}>
   {%- if section.settings.text != blank -%}
     {%- if section.settings.link != blank -%}
       <a href="{{ section.settings.link }}" class="">
@@ -82,7 +82,7 @@ document.addEventListener('DOMContentLoaded', function() {
 </script>
 {% schema %}
 {
-  "name": "Marquee Announcement",
+  "name": "SVG Banner",
   "settings": [
     {
       "type": "richtext",
