@@ -289,6 +289,15 @@
         "padding_bottom": 0
       }
     },
+    "marquee_svg_xkxGTb": {
+      "type": "marquee_svg",
+      "settings": {
+        "text": "Welcome to our store | Check out our latest offers",
+        "color_scheme": "",
+        "link": "",
+        "image": "shopify://shop_images/recyclable-bag.svg"
+      }
+    },
     "multicolumn_8C9Q34": {
       "type": "multicolumn",
       "blocks": {
@@ -492,6 +501,7 @@
     "image_banner_BWxL4R",
     "multicolumn_xYcnmf",
     "custom_liquid_FHDpUK",
+    "marquee_svg_xkxGTb",
     "multicolumn_8C9Q34",
     "multicolumn_xrJDbx",
     "image_banner_hhFPbe"
