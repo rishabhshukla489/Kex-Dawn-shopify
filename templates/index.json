@@ -292,7 +292,7 @@
     "marquee_svg_xkxGTb": {
       "type": "marquee_svg",
       "settings": {
-        "text": "keep it Clean | Do right by people | Keep it clear",
+        "text": "<p><strong>Keep it Clean</strong> | Do right by people | Keep it clear</p>",
         "color_scheme": "",
         "link": "",
         "image": "shopify://shop_images/recyclable-bag.svg"
