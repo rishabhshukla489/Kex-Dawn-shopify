@@ -219,7 +219,7 @@
             "title": "Bomber Suit",
             "text": "<p>Matt Pink</p>",
             "link_label": "",
-            "link": ""
+            "link": "shopify://products/adjustable-camisole"
           }
         },
         "column_f8cdJk": {
@@ -229,7 +229,7 @@
             "title": "Athleisure",
             "text": "<p>Neon green</p>",
             "link_label": "",
-            "link": ""
+            "link": "shopify://products/pocket-legging"
           }
         },
         "column_RUmEXG": {
@@ -399,7 +399,7 @@
             "title": "",
             "text": "<p>Men Activewear</p>",
             "link_label": "",
-            "link": ""
+            "link": "shopify://collections/shorts"
           }
         },
         "column_9RVaPR": {
@@ -409,7 +409,7 @@
             "title": "",
             "text": "<p>Women Activewear</p>",
             "link_label": "",
-            "link": ""
+            "link": "shopify://collections/thermals"
           }
         },
         "column_aqHgrQ": {
@@ -419,7 +419,7 @@
             "title": "",
             "text": "<p>Womens Essentials</p>",
             "link_label": "",
-            "link": ""
+            "link": "shopify://collections/tees"
           }
         },
         "column_9jy337": {
@@ -429,7 +429,7 @@
             "title": "",
             "text": "<p>Men Essentials</p>",
             "link_label": "",
-            "link": ""
+            "link": "shopify://collections/trousers"
           }
         }
       },
