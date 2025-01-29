@@ -491,16 +491,19 @@
         "text_fqgqTk",
         "buttons_FUbmtV"
       ],
+      "custom_css": [
+        ".banner__media {border-radius: 50px;}"
+      ],
       "settings": {
         "image": "shopify://shop_images/Group_47690.png",
         "image_overlay_opacity": 0,
         "image_height": "large",
-        "desktop_content_position": "middle-center",
+        "desktop_content_position": "middle-left",
         "show_text_box": false,
         "desktop_content_alignment": "left",
         "color_scheme": "scheme-d740678e-b2db-488e-b188-c7e902e83c4b",
         "image_behavior": "none",
-        "mobile_content_alignment": "left",
+        "mobile_content_alignment": "center",
         "stack_images_on_mobile": true,
         "show_text_below": false
       }
