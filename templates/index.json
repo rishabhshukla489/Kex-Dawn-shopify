@@ -293,8 +293,9 @@
       "type": "marquee_svg",
       "settings": {
         "text": "Welcome to our store",
-        "color_scheme": "",
-        "link": ""
+        "color_scheme": "scheme-1",
+        "link": "",
+        "image": "shopify://shop_images/recyclable-bag.svg"
       }
     },
     "multicolumn_8C9Q34": {
