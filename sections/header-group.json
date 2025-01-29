@@ -33,6 +33,9 @@
         "announcement-bar-0",
         "announcement_HVidYr"
       ],
+      "custom_css": [
+        ".utility-bar,.utility-bar__grid,.announcement-bar {height: 30px;}"
+      ],
       "settings": {
         "color_scheme": "scheme-6",
         "show_line_separator": true,
