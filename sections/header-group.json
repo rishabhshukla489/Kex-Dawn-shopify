@@ -52,6 +52,7 @@
         "#HeaderMenu-sales {color: red;}"
       ],
       "settings": {
+        "center-main-nav": true,
         "logo_position": "middle-left",
         "menu": "main-menu",
         "menu_type_desktop": "dropdown",
