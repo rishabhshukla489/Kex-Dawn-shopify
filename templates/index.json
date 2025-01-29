@@ -292,7 +292,7 @@
     "svg_banner_NC6di3": {
       "type": "SVG-banner",
       "settings": {
-        "text": "<p>Keep it Clean | Do right by people | Keep it Clear</p>",
+        "text": "<p><strong>Keep it Clean</strong> | Do right by people | Keep it Clear</p>",
         "color_scheme": "",
         "link": "",
         "image": "shopify://shop_images/recyclable-bag.svg"
