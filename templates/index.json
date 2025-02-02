@@ -36,6 +36,9 @@
         "featured_collection_KziKwW",
         "featured_collection_g6rYUn"
       ],
+      "custom_css": [
+        "li {background-color: white;}"
+      ],
       "settings": {
         "title": "Collections",
         "content_alignment": "left",
