@@ -40,7 +40,7 @@
         ".custom-collection-slider {background-color: #f5f5f5;}"
       ],
       "settings": {
-        "title": "Collections",
+        "title": "",
         "content_alignment": "left",
         "image_overlay_opacity": 0,
         "heading_size": "h1",
