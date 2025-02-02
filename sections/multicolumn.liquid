@@ -13,6 +13,19 @@
       padding-bottom: {{ section.settings.padding_bottom }}px;
     }
   }
+
+  .multicolumn__title-wrapper {
+    display: flex;
+    align-items: center;
+  }
+
+  .multicolumn__logo {
+    margin-right: 1rem;
+  }
+
+  .multicolumn__subheading {
+    margin-top: 0.5rem;
+  }
 {%- endstyle -%}
 
 {%- liquid
@@ -32,14 +45,16 @@
   >
     {%- unless section.settings.title == blank and section.settings.logo == blank and section.settings.subheading == blank -%}
       <div class="title-wrapper-with-link title-wrapper--self-padded-mobile title-wrapper--no-top-margin multicolumn__title">
-        {%- if section.settings.logo != blank -%}
-          <img src="{{ section.settings.logo | image_url }}" alt="Logo" class="multicolumn__logo">
-        {%- endif -%}
-        <h2 class="title inline-richtext {{ section.settings.heading_size }} inline-richtext {{ section.settings.heading_alignment }}">
-          {{ section.settings.title }}
-        </h2>
+        <div class="multicolumn__title-wrapper">
+          {%- if section.settings.logo != blank -%}
+            <img src="{{ section.settings.logo | image_url }}" alt="Logo" class="multicolumn__logo">
+          {%- endif -%}
+          <h2 class="title inline-richtext {{ section.settings.heading_size }} inline-richtext {{ section.settings.heading_alignment }}">
+            {{ section.settings.title }}
+          </h2>
+        </div>
         {%- if section.settings.subheading != blank -%}
-          <p class="subheading">{{ section.settings.subheading }}</p>
+          <p class="subheading multicolumn__subheading">{{ section.settings.subheading }}</p>
         {%- endif -%}
         {%- if section.settings.button_label != blank and show_mobile_slider -%}
           <a href="{{ section.settings.button_link }}" class="link underlined-link large-up-hide">
