@@ -112,8 +112,10 @@
                 </span>
               </p>
             {%- endif -%}
-            <div class="collection-button-wrapper">
-              <a href="{{ card_collection.url }}" class="collection-button">View Collection</a>
+            <div class="collection-button-wrapper" style="margin-top: 30px;">
+              <a href="{{ card_collection.url }}" class="collection-button" style="color: #F5F5F5; background-color: #FC6600; border-radius: 8px; padding: 10px 20px; text-decoration: none;">
+                {{ section.settings.button_label }}
+              </a>
             </div>
           </div>
         </div>
@@ -151,8 +153,10 @@
               </span>
             </p>
           {%- endif -%}
-          <div class="collection-button-wrapper">
-            <a href="{{ card_collection.url }}" class="collection-button">View Collection</a>
+          <div class="collection-button-wrapper" style="margin-top: 20px;">
+            <a href="{{ card_collection.url }}" class="collection-button" style="color: #F5F5F5; background-color: #FC6600; border-radius: 8px; padding: 10px 20px; text-decoration: none;">
+              {{ section.settings.button_label }}
+            </a>
           </div>
         </div>
       </div>

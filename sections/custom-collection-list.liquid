@@ -150,7 +150,7 @@
               placeholder_image: placeholder_image
             %}
             <div class="collection-button-wrapper">
-              <a href="{{ block.settings.collection.url }}" class="collection-button">View Collection</a>
+              <a href="{{ block.settings.collection.url }}" class="collection-button">{{ section.settings.button_label }}</a>
             </div>
           </li>
         {%- endfor -%}
@@ -325,6 +325,12 @@
       "unit": "px",
       "label": "t:sections.all.padding.padding_bottom",
       "default": 36
+    },
+    {
+      "type": "text",
+      "id": "button_label",
+      "default": "View Collection",
+      "label": "Button Label"
     }
   ],
   "blocks": [
