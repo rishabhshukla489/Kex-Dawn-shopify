@@ -17,14 +17,32 @@
   .multicolumn__title-wrapper {
     display: flex;
     align-items: center;
+    flex-direction: column;
+    text-align: center;
   }
 
   .multicolumn__logo {
-    margin-right: 1rem;
+    margin-bottom: 1rem;
   }
 
   .multicolumn__subheading {
     margin-top: 0.5rem;
+  }
+
+  @media screen and (min-width: 750px) {
+    .multicolumn__title-wrapper {
+      flex-direction: row;
+      text-align: left;
+    }
+
+    .multicolumn__logo {
+      margin-bottom: 0;
+      margin-right: 1rem;
+    }
+
+    .multicolumn__subheading {
+      margin-top: 0;
+    }
   }
 {%- endstyle -%}
 
@@ -49,13 +67,15 @@
           {%- if section.settings.logo != blank -%}
             <img src="{{ section.settings.logo | image_url }}" alt="Logo" class="multicolumn__logo">
           {%- endif -%}
-          <h2 class="title inline-richtext {{ section.settings.heading_size }} inline-richtext {{ section.settings.heading_alignment }}">
-            {{ section.settings.title }}
-          </h2>
+          <div>
+            <h2 class="title inline-richtext {{ section.settings.heading_size }} inline-richtext {{ section.settings.heading_alignment }}">
+              {{ section.settings.title }}
+            </h2>
+            {%- if section.settings.subheading != blank -%}
+              <p class="subheading multicolumn__subheading">{{ section.settings.subheading }}</p>
+            {%- endif -%}
+          </div>
         </div>
-        {%- if section.settings.subheading != blank -%}
-          <p class="subheading multicolumn__subheading">{{ section.settings.subheading }}</p>
-        {%- endif -%}
         {%- if section.settings.button_label != blank and show_mobile_slider -%}
           <a href="{{ section.settings.button_link }}" class="link underlined-link large-up-hide">
             {{- section.settings.button_label | escape -}}
