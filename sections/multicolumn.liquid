@@ -30,6 +30,17 @@
     margin-top: 0.5rem;
   }
 
+  .multicolumn__title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .multicolumn__title-wrapper {
+    width: 100%;
+  }
+
   @media screen and (min-width: 750px) {
     .multicolumn__title-wrapper {
       text-align: center;
@@ -60,6 +71,7 @@
     {% if settings.animations_reveal_on_scroll %}
       data-cascade
     {% endif %}
+    style="display: flex; justify-content: center;"
   >
     {%- unless section.settings.title == blank and section.settings.logo == blank and section.settings.subheading == blank -%}
       <div class="title-wrapper-with-link title-wrapper--self-padded-mobile title-wrapper--no-top-margin multicolumn__title">
