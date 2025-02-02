@@ -118,8 +118,14 @@ document.addEventListener("DOMContentLoaded", function() {
   colorOptions.forEach(option => {
     option.addEventListener("click", function() {
       const selectedColor = this.getAttribute("data-color");
+      let count = 0;
       productItems.forEach(item => {
-        item.style.display = item.getAttribute("data-color") === selectedColor ? "block" : "none";
+        if (item.getAttribute("data-color") === selectedColor && count < 4) {
+          item.style.display = "block";
+          count++;
+        } else {
+          item.style.display = "none";
+        }
       });
     });
   });
