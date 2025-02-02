@@ -57,9 +57,9 @@
           {{ block.settings.subsection_title }}
         </div>
         <ul class="quick-links__link-list">
-          {%- for link in block.settings.links -%}
+          {%- for collection in block.settings.collections -%}
             <li class="quick-links__link-item">
-              <a href="{{ link.url }}">{{ link.title }}</a>
+              <a href="{{ collection.url }}">{{ collection.title }}</a>
             </li>
           {%- endfor -%}
         </ul>
@@ -105,15 +105,15 @@
       "name": "Subsection",
       "settings": [
         {
-          "type": "text",
+          "type": "richtext",
           "id": "subsection_title",
           "label": "Subsection Title",
-          "default": "Subsection"
+          "default": "<p><strong>Subsection</strong></p>"
         },
         {
-          "type": "link_list",
-          "id": "links",
-          "label": "Links"
+          "type": "collection_list",
+          "id": "collections",
+          "label": "Collections"
         }
       ]
     }
