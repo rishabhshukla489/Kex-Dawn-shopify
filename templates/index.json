@@ -585,6 +585,7 @@
     },
     "custom_image_section_74gVj8": {
       "type": "custom-image-section",
+      "disabled": true,
       "settings": {
         "image": "shopify://shop_images/Screenshot_2025-01-30_at_3.22.39_AM.png"
       }
