@@ -328,8 +328,10 @@
       ],
       "settings": {
         "title": "Favourites",
+        "logo": "shopify://shop_images/Layer_2.png",
+        "subheading": "Beautifully Functional. Purposefully Designed. Consciously Crafted.",
         "heading_size": "h0",
-        "heading_alignment": "heading_alignment_right",
+        "heading_alignment": "heading_alignment_left",
         "image_width": "full",
         "image_ratio": "portrait",
         "columns_desktop": 5,
@@ -444,6 +446,7 @@
       ],
       "settings": {
         "title": "",
+        "subheading": "",
         "heading_size": "h2",
         "heading_alignment": "heading_alignment_center",
         "image_width": "third",
@@ -515,6 +518,7 @@
       ],
       "settings": {
         "title": "Popular <strong>Categories</strong>",
+        "subheading": "",
         "heading_size": "h1",
         "heading_alignment": "heading_alignment_left",
         "image_width": "full",
