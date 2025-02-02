@@ -37,7 +37,7 @@
         "featured_collection_g6rYUn"
       ],
       "custom_css": [
-        "li {background-color: white;}"
+        ".custom-collection-slider {background-color: #f5f5f5;}"
       ],
       "settings": {
         "title": "Collections",
