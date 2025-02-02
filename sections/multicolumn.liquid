@@ -20,6 +20,7 @@
     justify-content: center;
     text-align: center;
     flex-direction: column;
+    width: 100%;
   }
 
   .multicolumn__logo {
@@ -35,9 +36,6 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-  }
-
-  .multicolumn__title-wrapper {
     width: 100%;
   }
 
@@ -71,7 +69,6 @@
     {% if settings.animations_reveal_on_scroll %}
       data-cascade
     {% endif %}
-    style="display: flex; justify-content: center;"
   >
     {%- unless section.settings.title == blank and section.settings.logo == blank and section.settings.subheading == blank -%}
       <div class="title-wrapper-with-link title-wrapper--self-padded-mobile title-wrapper--no-top-margin multicolumn__title">
