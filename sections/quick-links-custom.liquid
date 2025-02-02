@@ -30,10 +30,17 @@
   .quick-links__link-list {
     list-style: none;
     padding: 0;
+    display: flex;
+    flex-wrap: wrap;
   }
 
   .quick-links__link-item {
-    margin-bottom: 0.5rem;
+    margin-right: 0.5rem;
+  }
+
+  .quick-links__link-item:not(:last-child)::after {
+    content: "|";
+    margin-left: 0.5rem;
   }
 
   .quick-links__link-item a {
