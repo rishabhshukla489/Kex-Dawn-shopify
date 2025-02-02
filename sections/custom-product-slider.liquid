@@ -1,0 +1,131 @@
+{% schema %}
+{
+  "name": "Product Color Slider",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title"
+    },
+    {
+      "type": "richtext",
+      "id": "title_format",
+      "label": "Title Format"
+    },
+    {
+      "type": "image_picker",
+      "id": "logo",
+      "label": "Logo Image"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "product",
+      "name": "Product",
+      "settings": [
+        {
+          "type": "product",
+          "id": "product",
+          "label": "Select Product"
+        },
+        {
+          "type": "color",
+          "id": "color",
+          "label": "Product Color"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Product Color Slider"
+    }
+  ]
+}
+{% endschema %}
+
+<div class="product-slider-section">
+  <div class="title-logo">
+    <div class="title" style="{{ section.settings.title_format }}">
+      {{ section.settings.title }}
+    </div>
+    {% if section.settings.logo %}
+      <img src="{{ section.settings.logo | image_url }}" alt="Logo" class="logo">
+    {% endif %}
+  </div>
+  
+  <div class="product-container">
+    {% for block in section.blocks limit: 4 %}
+      <div class="product-item" data-color="{{ block.settings.color }}">
+        <a href="{{ block.settings.product.url }}">
+          <img src="{{ block.settings.product.featured_image | image_url }}" alt="{{ block.settings.product.title }}" class="product-image">
+        </a>
+      </div>
+    {% endfor %}
+  </div>
+  
+  <div class="color-slider">
+    {% for block in section.blocks %}
+      <div class="color-option" data-color="{{ block.settings.color }}" style="background: {{ block.settings.color }};"></div>
+    {% endfor %}
+  </div>
+</div>
+
+<style>
+.product-slider-section {
+  text-align: center;
+}
+.title-logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  max-width: 100px;
+}
+.product-container {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 20px;
+}
+.product-image {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 15px;
+  border: 2px solid white;
+}
+.color-slider {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+.color-option {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin: 0 5px;
+  cursor: pointer;
+}
+</style>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  const colorOptions = document.querySelectorAll(".color-option");
+  const productItems = document.querySelectorAll(".product-item");
+
+  colorOptions.forEach(option => {
+    option.addEventListener("click", function() {
+      const selectedColor = this.getAttribute("data-color");
+      productItems.forEach(item => {
+        item.style.display = item.getAttribute("data-color") === selectedColor ? "block" : "none";
+      });
+    });
+  });
+  
+  if (colorOptions.length > 0) {
+    colorOptions[0].click();
+  }
+});
+</script>
