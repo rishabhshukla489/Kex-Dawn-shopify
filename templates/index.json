@@ -9,6 +9,62 @@
  */
 {
   "sections": {
+    "custom_collection_list_H79fF8": {
+      "type": "custom-collection-list",
+      "blocks": {
+        "featured_collection_yDzRzf": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "tank-tops"
+          }
+        },
+        "featured_collection_KziKwW": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "leggings"
+          }
+        },
+        "featured_collection_g6rYUn": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "tank-tops"
+          }
+        },
+        "featured_collection_b9xiAH": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": ""
+          }
+        },
+        "featured_collection_GamefJ": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": ""
+          }
+        }
+      },
+      "block_order": [
+        "featured_collection_yDzRzf",
+        "featured_collection_KziKwW",
+        "featured_collection_g6rYUn",
+        "featured_collection_b9xiAH",
+        "featured_collection_GamefJ"
+      ],
+      "settings": {
+        "title": "Collections",
+        "content_alignment": "left",
+        "image_overlay_opacity": 0,
+        "heading_size": "h1",
+        "image_ratio": "square",
+        "columns_desktop": 3,
+        "color_scheme": "",
+        "show_view_all": false,
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "slideshow_pxDALG": {
       "type": "slideshow",
       "blocks": {
@@ -540,6 +596,7 @@
     }
   },
   "order": [
+    "custom_collection_list_H79fF8",
     "slideshow_pxDALG",
     "custom_liquid_whqYUE",
     "custom_liquid_MEzPVQ",
