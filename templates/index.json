@@ -588,6 +588,42 @@
       "settings": {
         "image": "shopify://shop_images/Screenshot_2025-01-30_at_3.22.39_AM.png"
       }
+    },
+    "quick_links_custom_yT9iQF": {
+      "type": "quick-links-custom",
+      "blocks": {
+        "link_list_E8HEfc": {
+          "type": "link_list",
+          "settings": {
+            "subsection_title": "<h2>Men</h2>",
+            "menu": ""
+          }
+        },
+        "link_list_aJnx6C": {
+          "type": "link_list",
+          "settings": {
+            "subsection_title": "<h2>Women</h2>",
+            "menu": "women"
+          }
+        },
+        "link_list_GhxkJL": {
+          "type": "link_list",
+          "settings": {
+            "subsection_title": "<h2>Accessories</h2>",
+            "menu": ""
+          }
+        }
+      },
+      "block_order": [
+        "link_list_E8HEfc",
+        "link_list_aJnx6C",
+        "link_list_GhxkJL"
+      ],
+      "settings": {
+        "title": "<h1><strong>Quick </strong>Links</h1>",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
@@ -606,6 +642,7 @@
     "multicolumn_8C9Q34",
     "multicolumn_xrJDbx",
     "image_banner_hhFPbe",
-    "custom_image_section_74gVj8"
+    "custom_image_section_74gVj8",
+    "quick_links_custom_yT9iQF"
   ]
 }
