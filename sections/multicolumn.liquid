@@ -30,11 +30,17 @@
       data-cascade
     {% endif %}
   >
-    {%- unless section.settings.title == blank -%}
+    {%- unless section.settings.title == blank and section.settings.logo == blank and section.settings.subheading == blank -%}
       <div class="title-wrapper-with-link title-wrapper--self-padded-mobile title-wrapper--no-top-margin multicolumn__title">
+        {%- if section.settings.logo != blank -%}
+          <img src="{{ section.settings.logo | image_url }}" alt="Logo" class="multicolumn__logo">
+        {%- endif -%}
         <h2 class="title inline-richtext {{ section.settings.heading_size }} inline-richtext {{ section.settings.heading_alignment }}">
           {{ section.settings.title }}
         </h2>
+        {%- if section.settings.subheading != blank -%}
+          <p class="subheading">{{ section.settings.subheading }}</p>
+        {%- endif -%}
         {%- if section.settings.button_label != blank and show_mobile_slider -%}
           <a href="{{ section.settings.button_link }}" class="link underlined-link large-up-hide">
             {{- section.settings.button_label | escape -}}
@@ -206,6 +212,16 @@
       "label": "t:sections.multicolumn.settings.title.label"
     },
     {
+      "type": "image_picker",
+      "id": "logo",
+      "label": "Logo"
+    },
+    {
+      "type": "text",
+      "id": "subheading",
+      "label": "Subheading"
+    },
+    {
       "type": "select",
       "id": "heading_size",
       "options": [
@@ -251,7 +267,7 @@
         }
       ],
       "default": "heading_alignment_center",
-      "label": "Heading allignment"
+      "label": "Heading alignment"
     },
     {
       "type": "select",
