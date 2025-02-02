@@ -15,6 +15,11 @@
     }
   }
 
+  .slider img{
+    border-radius: 2rem;
+  }
+  
+
   .custom-collection-slider .slider-counter {
     display: none;
   }
@@ -25,7 +30,7 @@
     text-align: center;
     vertical-align: middle;
     z-index: 999;
-    background: black;
+    /* background: black; */
     color: white;
     border-radius: 50%;
     
@@ -45,20 +50,20 @@
   .custom-slider-desktop-li:first-child {
     margin-left: 0 !important;
   }
-
+  
 
   .custom-collection-slider .card__content {
     position: absolute;
     /* top: 43%; */
     text-align: center;
     vertical-align: middle;
-    height: auto;
+    min-height: 30rem;
     align-items: center;
   }
   .custom-collection-slider .card__inner .card__content {
     position: unset;
     top: unset;
-    background: black;
+    /* background: white; */
     opacity: {{ section.settings.image_overlay_opacity | divided_by: 100.0 }};
   }
   {% if section.settings.content_alignment == 'center' %}
@@ -74,6 +79,7 @@
     text-transform: uppercase;
     color: white;
     font-weight: 600;
+    
   }
   .card:hover .media.media--hover-effect>img:first-child:only-child {
     transform: scale(1.09);
@@ -104,7 +110,7 @@
     {%- endunless -%}
 
     <slider-component class="slider-mobile-gutter{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %} slider-component-desktop">
-      <button
+      {% comment %} <button
         type="button"
         class="slider-button slider-button--prev"
         name="previous"
@@ -113,7 +119,7 @@
         <span class="svg-wrapper">
           {{- 'icon-caret.svg' | inline_asset_content -}}
         </span>
-      </button>
+      </button> {% endcomment %}
       <ul
         class="slider slider--desktop collection-list contains-card contains-card--collection{% if settings.card_style == 'standard' %} contains-card--standard{% endif %} grid grid--{{ section.settings.columns_desktop }}-col-desktop grid--{{ section.settings.columns_mobile }}-col-tablet-down{% if section.settings.swipe_on_mobile %} slider slider--tablet grid--peek{% endif %} collection-list--{{ section.blocks.size }}-items"
         id="Slider-{{ section.id }}"
@@ -147,7 +153,7 @@
         {%- endfor -%}
       </ul>
           
-      <button
+      {% comment %} <button
         type="button"
         class="slider-button slider-button--next"
         name="next"
@@ -156,7 +162,7 @@
          <span class="svg-wrapper">
             {{- 'icon-caret.svg' | inline_asset_content -}}
           </span>
-      </button>
+      </button> {% endcomment %}
     </slider-component>
 
   </div>
