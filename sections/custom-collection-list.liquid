@@ -57,7 +57,7 @@
     /* top: 43%; */
     text-align: center;
     vertical-align: middle;
-    min-height: 40rem;
+    min-height: 30rem;
     align-items: center;
   }
   .custom-collection-slider .card__inner .card__content {
@@ -143,12 +143,15 @@
           >
             {%- assign placeholder_image_index = forloop.index0 | modulo: 4 | plus: 1 -%}
             {%- assign placeholder_image = 'collection-apparel-' | append: placeholder_image_index -%}
-            {% render 'card-collection',
+            {% render 'card-collection-custom',
               card_collection: block.settings.collection,
               media_aspect_ratio: section.settings.image_ratio,
               columns: columns,
               placeholder_image: placeholder_image
             %}
+            <div class="collection-button-wrapper">
+              <a href="{{ block.settings.collection.url }}" class="collection-button">View Collection</a>
+            </div>
           </li>
         {%- endfor -%}
       </ul>
