@@ -19,16 +19,15 @@
     align-items: center;
     justify-content: center;
     text-align: center;
+    flex-direction: column;
   }
 
   .multicolumn__logo {
-    margin-right: 1rem;
-    vertical-align: middle;
+    margin-bottom: 1rem;
   }
 
   .multicolumn__subheading {
     margin-top: 0.5rem;
-    text-align: center;
   }
 
   @media screen and (min-width: 750px) {
@@ -37,13 +36,12 @@
     }
 
     .multicolumn__logo {
+      margin-bottom: 0;
       margin-right: 1rem;
-      vertical-align: middle;
     }
 
     .multicolumn__subheading {
       margin-top: 0.5rem;
-      text-align: center;
     }
   }
 {%- endstyle -%}
@@ -70,7 +68,7 @@
             <img src="{{ section.settings.logo | image_url }}" alt="Logo" class="multicolumn__logo">
           {%- endif -%}
           <div>
-            <h2 class="title inline-richtext {{ section.settings.heading_size }} inline-richtext {{ section.settings.heading_alignment }}">
+            <h2 class="title inline-richtext {{ section.settings.heading_size }} inline-richtext">
               {{ section.settings.title }}
             </h2>
             {%- if section.settings.subheading != blank -%}
@@ -285,26 +283,6 @@
       ],
       "default": "h1",
       "label": "t:sections.all.heading_size.label"
-    },
-    {
-      "type": "select",
-      "id": "heading_alignment",
-      "options": [
-        {
-          "value": "heading_alignment_left",
-          "label": "Left"
-        },
-        {
-          "value": "heading_alignment_center",
-          "label": "Centre"
-        },
-        {
-          "value": "heading_alignment_right",
-          "label": "Right"
-        }
-      ],
-      "default": "heading_alignment_center",
-      "label": "Heading alignment"
     },
     {
       "type": "select",
