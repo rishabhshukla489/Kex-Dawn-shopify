@@ -84,6 +84,22 @@
   .card:hover .media.media--hover-effect>img:first-child:only-child {
     transform: scale(1.09);
   }
+
+  .custom-collection-slider .slider {
+    display: flex;
+    justify-content: center;
+  }
+
+  .custom-collection-slider .slider--desktop {
+    margin: 0 auto;
+  }
+
+  @media screen and (max-width: 749px) {
+    .custom-collection-slider .slider--desktop {
+      margin: 0;
+      padding: 0;
+    }
+  }
   
 {%- endstyle -%}
 
