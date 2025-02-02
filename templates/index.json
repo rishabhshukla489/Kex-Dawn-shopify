@@ -29,26 +29,12 @@
           "settings": {
             "collection": "tank-tops"
           }
-        },
-        "featured_collection_b9xiAH": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": ""
-          }
-        },
-        "featured_collection_GamefJ": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": ""
-          }
         }
       },
       "block_order": [
         "featured_collection_yDzRzf",
         "featured_collection_KziKwW",
-        "featured_collection_g6rYUn",
-        "featured_collection_b9xiAH",
-        "featured_collection_GamefJ"
+        "featured_collection_g6rYUn"
       ],
       "settings": {
         "title": "Collections",
