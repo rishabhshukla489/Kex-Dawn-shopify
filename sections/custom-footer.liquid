@@ -31,6 +31,7 @@
   <div class="footer__content-top page-width">
     <div class="footer__logo">
       {%- if settings.brand_image != blank -%}
+        {%- assign brand_image_height = settings.brand_image_width | divided_by: settings.brand_image.aspect_ratio -%}
         <div class="footer-block__image-wrapper" style="max-width: min(100%, {{ settings.brand_image_width }}px);">
           {{
             settings.brand_image
@@ -38,7 +39,7 @@
             | image_tag:
               loading: 'lazy',
               widths: '50, 100, 150, 200, 300, 400, 550, 800, 1100',
-              height: settings.brand_image.aspect_ratio | divided_by: settings.brand_image_width,
+              height: brand_image_height,
               width: settings.brand_image_width
           }}
         </div>
