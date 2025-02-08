@@ -80,6 +80,21 @@
   .product-card .buy-button:hover {
     background-color: #333;
   }
+
+  .product-card .add-to-cart-button {
+    margin-top: auto;
+    padding: 10px 20px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+  }
+
+  .product-card .add-to-cart-button:hover {
+    background-color: #333;
+  }
 {%- endstyle -%}
 
 <div class="section-{{ section.id }}-padding gradient color-{{ section.settings.color_scheme }}">
@@ -226,6 +241,7 @@
                       show_price: true
                     %}
                     <button class="buy-button">Buy Now</button>
+                    <button class="add-to-cart-button">Add to Cart</button>
                   </div>
                 </li>
                 {%- assign skip_card_product_styles = true -%}
