@@ -57,15 +57,11 @@
   }
 
   .product-card .price {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-    font-size: 14px; /* Adjust font size */
+    display: none; /* Hide the price */
   }
 
   .product-card .add-to-cart {
-    margin-left: 5px; /* Reduce margin */
+    margin: 0 auto; /* Center the button */
   }
 {%- endstyle -%}
 
@@ -212,10 +208,7 @@
                       section_id: section.id,
                       show_price: false
                     %}
-                    <div class="price">
-                      <span>{{ product.price | money }}</span>
-                      <button class="add-to-cart">Add to Cart</button>
-                    </div>
+                    <button class="add-to-cart">Add to Cart</button>
                   </div>
                 </li>
                 {%- assign skip_card_product_styles = true -%}
