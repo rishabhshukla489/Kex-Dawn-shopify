@@ -38,8 +38,8 @@
   .product-card {
     border: 1px solid #ABABAB;
     border-radius: 15px;
-    padding: 5px; /* Reduce padding */
-    margin: 5px; /* Reduce margin */
+    padding: 10px;
+    margin: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -51,21 +51,18 @@
   .product-card img {
     border-radius: 15px;
     width: 100%;
-    height: 200px; /* Set a fixed height for the images */
-    object-fit: cover; /* Ensure images fill the space without distortion */
-    margin-bottom: 5px; /* Reduce margin */
+    height: auto;
+    max-height: 200px; /* Ensure the image fits within the card */
+    margin-bottom: 10px;
   }
 
   .product-card .price {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
     font-size: 14px; /* Adjust font size */
+    margin-bottom: 10px;
   }
 
   .product-card .add-to-cart {
-    margin-left: 5px; /* Reduce margin */
+    margin: 0 auto; /* Center the button */
   }
 {%- endstyle -%}
 
@@ -209,13 +206,12 @@
                       lazy_load: lazy_load,
                       skip_styles: skip_card_product_styles,
                       quick_add: section.settings.quick_add,
-                      section_id: section.id,
-                      show_price: false
+                      section_id: section.id
                     %}
                     <div class="price">
                       <span>{{ product.price | money }}</span>
-                      <button class="add-to-cart">Add to Cart</button>
                     </div>
+                    <button class="add-to-cart">Add to Cart</button>
                   </div>
                 </li>
                 {%- assign skip_card_product_styles = true -%}
