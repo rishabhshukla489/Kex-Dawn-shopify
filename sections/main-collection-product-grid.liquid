@@ -207,12 +207,8 @@
                       skip_styles: skip_card_product_styles,
                       quick_add: section.settings.quick_add,
                       section_id: section.id,
-                      show_price: false
+                      show_price: true
                     %}
-                    <div class="price">
-                      <span>{{ product.price | money }}</span>
-                    </div>
-                    <button class="add-to-cart">Add to Cart</button>
                   </div>
                 </li>
                 {%- assign skip_card_product_styles = true -%}
