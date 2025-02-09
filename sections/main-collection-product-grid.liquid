@@ -34,45 +34,6 @@
       padding-bottom: {{ section.settings.padding_bottom }}px;
     }
   }
-
-  .product-card {
-    border: 1px solid #ABABAB;
-    border-radius: 25px;
-    padding: 10px;
-    margin: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: stretch;
-    width: 80%; /* Reduce the container width */
-    box-sizing: border-box;
-    height: auto; /* Adjust height to auto */
-  }
-
-  .product-card img {
-    border-radius: 25px;
-    width: 100%;
-    aspect-ratio: 3 / 4; /* Maintain aspect ratio */
-    object-fit: cover; /* Ensure images fill the space without distortion */
-    margin-bottom: 10px;
-    background-color: transparent; /* Set background color to match surrounding color */
-  }
-
-  .product-card .price {
-    font-size: 1vw; /* Adjust font size to be responsive */
-    margin-top: auto; /* Move the price to the bottom */
-    margin-bottom: 10px;
-  }
-
-  .product-card .add-to-cart {
-    margin: 0 auto; /* Center the button */
-    margin-top: 10px; /* Add some space above the button */
-  }
-
-  @media screen and (max-width: 750px) {
-    .product-card .price {
-      font-size: 4vw; /* Adjust font size for smaller screens */
-    }
-  }
 {%- endstyle -%}
 
 <div class="section-{{ section.id }}-padding gradient color-{{ section.settings.color_scheme }}">
@@ -204,21 +165,18 @@
                     style="--animation-order: {{ forloop.index }};"
                   {% endif %}
                 >
-                  <div class="product-card">
-                    {% render 'card-product',
-                      card_product: product,
-                      media_aspect_ratio: 'portrait', /* Ensure images are displayed in portrait format */
-                      image_shape: section.settings.image_shape,
-                      show_secondary_image: section.settings.show_secondary_image,
-                      show_vendor: section.settings.show_vendor,
-                      show_rating: section.settings.show_rating,
-                      lazy_load: lazy_load,
-                      skip_styles: skip_card_product_styles,
-                      quick_add: section.settings.quick_add,
-                      section_id: section.id,
-                      show_price: true
-                    %}
-                  </div>
+                  {% render 'card-product',
+                    card_product: product,
+                    media_aspect_ratio: section.settings.image_ratio,
+                    image_shape: section.settings.image_shape,
+                    show_secondary_image: section.settings.show_secondary_image,
+                    show_vendor: section.settings.show_vendor,
+                    show_rating: section.settings.show_rating,
+                    lazy_load: lazy_load,
+                    skip_styles: skip_card_product_styles,
+                    quick_add: section.settings.quick_add,
+                    section_id: section.id
+                  %}
                 </li>
                 {%- assign skip_card_product_styles = true -%}
               {%- endfor -%}
