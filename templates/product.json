@@ -101,6 +101,226 @@
         "padding_bottom": 28
       }
     },
+    "rich_text_B7FhjE": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_WKGLpr": {
+          "type": "heading",
+          "settings": {
+            "heading": "Washing Instructions",
+            "heading_size": "h1"
+          }
+        }
+      },
+      "block_order": [
+        "heading_WKGLpr"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-46f3ad75-01f2-4912-b3c2-62534caf2030",
+        "full_width": true,
+        "padding_top": 20,
+        "padding_bottom": 8
+      }
+    },
+    "ss_feature_1_MNtghw": {
+      "type": "ss-feature-1",
+      "blocks": {
+        "image_8P8teg": {
+          "type": "image",
+          "settings": {
+            "feature_title": "Gentle Wash 40 C",
+            "feature_text": "",
+            "feature_image": "shopify://shop_images/Vector_3_d126c2d4-948b-48f3-ac51-8c2f9a2e0fa0.png",
+            "feature_url": "",
+            "hide_image": false
+          }
+        },
+        "image_PVpdYH": {
+          "type": "image",
+          "settings": {
+            "feature_title": "Do not Bleach",
+            "feature_text": "",
+            "feature_url": "",
+            "hide_image": false
+          }
+        },
+        "image_mpMWNR": {
+          "type": "image",
+          "settings": {
+            "feature_title": "Do not Dry Clean",
+            "feature_text": "",
+            "feature_url": "",
+            "hide_image": false
+          }
+        },
+        "image_q7Bt4J": {
+          "type": "image",
+          "settings": {
+            "feature_title": "Tumble dry Low",
+            "feature_text": "",
+            "feature_image": "shopify://shop_images/Vector_3_d126c2d4-948b-48f3-ac51-8c2f9a2e0fa0.png",
+            "feature_url": "",
+            "hide_image": false
+          }
+        },
+        "image_9rxXK7": {
+          "type": "image",
+          "settings": {
+            "feature_title": "Medium Iron",
+            "feature_text": "",
+            "feature_url": "",
+            "hide_image": false
+          }
+        }
+      },
+      "block_order": [
+        "image_8P8teg",
+        "image_PVpdYH",
+        "image_mpMWNR",
+        "image_q7Bt4J",
+        "image_9rxXK7"
+      ],
+      "settings": {
+        "feature_row": 5,
+        "feature_row_mobile": 1,
+        "feature_gap": 0,
+        "feature_gap_mobile": 10,
+        "feature_padding_horizontal": 0,
+        "feature_padding_vertical": 28,
+        "feature_radius": 16,
+        "feature_border_thickness": 1,
+        "feature_shadow": false,
+        "feature_heading_custom": false,
+        "feature_heading_font": "josefin_sans_n4",
+        "feature_heading_size": 20,
+        "feature_heading_size_mobile": 16,
+        "feature_heading_height": 140,
+        "feature_heading_mt": 8,
+        "feature_text_custom": false,
+        "feature_text_font": "josefin_sans_n4",
+        "feature_text_size": 12,
+        "feature_text_size_mobile": 0,
+        "feature_text_height": 130,
+        "feature_text_mt": 4,
+        "feature_icon_size": 42,
+        "feature_icon_size_mobile": 42,
+        "feature_bg": "#FFFFFF",
+        "feature_border_color": "#2e3742",
+        "feature_shadow_color": "#fc6600",
+        "feature_heading_color": "#000000",
+        "feature_text_color": "#000000",
+        "feature_icon_color": "#fc6600",
+        "background_color": "#FFFFFF",
+        "background_gradient": "",
+        "border_color": "#f3f3f3",
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "padding_top": 16,
+        "padding_bottom": 16,
+        "padding_horizontal": 5,
+        "padding_horizontal_mobile": 1.5,
+        "full_width": false,
+        "content_width": 150,
+        "border_thickness": 0,
+        "lazy": true
+      }
+    },
+    "rich_text_V6ffxK": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_hxeFYE": {
+          "type": "heading",
+          "settings": {
+            "heading": "Manufacturing Details",
+            "heading_size": "h1"
+          }
+        }
+      },
+      "block_order": [
+        "heading_hxeFYE"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-46f3ad75-01f2-4912-b3c2-62534caf2030",
+        "full_width": true,
+        "padding_top": 24,
+        "padding_bottom": 0
+      }
+    },
+    "ss_feature_1_QCHzmy": {
+      "type": "ss-feature-1",
+      "blocks": {
+        "image_dFdg9p": {
+          "type": "image",
+          "settings": {
+            "feature_title": "",
+            "feature_text": "<p>Gurgaon, Haryana<br/>India</p>",
+            "feature_url": "",
+            "hide_image": true
+          }
+        },
+        "image_Bkge9Y": {
+          "type": "image",
+          "settings": {
+            "feature_title": "",
+            "feature_text": "<p>County of Origin - India</p>",
+            "feature_url": "",
+            "hide_image": true
+          }
+        }
+      },
+      "block_order": [
+        "image_dFdg9p",
+        "image_Bkge9Y"
+      ],
+      "settings": {
+        "feature_row": 2,
+        "feature_row_mobile": 2,
+        "feature_gap": 100,
+        "feature_gap_mobile": 20,
+        "feature_padding_horizontal": 0,
+        "feature_padding_vertical": 0,
+        "feature_radius": 16,
+        "feature_border_thickness": 0,
+        "feature_shadow": false,
+        "feature_heading_custom": false,
+        "feature_heading_font": "josefin_sans_n4",
+        "feature_heading_size": 22,
+        "feature_heading_size_mobile": 12,
+        "feature_heading_height": 130,
+        "feature_heading_mt": 16,
+        "feature_text_custom": false,
+        "feature_text_font": "josefin_sans_n4",
+        "feature_text_size": 26,
+        "feature_text_size_mobile": 34,
+        "feature_text_height": 130,
+        "feature_text_mt": 22,
+        "feature_icon_size": 42,
+        "feature_icon_size_mobile": 42,
+        "feature_bg": "#FFFFFF",
+        "feature_border_color": "#000000",
+        "feature_shadow_color": "#000000",
+        "feature_heading_color": "#000000",
+        "feature_text_color": "#000000",
+        "feature_icon_color": "#000000",
+        "background_color": "#FFFFFF",
+        "background_gradient": "",
+        "border_color": "#000000",
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "padding_top": 16,
+        "padding_bottom": 16,
+        "padding_horizontal": 5,
+        "padding_horizontal_mobile": 1.5,
+        "full_width": false,
+        "content_width": 120,
+        "border_thickness": 0,
+        "lazy": true
+      }
+    },
     "quick_links_custom_AtTatH": {
       "type": "quick-links-custom",
       "blocks": {
@@ -125,6 +345,10 @@
   "order": [
     "main",
     "related-products",
+    "rich_text_B7FhjE",
+    "ss_feature_1_MNtghw",
+    "rich_text_V6ffxK",
+    "ss_feature_1_QCHzmy",
     "quick_links_custom_AtTatH"
   ]
 }
