@@ -100,10 +100,31 @@
         "padding_top": 36,
         "padding_bottom": 28
       }
+    },
+    "quick_links_custom_AtTatH": {
+      "type": "quick-links-custom",
+      "blocks": {
+        "link_list_U8nz3b": {
+          "type": "link_list",
+          "settings": {
+            "subsection_title": "",
+            "menu": "women"
+          }
+        }
+      },
+      "block_order": [
+        "link_list_U8nz3b"
+      ],
+      "settings": {
+        "title": "<h2>Popular Searches</h2>",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
     "main",
-    "related-products"
+    "related-products",
+    "quick_links_custom_AtTatH"
   ]
 }
