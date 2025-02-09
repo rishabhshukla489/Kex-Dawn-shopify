@@ -38,6 +38,91 @@
         "padding_bottom": 32
       }
     },
+    "ss_simple_faq_BzTy6p": {
+      "type": "ss-simple-faq",
+      "blocks": {
+        "text_bBzitK": {
+          "type": "text",
+          "settings": {
+            "question": "Are Kex tank tops suitable for workouts?",
+            "answer": "<p>Yes! Our tank tops are designed for both performance and style, offering stretch and breathability for an active lifestyle.</p>"
+          }
+        },
+        "text_LqaWfV": {
+          "type": "text",
+          "settings": {
+            "question": "How should I wash my tank top?",
+            "answer": "<p>We recommend machine washing in cold water with similar colors and air drying for longevity. Avoid harsh detergents and bleach.</p>"
+          }
+        },
+        "text_3QzgzX": {
+          "type": "text",
+          "settings": {
+            "question": "Do Kex tank tops shrink after washing?",
+            "answer": "<p>Our tank tops are pre-shrunk, ensuring minimal shrinkage when washed as per care instructions.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_bBzitK",
+        "text_LqaWfV",
+        "text_3QzgzX"
+      ],
+      "settings": {
+        "heading": "Frequently Asked Questions",
+        "icon_color": "#fff",
+        "hover_color": "#EFEFEF",
+        "question_color": "#fff",
+        "background_color": "#fc6600",
+        "answer_color": "#000",
+        "answer_bg_color": "#fff",
+        "questions-font-size": 1.5
+      }
+    },
+    "ss_cookie_banner_8aUERU": {
+      "type": "ss-cookie-banner",
+      "blocks": {
+        "accept_button_dYR4F7": {
+          "type": "accept_button",
+          "settings": {
+            "button_text": "Accept",
+            "button_color": "#fc6600",
+            "button_text_color": "#ffffff",
+            "button_border_color": "#000000",
+            "button_border_width": 0,
+            "button_border_radius": 24
+          }
+        },
+        "decline_button_iVgQxr": {
+          "type": "decline_button",
+          "settings": {
+            "redirect_url": "",
+            "button_text": "Decline",
+            "button_color": "#ffffff",
+            "button_text_color": "#000000",
+            "button_border_color": "#000000",
+            "button_border_width": 1,
+            "button_border_radius": 24
+          }
+        }
+      },
+      "block_order": [
+        "accept_button_dYR4F7",
+        "decline_button_iVgQxr"
+      ],
+      "settings": {
+        "text_color": "#000000",
+        "text_size": 16,
+        "text": "<p>🍪 We use cookies to ensure the best possible user experience. Please agree to our cookies policy by clicking 'Accept'.</p>",
+        "max_width": 400,
+        "background_color": "#ffffff",
+        "border_radius": 24,
+        "vertical_padding": 20,
+        "horizontal_padding": 20,
+        "placement": "bottom-left",
+        "enable_shadow": true
+      }
+    },
     "quick_links_custom_h8D7Vk": {
       "type": "quick-links-custom",
       "blocks": {
@@ -62,6 +147,8 @@
   "order": [
     "banner",
     "product-grid",
+    "ss_simple_faq_BzTy6p",
+    "ss_cookie_banner_8aUERU",
     "quick_links_custom_h8D7Vk"
   ]
 }
