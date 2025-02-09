@@ -61,12 +61,20 @@
             "question": "Do Kex tank tops shrink after washing?",
             "answer": "<p>Our tank tops are pre-shrunk, ensuring minimal shrinkage when washed as per care instructions.</p>"
           }
+        },
+        "text_ttNAFL": {
+          "type": "text",
+          "settings": {
+            "question": "What sizes are available?",
+            "answer": "<p>We offer sizes from XS to 4XL, ensuring a perfect fit for everyone.</p>"
+          }
         }
       },
       "block_order": [
         "text_bBzitK",
         "text_LqaWfV",
-        "text_3QzgzX"
+        "text_3QzgzX",
+        "text_ttNAFL"
       ],
       "settings": {
         "heading": "Frequently Asked Questions",
