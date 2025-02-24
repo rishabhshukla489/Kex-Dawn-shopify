@@ -373,6 +373,7 @@
     },
     "custom_image_section_84wjBx": {
       "type": "custom-image-section",
+      "disabled": true,
       "settings": {
         "image": "shopify://shop_images/Untitled.png"
       }
