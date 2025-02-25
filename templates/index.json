@@ -117,25 +117,25 @@
         "featured_collection_iGyHga": {
           "type": "featured_collection",
           "settings": {
-            "collection": "tees"
+            "collection": "kurti"
           }
         },
         "featured_collection_cKAhfy": {
           "type": "featured_collection",
           "settings": {
-            "collection": "trousers"
+            "collection": "camisoles"
           }
         },
         "featured_collection_TJCaBj": {
           "type": "featured_collection",
           "settings": {
-            "collection": "shorts"
+            "collection": "combo-packs"
           }
         },
         "featured_collection_FPzgTg": {
           "type": "featured_collection",
           "settings": {
-            "collection": "thermals"
+            "collection": "bottom-wear"
           }
         }
       },
@@ -181,7 +181,7 @@
         "featured_collection_g6rYUn": {
           "type": "featured_collection",
           "settings": {
-            "collection": "thermals",
+            "collection": "winter-wear",
             "button_label": "SHOP NOW"
           }
         }
