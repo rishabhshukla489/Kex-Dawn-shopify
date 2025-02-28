@@ -330,7 +330,7 @@
         "title": "Favourites",
         "logo": "shopify://shop_images/Layer_2.png",
         "subheading": "Beautifully Functional. Purposefully Designed. Consciously Crafted.",
-        "heading_size": "h0",
+        "heading_size": "h1",
         "image_width": "full",
         "image_ratio": "portrait",
         "columns_desktop": 5,
