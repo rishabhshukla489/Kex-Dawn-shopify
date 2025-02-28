@@ -272,7 +272,7 @@
             "title": "Bomber Suit",
             "text": "",
             "link_label": "Light pink",
-            "link": "shopify://products/adjustable-camisole"
+            "link": "shopify://collections/kurti"
           }
         },
         "column_f8cdJk": {
@@ -634,8 +634,8 @@
         "button_label": "",
         "button_link": "",
         "color_scheme": "scheme-1",
-        "columns_mobile": "1",
-        "swipe_on_mobile": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": true,
         "padding_top": 36,
         "padding_bottom": 36
       }
