@@ -38,7 +38,7 @@
             "heading_size": "hxxl",
             "subheading": "",
             "button_label": "EXPLORE",
-            "link": "shopify://collections",
+            "link": "shopify://collections/all",
             "button_style_secondary": false,
             "box_align": "middle-center",
             "show_text_box": false,
