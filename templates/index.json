@@ -268,7 +268,7 @@
         "column_tbQiAF": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/KES-SWT-2153_6.jpg",
+            "image": "shopify://shop_images/KES-SWT-2153_3.jpg",
             "title": "Sweatshirt",
             "text": "",
             "link_label": "Black",
@@ -288,31 +288,31 @@
         "column_RUmEXG": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/43abd9e55c.jpg",
-            "title": "The Hip Co-ord Set",
+            "image": "shopify://shop_images/KES-RNTT-206_4.jpg",
+            "title": "Tank Top",
             "text": "",
-            "link_label": "Light Turquoise",
-            "link": ""
+            "link_label": "Black",
+            "link": "shopify://products/kex-women-round-neck-tank-top-black"
           }
         },
         "column_Rtf88x": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/aa46e0f3a8.jpg",
-            "title": "The Slim  Tank Top",
+            "image": "shopify://shop_images/KES-TSRT-2133_4.jpg",
+            "title": "TSHIRT",
             "text": "",
-            "link_label": "Light Peach",
-            "link": ""
+            "link_label": "White",
+            "link": "shopify://products/kex-men-cotton-white-solid-tshirt"
           }
         },
         "column_F4W9KT": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/e221529ed2.png",
-            "title": "Super Hoodies",
+            "image": "shopify://shop_images/KES-KRT-2123-2126_2.jpg",
+            "title": "KURTI SET",
             "text": "",
-            "link_label": "Beige",
-            "link": ""
+            "link_label": "Yellow",
+            "link": "shopify://products/kex-women-chikan-kurti-yellow-solid-white-pant"
           }
         }
       },
