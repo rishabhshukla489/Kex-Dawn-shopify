@@ -578,28 +578,28 @@
             "image": "shopify://shop_images/a7f0b3ff7c.png",
             "title": "",
             "text": "",
-            "link_label": "Men Activewear",
-            "link": "shopify://collections/shorts"
+            "link_label": "TSHIRTS",
+            "link": "shopify://collections/mens-t-shirt"
           }
         },
         "column_9RVaPR": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/8ba130db61.jpg",
+            "image": "shopify://shop_images/KES-KRT-2120-2126_1.jpg",
             "title": "",
             "text": "",
-            "link_label": "Women Activewear",
-            "link": "shopify://collections/thermals"
+            "link_label": "KURTI",
+            "link": "shopify://collections/kurti"
           }
         },
         "column_aqHgrQ": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/49c1e84217.jpg",
+            "image": "shopify://shop_images/KES-SCC-2029-2030_5.jpg",
             "title": "",
             "text": "",
-            "link_label": "Womens Essentials",
-            "link": "shopify://collections/tees"
+            "link_label": "CAMISOLES",
+            "link": "shopify://collections/camisoles"
           }
         },
         "column_9jy337": {
@@ -608,8 +608,8 @@
             "image": "shopify://shop_images/e221529ed2.jpg",
             "title": "",
             "text": "",
-            "link_label": "Men Essentials",
-            "link": "shopify://collections/trousers"
+            "link_label": "SWEATSHIRTS",
+            "link": "shopify://collections/sweatshirt"
           }
         }
       },
