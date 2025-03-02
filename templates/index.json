@@ -268,21 +268,21 @@
         "column_tbQiAF": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/5381ae4c18.jpg",
-            "title": "Bomber Suit",
+            "image": "shopify://shop_images/KES-SWT-2153_6.jpg",
+            "title": "Sweatshirt",
             "text": "",
-            "link_label": "Light pink",
-            "link": "shopify://collections/kurti"
+            "link_label": "Black",
+            "link": "shopify://products/kex-men-cotton-black-solid-sweatshirt"
           }
         },
         "column_f8cdJk": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/49c1e84217.jpg",
-            "title": "Athleisure",
+            "image": "shopify://shop_images/KES-VLP-2113_6.jpg",
+            "title": "Palazzo",
             "text": "",
-            "link_label": "Neon green",
-            "link": "shopify://products/pocket-legging"
+            "link_label": "Maroon",
+            "link": "shopify://products/kex-women-velvet-palazzo-maroon"
           }
         },
         "column_RUmEXG": {
