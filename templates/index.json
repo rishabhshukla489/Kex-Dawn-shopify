@@ -736,7 +736,7 @@
           "type": "link_list",
           "settings": {
             "subsection_title": "<h2>Combos</h2>",
-            "menu": ""
+            "menu": "combo-menu"
           }
         }
       },
