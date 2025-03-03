@@ -78,6 +78,9 @@
         "text_3QzgzX",
         "text_ttNAFL"
       ],
+      "custom_css": [
+        "@media screen and (max-width: 749px) {h1 {font-size: 1.9em; } .rb-faq-container-item {font-size: 0.75em; } .rb-faq-question{font-size:0.90em }}"
+      ],
       "settings": {
         "heading": "Frequently Asked Questions",
         "icon_color": "#ffffff",
