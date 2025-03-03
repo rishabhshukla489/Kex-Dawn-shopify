@@ -12,7 +12,8 @@
     "main": {
       "type": "main-list-collections",
       "custom_css": [
-        "@media screen and (max-width: 750px) {.card__heading{font-size:0.8em; }}"
+        "h1{text-align:center;}",
+        "@media screen and (max-width: 750px) {.card__heading {font-size: 0.8em; } h1{text-align:center;}}"
       ],
       "settings": {
         "title": "Collections",
