@@ -49,7 +49,8 @@
     "header": {
       "type": "header",
       "custom_css": [
-        "#HeaderMenu-sales {color: red;}"
+        "#HeaderMenu-sales {color: red;}",
+        "@media screen and (max-width: 749px) {img:{max-width: 0.5em; /* Adjust the max-width as needed */ height: auto; }}"
       ],
       "settings": {
         "center-main-nav": true,

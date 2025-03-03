@@ -149,7 +149,7 @@
         "featured_collection_FPzgTg"
       ],
       "custom_css": [
-        "@media screen and (max-width: 749px) {.collection-list-title {font-size: 2.2em; }}"
+        "@media screen and (max-width: 749px) {.collection-list-title {font-size: 2.2em; } .card__heading {font-size: 0.9em; }}"
       ],
       "settings": {
         "title": "Shop by <strong>Category</strong>",
