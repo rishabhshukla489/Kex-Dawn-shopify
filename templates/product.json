@@ -220,6 +220,24 @@
         "lazy": true
       }
     },
+    "related-products": {
+      "type": "related-products",
+      "settings": {
+        "heading": "You may also like",
+        "heading_size": "h2",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "color_scheme": "scheme-1",
+        "image_ratio": "square",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": true,
+        "columns_mobile": "2",
+        "padding_top": 36,
+        "padding_bottom": 28
+      }
+    },
     "rich_text_V6ffxK": {
       "type": "rich-text",
       "blocks": {
@@ -253,7 +271,7 @@
           "type": "image",
           "settings": {
             "feature_title": "",
-            "feature_text": "<h6><strong>Gurgaon, Haryana<br/>India</strong></h6>",
+            "feature_text": "<p>Gurugram, Haryana<br/>India</p>",
             "feature_url": "",
             "hide_image": true
           }
@@ -291,8 +309,8 @@
         "feature_heading_mt": 16,
         "feature_text_custom": false,
         "feature_text_font": "josefin_sans_n4",
-        "feature_text_size": 26,
-        "feature_text_size_mobile": 34,
+        "feature_text_size": 22,
+        "feature_text_size_mobile": 16,
         "feature_text_height": 130,
         "feature_text_mt": 22,
         "feature_icon_size": 42,
@@ -318,24 +336,6 @@
         "lazy": true
       }
     },
-    "related-products": {
-      "type": "related-products",
-      "settings": {
-        "heading": "You may also like",
-        "heading_size": "h2",
-        "products_to_show": 4,
-        "columns_desktop": 4,
-        "color_scheme": "scheme-1",
-        "image_ratio": "square",
-        "image_shape": "default",
-        "show_secondary_image": true,
-        "show_vendor": false,
-        "show_rating": true,
-        "columns_mobile": "2",
-        "padding_top": 36,
-        "padding_bottom": 28
-      }
-    },
     "quick_links_custom_AtTatH": {
       "type": "quick-links-custom",
       "blocks": {
@@ -343,7 +343,7 @@
           "type": "link_list",
           "settings": {
             "subsection_title": "",
-            "menu": "women"
+            "menu": "all-menu"
           }
         }
       },
@@ -361,9 +361,9 @@
     "main",
     "rich_text_B7FhjE",
     "ss_feature_1_MNtghw",
+    "related-products",
     "rich_text_V6ffxK",
     "ss_feature_1_QCHzmy",
-    "related-products",
     "quick_links_custom_AtTatH"
   ]
 }
