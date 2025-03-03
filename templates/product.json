@@ -91,6 +91,104 @@
         "padding_bottom": 12
       }
     },
+    "rich_text_V6ffxK": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_hxeFYE": {
+          "type": "heading",
+          "settings": {
+            "heading": "Manufacturing Details",
+            "heading_size": "h1"
+          }
+        }
+      },
+      "block_order": [
+        "heading_hxeFYE"
+      ],
+      "custom_css": [
+        "@media screen and (max-width: 750px) {.rich-text__heading {font-size: 1.6em; }}"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-46f3ad75-01f2-4912-b3c2-62534caf2030",
+        "full_width": true,
+        "padding_top": 24,
+        "padding_bottom": 0
+      }
+    },
+    "ss_feature_1_QCHzmy": {
+      "type": "ss-feature-1",
+      "blocks": {
+        "image_dFdg9p": {
+          "type": "image",
+          "settings": {
+            "feature_title": "",
+            "feature_text": "<p>Gurugram, Haryana<br/>India</p>",
+            "feature_url": "",
+            "hide_image": true
+          }
+        },
+        "image_Bkge9Y": {
+          "type": "image",
+          "settings": {
+            "feature_title": "",
+            "feature_text": "<p>County of Origin - India</p>",
+            "feature_url": "",
+            "hide_image": true
+          }
+        }
+      },
+      "block_order": [
+        "image_dFdg9p",
+        "image_Bkge9Y"
+      ],
+      "custom_css": [],
+      "settings": {
+        "feature_row": 2,
+        "feature_row_mobile": 2,
+        "feature_gap": 100,
+        "feature_gap_mobile": 20,
+        "feature_padding_horizontal": 0,
+        "feature_padding_vertical": 0,
+        "feature_radius": 16,
+        "feature_border_thickness": 0,
+        "feature_shadow": false,
+        "feature_heading_custom": false,
+        "feature_heading_font": "josefin_sans_n4",
+        "feature_heading_size": 22,
+        "feature_heading_size_mobile": 12,
+        "feature_heading_height": 130,
+        "feature_heading_mt": 16,
+        "feature_text_custom": false,
+        "feature_text_font": "josefin_sans_n4",
+        "feature_text_size": 22,
+        "feature_text_size_mobile": 16,
+        "feature_text_height": 130,
+        "feature_text_mt": 22,
+        "feature_icon_size": 42,
+        "feature_icon_size_mobile": 42,
+        "feature_bg": "#ffffff",
+        "feature_border_color": "#000000",
+        "feature_shadow_color": "#000000",
+        "feature_heading_color": "#000000",
+        "feature_text_color": "#000000",
+        "feature_icon_color": "#000000",
+        "background_color": "#ffffff",
+        "background_gradient": "",
+        "border_color": "#000000",
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "padding_top": 16,
+        "padding_bottom": 16,
+        "padding_horizontal": 5,
+        "padding_horizontal_mobile": 1.5,
+        "full_width": false,
+        "content_width": 120,
+        "border_thickness": 0,
+        "lazy": true
+      }
+    },
     "rich_text_B7FhjE": {
       "type": "rich-text",
       "blocks": {
@@ -222,6 +320,9 @@
     },
     "related-products": {
       "type": "related-products",
+      "custom_css": [
+        "@media screen and (max-width: 750px) {.card__heading{font-size: 0.8em;} .price-item{font-size: 0.7em;}}"
+      ],
       "settings": {
         "heading": "You may also like",
         "heading_size": "h2",
@@ -236,104 +337,6 @@
         "columns_mobile": "2",
         "padding_top": 36,
         "padding_bottom": 28
-      }
-    },
-    "rich_text_V6ffxK": {
-      "type": "rich-text",
-      "blocks": {
-        "heading_hxeFYE": {
-          "type": "heading",
-          "settings": {
-            "heading": "Manufacturing Details",
-            "heading_size": "h1"
-          }
-        }
-      },
-      "block_order": [
-        "heading_hxeFYE"
-      ],
-      "custom_css": [
-        "@media screen and (max-width: 750px) {.rich-text__heading {font-size: 1.6em; }}"
-      ],
-      "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "center",
-        "color_scheme": "scheme-46f3ad75-01f2-4912-b3c2-62534caf2030",
-        "full_width": true,
-        "padding_top": 24,
-        "padding_bottom": 0
-      }
-    },
-    "ss_feature_1_QCHzmy": {
-      "type": "ss-feature-1",
-      "blocks": {
-        "image_dFdg9p": {
-          "type": "image",
-          "settings": {
-            "feature_title": "",
-            "feature_text": "<p>Gurugram, Haryana<br/>India</p>",
-            "feature_url": "",
-            "hide_image": true
-          }
-        },
-        "image_Bkge9Y": {
-          "type": "image",
-          "settings": {
-            "feature_title": "",
-            "feature_text": "<p>County of Origin - India</p>",
-            "feature_url": "",
-            "hide_image": true
-          }
-        }
-      },
-      "block_order": [
-        "image_dFdg9p",
-        "image_Bkge9Y"
-      ],
-      "custom_css": [],
-      "settings": {
-        "feature_row": 2,
-        "feature_row_mobile": 2,
-        "feature_gap": 100,
-        "feature_gap_mobile": 20,
-        "feature_padding_horizontal": 0,
-        "feature_padding_vertical": 0,
-        "feature_radius": 16,
-        "feature_border_thickness": 0,
-        "feature_shadow": false,
-        "feature_heading_custom": false,
-        "feature_heading_font": "josefin_sans_n4",
-        "feature_heading_size": 22,
-        "feature_heading_size_mobile": 12,
-        "feature_heading_height": 130,
-        "feature_heading_mt": 16,
-        "feature_text_custom": false,
-        "feature_text_font": "josefin_sans_n4",
-        "feature_text_size": 22,
-        "feature_text_size_mobile": 16,
-        "feature_text_height": 130,
-        "feature_text_mt": 22,
-        "feature_icon_size": 42,
-        "feature_icon_size_mobile": 42,
-        "feature_bg": "#ffffff",
-        "feature_border_color": "#000000",
-        "feature_shadow_color": "#000000",
-        "feature_heading_color": "#000000",
-        "feature_text_color": "#000000",
-        "feature_icon_color": "#000000",
-        "background_color": "#ffffff",
-        "background_gradient": "",
-        "border_color": "#000000",
-        "margin_top": 0,
-        "margin_bottom": 0,
-        "padding_top": 16,
-        "padding_bottom": 16,
-        "padding_horizontal": 5,
-        "padding_horizontal_mobile": 1.5,
-        "full_width": false,
-        "content_width": 120,
-        "border_thickness": 0,
-        "lazy": true
       }
     },
     "quick_links_custom_AtTatH": {
