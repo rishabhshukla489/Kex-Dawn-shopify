@@ -274,7 +274,7 @@
           "type": "column",
           "settings": {
             "image": "shopify://shop_images/KES-SWT-2153_3.jpg",
-            "title": "Sweatshirt",
+            "title": "SWEATSHIRT",
             "text": "",
             "link_label": "Black",
             "link": "shopify://products/kex-men-cotton-black-solid-sweatshirt"
@@ -284,7 +284,7 @@
           "type": "column",
           "settings": {
             "image": "shopify://shop_images/KES-VLP-2113_6.jpg",
-            "title": "Palazzo",
+            "title": "PALAZZO",
             "text": "",
             "link_label": "Maroon",
             "link": "shopify://products/kex-women-velvet-palazzo-maroon"
@@ -294,7 +294,7 @@
           "type": "column",
           "settings": {
             "image": "shopify://shop_images/KES-RNTT-206_4.jpg",
-            "title": "Tank Top",
+            "title": "TANK TOP",
             "text": "",
             "link_label": "Black",
             "link": "shopify://products/kex-women-round-neck-tank-top-black"
@@ -330,7 +330,7 @@
       ],
       "custom_css": [
         "h2 {text-align: center;}",
-        "@media screen and (max-width: 749px) {h2 {text-align: center; font-size: 3.3rem; } .multicolumn__title {font-size: 1.4rem; text-align: center; } .multicolumn-card__info {font-size: 0.8em; } h3 {font-size: 1.4em; }}"
+        "@media screen and (max-width: 749px) {h2 {text-align: center; font-size: 3.3rem; } .multicolumn__title {font-size: 1.4rem; text-align: center; } .multicolumn-card__info {font-size: 0.8em; } h3 {font-size: 1.2em; }}"
       ],
       "settings": {
         "title": "Favourites",
