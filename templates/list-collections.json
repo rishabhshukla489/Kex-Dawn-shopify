@@ -11,6 +11,9 @@
   "sections": {
     "main": {
       "type": "main-list-collections",
+      "custom_css": [
+        "@media screen and (max-width: 750px) {.card__heading{font-size:0.8em; }}"
+      ],
       "settings": {
         "title": "Collections",
         "sort": "date",
