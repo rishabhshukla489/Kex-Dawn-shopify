@@ -155,7 +155,7 @@
         "title": "Shop by <strong>Category</strong>",
         "heading_size": "h1",
         "heading_alignment": "heading_alignment_left",
-        "image_ratio": "square",
+        "image_ratio": "portrait",
         "columns_desktop": 6,
         "color_scheme": "scheme-8",
         "show_view_all": false,
