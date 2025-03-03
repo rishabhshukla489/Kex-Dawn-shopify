@@ -103,6 +103,9 @@
       "block_order": [
         "link_list_EGM86E"
       ],
+      "custom_css": [
+        "@media screen and (max-width: 749px) {h1 {font-size: 1.75em; } h2 {font-size: 1.2em; } .quick-links__link-item {font-size: 0.7em; }}"
+      ],
       "settings": {
         "title": "<h1>Popular Seacrhes</h1>",
         "padding_top": 36,
