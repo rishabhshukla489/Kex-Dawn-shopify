@@ -17,6 +17,7 @@
   }
   .multicolumn__title {
     font-size: 1.5rem; /* Adjust font size for smaller screens */
+    text-align:center;
   }
 }
 
