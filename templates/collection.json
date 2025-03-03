@@ -19,7 +19,9 @@
     },
     "product-grid": {
       "type": "main-collection-product-grid",
-      "custom_css": [],
+      "custom_css": [
+        "@media screen and (max-width: 749px) {"
+      ],
       "settings": {
         "products_per_page": 16,
         "columns_desktop": 4,
@@ -94,7 +96,7 @@
           "type": "link_list",
           "settings": {
             "subsection_title": "",
-            "menu": "women"
+            "menu": "women-menu"
           }
         }
       },
