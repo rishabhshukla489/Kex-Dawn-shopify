@@ -800,6 +800,7 @@
         "accept_button_y4wArY",
         "decline_button_qEMKnB"
       ],
+      "disabled": true,
       "settings": {
         "text_color": "#000000",
         "text_size": 15,
