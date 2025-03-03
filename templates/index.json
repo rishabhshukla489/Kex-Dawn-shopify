@@ -54,7 +54,8 @@
         "slide_8ahAdB"
       ],
       "custom_css": [
-        ".slideshow__controls {display: none;}"
+        ".slideshow__controls {display: none;}",
+        "@media screen and (max-width: 749px) {.slideshow {width: 100%; overflow: hidden; } .slideshow__slide {padding: 10px; margin: 0 auto; } .slideshow__media img {width: 100%; height: auto; } .slideshow__text-wrapper {text-align: center;} .slideshow__text h2 {font-size: 1.5em; } .slideshow__text p {font-size: 1em; }}"
       ],
       "settings": {
         "layout": "full_bleed",
