@@ -1,6 +1,5 @@
 .multicolumn .title {
   margin: 0;
-   word-wrap: break-word;
 }
 
 .multicolumn.no-heading .title {
@@ -14,10 +13,6 @@
 @media screen and (max-width: 749px) {
   .multicolumn .title-wrapper-with-link {
     margin-bottom: 3rem;
-  }
-  .multicolumn__title {
-    font-size: 1.5rem; /* Adjust font size for smaller screens */
-    text-align:center;
   }
 }
 
