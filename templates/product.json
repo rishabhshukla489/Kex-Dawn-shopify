@@ -350,6 +350,9 @@
       "block_order": [
         "link_list_U8nz3b"
       ],
+      "custom_css": [
+        "@media screen and (max-width: 749px) {h1 {font-size: 1.75em; } h2 {font-size: 1.2em; } .quick-links__link-item {font-size: 0.7em; }}"
+      ],
       "settings": {
         "title": "<h2>Popular Searches</h2>",
         "padding_top": 36,
@@ -359,11 +362,11 @@
   },
   "order": [
     "main",
+    "rich_text_V6ffxK",
+    "ss_feature_1_QCHzmy",
     "rich_text_B7FhjE",
     "ss_feature_1_MNtghw",
     "related-products",
-    "rich_text_V6ffxK",
-    "ss_feature_1_QCHzmy",
     "quick_links_custom_AtTatH"
   ]
 }
