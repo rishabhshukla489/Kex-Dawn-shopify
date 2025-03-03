@@ -171,21 +171,21 @@
         "featured_collection_yDzRzf": {
           "type": "featured_collection",
           "settings": {
-            "collection": "tank-tops",
+            "collection": "women-sweatshirt",
             "button_label": "SHOP THE LATEST"
           }
         },
         "featured_collection_KziKwW": {
           "type": "featured_collection",
           "settings": {
-            "collection": "camisoles",
+            "collection": "mens-t-shirt",
             "button_label": "SHOP YOUR FAVORITES"
           }
         },
         "featured_collection_g6rYUn": {
           "type": "featured_collection",
           "settings": {
-            "collection": "kurti",
+            "collection": "winter-wear",
             "button_label": "SHOP NOW"
           }
         }
