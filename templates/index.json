@@ -378,112 +378,6 @@
         "image": "shopify://shop_images/Untitled.png"
       }
     },
-    "ss_feature_1_RqLbgB": {
-      "type": "ss-feature-1",
-      "blocks": {
-        "image_kdzP87": {
-          "type": "image",
-          "settings": {
-            "feature_title": "Locally Owned",
-            "feature_text": "<p>We have local business and sell best quality clothes</p>",
-            "feature_image": "shopify://shop_images/Group.png",
-            "feature_url": "",
-            "hide_image": false
-          }
-        },
-        "image_cRHaGh": {
-          "type": "image",
-          "settings": {
-            "feature_title": "Fast Delivery",
-            "feature_text": "<p>We provide fast delivery to our customers</p>",
-            "feature_image": "shopify://shop_images/Vector-1.png",
-            "feature_url": "https://section.store/",
-            "hide_image": false
-          }
-        },
-        "image_rjN6YH": {
-          "type": "image",
-          "settings": {
-            "feature_title": "Easy Return",
-            "feature_text": "<p>We provide easy return policy</p>",
-            "feature_image": "shopify://shop_images/Group_2.png",
-            "feature_url": "",
-            "hide_image": false
-          }
-        },
-        "image_36nb8J": {
-          "type": "image",
-          "settings": {
-            "feature_title": "Online Support",
-            "feature_text": "<p>We give 24/7 online support</p>",
-            "feature_image": "shopify://shop_images/Vector_2.png",
-            "feature_url": "",
-            "hide_image": false
-          }
-        },
-        "image_PPBNV4": {
-          "type": "image",
-          "settings": {
-            "feature_title": "Best Offers",
-            "feature_text": "<p>We give best offers to our customers</p>",
-            "feature_image": "shopify://shop_images/Vector_4.png",
-            "feature_url": "",
-            "hide_image": false
-          }
-        }
-      },
-      "block_order": [
-        "image_kdzP87",
-        "image_cRHaGh",
-        "image_rjN6YH",
-        "image_36nb8J",
-        "image_PPBNV4"
-      ],
-      "settings": {
-        "feature_row": 5,
-        "feature_row_mobile": 2,
-        "feature_gap": 20,
-        "feature_gap_mobile": 20,
-        "feature_padding_horizontal": 0,
-        "feature_padding_vertical": 26,
-        "feature_radius": 16,
-        "feature_border_thickness": 0,
-        "feature_shadow": false,
-        "feature_heading_custom": false,
-        "feature_heading_font": "josefin_sans_n4",
-        "feature_heading_size": 24,
-        "feature_heading_size_mobile": 20,
-        "feature_heading_height": 130,
-        "feature_heading_mt": 8,
-        "feature_text_custom": false,
-        "feature_text_font": "josefin_sans_n4",
-        "feature_text_size": 18,
-        "feature_text_size_mobile": 16,
-        "feature_text_height": 180,
-        "feature_text_mt": 4,
-        "feature_icon_size": 42,
-        "feature_icon_size_mobile": 38,
-        "feature_bg": "#ffffff",
-        "feature_border_color": "#000000",
-        "feature_shadow_color": "#000000",
-        "feature_heading_color": "#2e3742",
-        "feature_text_color": "#2e3742",
-        "feature_icon_color": "#fc6600",
-        "background_color": "#ffffff",
-        "background_gradient": "",
-        "border_color": "#000000",
-        "margin_top": 0,
-        "margin_bottom": 0,
-        "padding_top": 16,
-        "padding_bottom": 16,
-        "padding_horizontal": 5,
-        "padding_horizontal_mobile": 1.5,
-        "full_width": false,
-        "content_width": 120,
-        "border_thickness": 0,
-        "lazy": true
-      }
-    },
     "multicolumn_8C9Q34": {
       "type": "multicolumn",
       "blocks": {
@@ -638,6 +532,112 @@
         "swipe_on_mobile": false,
         "padding_top": 36,
         "padding_bottom": 36
+      }
+    },
+    "ss_feature_1_RqLbgB": {
+      "type": "ss-feature-1",
+      "blocks": {
+        "image_kdzP87": {
+          "type": "image",
+          "settings": {
+            "feature_title": "Locally Owned",
+            "feature_text": "<p>We have local business and sell best quality clothes</p>",
+            "feature_image": "shopify://shop_images/Group.png",
+            "feature_url": "",
+            "hide_image": false
+          }
+        },
+        "image_cRHaGh": {
+          "type": "image",
+          "settings": {
+            "feature_title": "Fast Delivery",
+            "feature_text": "<p>We provide fast delivery to our customers</p>",
+            "feature_image": "shopify://shop_images/Vector-1.png",
+            "feature_url": "https://section.store/",
+            "hide_image": false
+          }
+        },
+        "image_rjN6YH": {
+          "type": "image",
+          "settings": {
+            "feature_title": "Easy Return",
+            "feature_text": "<p>We provide easy return policy</p>",
+            "feature_image": "shopify://shop_images/Group_2.png",
+            "feature_url": "",
+            "hide_image": false
+          }
+        },
+        "image_36nb8J": {
+          "type": "image",
+          "settings": {
+            "feature_title": "Online Support",
+            "feature_text": "<p>We give 24/7 online support</p>",
+            "feature_image": "shopify://shop_images/Vector_2.png",
+            "feature_url": "",
+            "hide_image": false
+          }
+        },
+        "image_PPBNV4": {
+          "type": "image",
+          "settings": {
+            "feature_title": "Best Offers",
+            "feature_text": "<p>We give best offers to our customers</p>",
+            "feature_image": "shopify://shop_images/Vector_4.png",
+            "feature_url": "",
+            "hide_image": false
+          }
+        }
+      },
+      "block_order": [
+        "image_kdzP87",
+        "image_cRHaGh",
+        "image_rjN6YH",
+        "image_36nb8J",
+        "image_PPBNV4"
+      ],
+      "settings": {
+        "feature_row": 5,
+        "feature_row_mobile": 2,
+        "feature_gap": 20,
+        "feature_gap_mobile": 20,
+        "feature_padding_horizontal": 0,
+        "feature_padding_vertical": 26,
+        "feature_radius": 16,
+        "feature_border_thickness": 0,
+        "feature_shadow": false,
+        "feature_heading_custom": false,
+        "feature_heading_font": "josefin_sans_n4",
+        "feature_heading_size": 24,
+        "feature_heading_size_mobile": 20,
+        "feature_heading_height": 130,
+        "feature_heading_mt": 8,
+        "feature_text_custom": false,
+        "feature_text_font": "josefin_sans_n4",
+        "feature_text_size": 18,
+        "feature_text_size_mobile": 16,
+        "feature_text_height": 180,
+        "feature_text_mt": 4,
+        "feature_icon_size": 42,
+        "feature_icon_size_mobile": 38,
+        "feature_bg": "#ffffff",
+        "feature_border_color": "#000000",
+        "feature_shadow_color": "#000000",
+        "feature_heading_color": "#2e3742",
+        "feature_text_color": "#2e3742",
+        "feature_icon_color": "#fc6600",
+        "background_color": "#ffffff",
+        "background_gradient": "",
+        "border_color": "#000000",
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "padding_top": 16,
+        "padding_bottom": 16,
+        "padding_horizontal": 5,
+        "padding_horizontal_mobile": 1.5,
+        "full_width": false,
+        "content_width": 120,
+        "border_thickness": 0,
+        "lazy": true
       }
     },
     "image_banner_hhFPbe": {
@@ -827,9 +827,9 @@
     "custom_image_section_xwRhkE",
     "svg_banner_NC6di3",
     "custom_image_section_84wjBx",
-    "ss_feature_1_RqLbgB",
     "multicolumn_8C9Q34",
     "multicolumn_xrJDbx",
+    "ss_feature_1_RqLbgB",
     "image_banner_hhFPbe",
     "17391197783f6b68af",
     "custom_image_section_74gVj8",
