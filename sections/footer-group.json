@@ -23,6 +23,9 @@
     },
     "footer": {
       "type": "footer",
+      "custom_css": [
+        "@media screen and (max-width: 749px) {.newsletter-form {padding: 0.1rem; } .newsletter-form__field-wrapper {margin-bottom: 0.1rem; } .newsletter-form__field-wrapper .field__input {padding-right: 0.2rem; } .newsletter-form__button {width: 100%; margin-top: 0.1rem; right: 0; } .newsletter-form__message {text-align: center; margin-top: 0.1rem; } .newsletter-form__message--success {margin-top: 0.1rem; }}"
+      ],
       "settings": {
         "color_scheme": "scheme-3",
         "newsletter_enable": true,

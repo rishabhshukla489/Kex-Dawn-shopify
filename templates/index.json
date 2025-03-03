@@ -754,7 +754,7 @@
         "link_list_GhxkJL"
       ],
       "custom_css": [
-        "@media screen and (max-width: 749px) {h1{font-size:1.75em } h2 {font-size:1.2em; } .quick-links__link-item{font-size:0.7em; }}"
+        "@media screen and (max-width: 749px) {h1 {font-size: 1.75em; } h2 {font-size: 1.2em; } .quick-links__link-item {font-size: 0.7em; }}"
       ],
       "settings": {
         "title": "<h1><strong>Quick </strong>Links</h1>",
