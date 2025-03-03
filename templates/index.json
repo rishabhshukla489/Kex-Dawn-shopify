@@ -520,7 +520,8 @@
         "column_9jy337"
       ],
       "custom_css": [
-        "h2 {text-align: center;}"
+        "h2 {text-align: center;}",
+        "@media screen and (max-width: 749px) {h2 {text-align: center; font-size: 2em; }}"
       ],
       "settings": {
         "title": "Popular <strong>Categories</strong>",
