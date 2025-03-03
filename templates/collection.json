@@ -20,8 +20,7 @@
     "product-grid": {
       "type": "main-collection-product-grid",
       "custom_css": [
-        ".kex-apparels-info {color: black; padding: 0 120px; word-wrap: break-word;}",
-        "@media screen and (max-width: 750px) {.kex-apparels-info {display:none }}"
+        "@media screen and (max-width: 750px) {.kex-apparels-info {display: none; } .card__heading {font-size: 1em; }}"
       ],
       "settings": {
         "products_per_page": 16,
@@ -36,7 +35,7 @@
         "enable_filtering": true,
         "filter_type": "horizontal",
         "enable_sorting": true,
-        "columns_mobile": "2",
+        "columns_mobile": "1",
         "padding_top": 32,
         "padding_bottom": 32
       }
