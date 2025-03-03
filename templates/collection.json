@@ -20,7 +20,8 @@
     "product-grid": {
       "type": "main-collection-product-grid",
       "custom_css": [
-        "@media screen and (max-width: 749px) {"
+        ".kex-apparels-info {color: black; padding: 0 120px; word-wrap: break-word;}",
+        "@media screen and (max-width: 750px) {.kex-apparels-info {display:none }}"
       ],
       "settings": {
         "products_per_page": 16,
