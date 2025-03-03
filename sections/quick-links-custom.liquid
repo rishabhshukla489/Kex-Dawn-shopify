@@ -12,11 +12,24 @@
       padding-bottom: {{ section.settings.padding_bottom }}px;
     }
   }
+  @media screen and (max-width: 749px) {
+    .quick-links__link-list {
+      flex-direction: column;
+    }
+
+    .quick-links__link-item {
+      margin-bottom: 0.5rem;
+    }
+
+    .quick-links__link-item:not(:last-child)::after {
+      content: "";
+      margin-left: 0;
+    }
+  }
 
   .quick-links__title {
     text-align: center;
     margin-bottom: 2rem;
-    font-size: 0.5em;
   }
 
   .quick-links__subsection {
