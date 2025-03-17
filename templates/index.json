@@ -115,12 +115,6 @@
             "collection": "leggings"
           }
         },
-        "featured_collection_iGyHga": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "kurti"
-          }
-        },
         "featured_collection_cKAhfy": {
           "type": "featured_collection",
           "settings": {
@@ -138,15 +132,21 @@
           "settings": {
             "collection": "bottom-wear"
           }
+        },
+        "featured_collection_iGyHga": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "kurti"
+          }
         }
       },
       "block_order": [
         "featured_collection_i68AzQ",
         "featured_collection_6AhL9J",
-        "featured_collection_iGyHga",
         "featured_collection_cKAhfy",
         "featured_collection_TJCaBj",
-        "featured_collection_FPzgTg"
+        "featured_collection_FPzgTg",
+        "featured_collection_iGyHga"
       ],
       "custom_css": [
         "@media screen and (max-width: 749px) {.collection-list-title {font-size: 2.2em; } .card__heading {font-size: 0.9em; }}"
@@ -482,16 +482,6 @@
             "link": "shopify://collections/women-tshirt"
           }
         },
-        "column_9RVaPR": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/KES-KRT-2120-2126_1.jpg",
-            "title": "",
-            "text": "",
-            "link_label": "KURTI",
-            "link": "shopify://collections/kurti"
-          }
-        },
         "column_aqHgrQ": {
           "type": "column",
           "settings": {
@@ -511,13 +501,23 @@
             "link_label": "MEN SWEATSHIRTS",
             "link": "shopify://collections/sweatshirt"
           }
+        },
+        "column_9RVaPR": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/KES-KRT-2120-2126_1.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "KURTI",
+            "link": "shopify://collections/kurti"
+          }
         }
       },
       "block_order": [
         "column_aLLXRg",
-        "column_9RVaPR",
         "column_aqHgrQ",
-        "column_9jy337"
+        "column_9jy337",
+        "column_9RVaPR"
       ],
       "custom_css": [
         "h2 {text-align: center;}",
