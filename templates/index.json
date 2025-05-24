@@ -171,7 +171,7 @@
         "featured_collection_yDzRzf": {
           "type": "featured_collection",
           "settings": {
-            "collection": "women-sweatshirt",
+            "collection": "camisoles",
             "button_label": "SHOP THE LATEST"
           }
         },
@@ -185,7 +185,7 @@
         "featured_collection_g6rYUn": {
           "type": "featured_collection",
           "settings": {
-            "collection": "winter-wear",
+            "collection": "women-tshirt",
             "button_label": "SHOP NOW"
           }
         }
