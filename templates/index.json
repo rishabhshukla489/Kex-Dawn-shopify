@@ -221,7 +221,7 @@
       ],
       "settings": {
         "title": "",
-        "content_alignment": "left",
+        "content_alignment": "center",
         "image_overlay_opacity": 0,
         "heading_size": "h1",
         "image_ratio": "adapt",
