@@ -75,7 +75,7 @@
       ],
       "custom_css": [
         ".slideshow__controls {display: none;}",
-        "@media screen and (max-width: 749px) {.slideshow {width: 100%; overflow: hidden; } .slideshow__slide {padding: 10px; margin: 0 auto; height: 100%; } .slideshow__media img {width: 100%; height: 100%; object-fit: cover; } .slideshow__text-wrapper {text-align: center; } .slideshow__text h2 {font-size: 2.6em; } .slideshow__text p {font-size: 0.7em; }}"
+        "@media screen and (max-width: 749px) {.slideshow {width: 100%; overflow: hidden; } .slideshow__slide {/* height: 50vh; max-height: none; */ padding: 10px; margin: 0 auto; height: 100%; } .slideshow__media img {width: 100%; height: 100%; object-fit: cover; } .slideshow__text-wrapper {text-align: center; } .slideshow__text h2 {font-size: 2.6em; } .slideshow__text p {font-size: 0.7em; }}"
       ],
       "settings": {
         "layout": "full_bleed",
