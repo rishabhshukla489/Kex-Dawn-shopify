@@ -707,9 +707,9 @@
         "@media screen and (max-width: 749px) {.banner__heading {font-size: 2.5em; word-wrap: break-word; overflow-wrap: break-word; } .banner__text {font-size: 1.25em; word-wrap: break-word; overflow-wrap: break-word; } .banner__media, img {border-radius: 30px; background-color: white; margin: 0; background-color: #f5f5f5; }}"
       ],
       "settings": {
-        "image": "shopify://shop_images/Group_47690_db6bdfbf-cb0c-4218-a4f2-e59bff980dc5.png",
+        "image": "shopify://shop_images/20250526_1928_Sunkissed_Summer_Styles_simple_compose_01jw6e2ybye2at1emx2vwhnrew.png",
         "image_overlay_opacity": 0,
-        "image_height": "large",
+        "image_height": "adapt",
         "desktop_content_position": "middle-left",
         "show_text_box": false,
         "desktop_content_alignment": "left",
