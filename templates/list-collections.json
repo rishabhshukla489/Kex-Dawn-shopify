@@ -11,6 +11,7 @@
   "sections": {
     "main": {
       "type": "main-list-collections",
+      "disabled": true,
       "custom_css": [
         "@media screen and (max-width: 750px) {.card__heading {font-size: 0.8em; } h1 {font-size: 2.4em; }}"
       ],
@@ -21,9 +22,115 @@
         "columns_desktop": 3,
         "columns_mobile": "2"
       }
+    },
+    "collection_list_WFJMYm": {
+      "type": "collection-list",
+      "blocks": {
+        "featured_collection_yhUytL": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "camisoles"
+          }
+        },
+        "featured_collection_k9iUwx": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "tank-tops"
+          }
+        },
+        "featured_collection_C7nHPi": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "women-tshirt"
+          }
+        },
+        "featured_collection_znN336": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "bottom-wear"
+          }
+        },
+        "featured_collection_m84PqM": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "leggings"
+          }
+        },
+        "featured_collection_MHR49g": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "kurti"
+          }
+        },
+        "featured_collection_GG3QKt": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "combo-packs"
+          }
+        },
+        "featured_collection_LUjq7F": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "leggings-combo"
+          }
+        },
+        "featured_collection_yz8fWE": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "camisole-combo"
+          }
+        },
+        "featured_collection_TTgwwB": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "winter-wear"
+          }
+        },
+        "featured_collection_nPkECX": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "sweatshirt"
+          }
+        },
+        "featured_collection_4kLXi8": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "women-sweatshirt"
+          }
+        }
+      },
+      "block_order": [
+        "featured_collection_yhUytL",
+        "featured_collection_k9iUwx",
+        "featured_collection_C7nHPi",
+        "featured_collection_znN336",
+        "featured_collection_m84PqM",
+        "featured_collection_MHR49g",
+        "featured_collection_GG3QKt",
+        "featured_collection_LUjq7F",
+        "featured_collection_yz8fWE",
+        "featured_collection_TTgwwB",
+        "featured_collection_nPkECX",
+        "featured_collection_4kLXi8"
+      ],
+      "name": "t:sections.collection-list.presets.name",
+      "settings": {
+        "title": "Collections",
+        "heading_size": "h1",
+        "heading_alignment": "heading_alignment_center",
+        "image_ratio": "portrait",
+        "columns_desktop": 3,
+        "color_scheme": "",
+        "show_view_all": false,
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "collection_list_WFJMYm"
   ]
 }
