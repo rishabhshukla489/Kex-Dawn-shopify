@@ -674,21 +674,21 @@
         "heading_AGtDtF": {
           "type": "heading",
           "settings": {
-            "heading": "<strong>Season's Best</strong>",
+            "heading": "",
             "heading_size": "hxxl"
           }
         },
         "text_fqgqTk": {
           "type": "text",
           "settings": {
-            "text": "<strong>Dive into the our exclusive premium collection</strong>",
+            "text": "",
             "text_style": "subtitle"
           }
         },
         "buttons_FUbmtV": {
           "type": "buttons",
           "settings": {
-            "button_label_1": "SHOP COLLECTION",
+            "button_label_1": "",
             "button_link_1": "shopify://collections",
             "button_style_secondary_1": false,
             "button_label_2": "",
