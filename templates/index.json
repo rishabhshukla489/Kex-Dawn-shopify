@@ -12,17 +12,36 @@
     "slideshow_pxDALG": {
       "type": "slideshow",
       "blocks": {
+        "slide_QJRijR": {
+          "type": "slide",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/kex_summer_banner_1.png",
+            "heading": "Image slide",
+            "heading_size": "h1",
+            "subheading": "Tell your brand's story through images",
+            "button_label": "Button label",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "show_text_box": true,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "scheme-1",
+            "text_alignment_mobile": "center"
+          }
+        },
         "slide_UJPCNq": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/f9c8fb173c_1.png",
-            "heading": "<strong>Summer 2025</strong>",
+            "image": "shopify://shop_images/kex_summer_banner_1.png",
+            "heading": "",
             "heading_size": "hxl",
-            "subheading": "<strong>Get Peak comfy-chic with new summer essentials.</strong>",
-            "button_label": "SHOP NOW",
+            "subheading": "",
+            "button_label": "",
             "link": "shopify://collections",
             "button_style_secondary": false,
-            "box_align": "middle-right",
+            "box_align": "bottom-center",
             "show_text_box": false,
             "text_alignment": "center",
             "image_overlay_opacity": 0,
@@ -33,11 +52,11 @@
         "slide_8ahAdB": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/woman-in-white-dress-outside.jpg",
-            "heading": "<strong>Clothing Essential</strong>",
+            "image": "shopify://shop_images/kex_banner_2.png",
+            "heading": "",
             "heading_size": "hxxl",
             "subheading": "",
-            "button_label": "EXPLORE",
+            "button_label": "",
             "link": "shopify://collections/all",
             "button_style_secondary": false,
             "box_align": "middle-center",
@@ -50,6 +69,7 @@
         }
       },
       "block_order": [
+        "slide_QJRijR",
         "slide_UJPCNq",
         "slide_8ahAdB"
       ],
@@ -59,7 +79,7 @@
       ],
       "settings": {
         "layout": "full_bleed",
-        "slide_height": "small",
+        "slide_height": "adapt_image",
         "slider_visual": "dots",
         "auto_rotate": true,
         "change_slides_speed": 7,
