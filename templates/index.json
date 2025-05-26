@@ -496,7 +496,7 @@
         "column_aLLXRg": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/KES-FTSRT-2140_7.jpg",
+            "image": "shopify://shop_images/KES-TSRT-2130_4.jpg",
             "title": "",
             "text": "",
             "link_label": "WOMEN TSHIRTS",
@@ -516,17 +516,17 @@
         "column_9jy337": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/KES-SWT-2154_7.jpg",
+            "image": "shopify://shop_images/KES-RNTT-208_4.jpg",
             "title": "",
             "text": "",
-            "link_label": "MEN SWEATSHIRTS",
-            "link": "shopify://collections/sweatshirt"
+            "link_label": "TAKN TOPS",
+            "link": "shopify://collections/tank-tops"
           }
         },
         "column_9RVaPR": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/KES-KRT-2120-2126_1.jpg",
+            "image": "shopify://shop_images/KES-KRT-2123_1.jpg",
             "title": "",
             "text": "",
             "link_label": "KURTI",
