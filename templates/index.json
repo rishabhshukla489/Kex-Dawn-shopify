@@ -306,6 +306,7 @@
         },
         "column_f8cdJk": {
           "type": "column",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/KES-VLP-2113_6.jpg",
             "title": "PALAZZO",
@@ -336,6 +337,7 @@
         },
         "column_F4W9KT": {
           "type": "column",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/KES-KRT-2123-2126_2.jpg",
             "title": "KURTI SET",
@@ -363,7 +365,7 @@
         "heading_size": "hxl",
         "image_width": "full",
         "image_ratio": "portrait",
-        "columns_desktop": 5,
+        "columns_desktop": 3,
         "column_alignment": "left",
         "background_style": "none",
         "button_label": "",
