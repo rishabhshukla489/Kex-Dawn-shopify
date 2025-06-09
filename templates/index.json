@@ -524,12 +524,13 @@
             "image": "shopify://shop_images/KES-RNTT-208_4.jpg",
             "title": "",
             "text": "",
-            "link_label": "TAKN TOPS",
+            "link_label": "TANK TOPS",
             "link": "shopify://collections/tank-tops"
           }
         },
         "column_9RVaPR": {
           "type": "column",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/KES-KRT-2123_1.jpg",
             "title": "",
@@ -555,7 +556,7 @@
         "heading_size": "h1",
         "image_width": "full",
         "image_ratio": "portrait",
-        "columns_desktop": 4,
+        "columns_desktop": 3,
         "column_alignment": "center",
         "background_style": "none",
         "button_label": "",
