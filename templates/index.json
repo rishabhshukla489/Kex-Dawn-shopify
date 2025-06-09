@@ -131,6 +131,7 @@
         },
         "featured_collection_6AhL9J": {
           "type": "featured_collection",
+          "disabled": true,
           "settings": {
             "collection": "leggings"
           }
@@ -149,12 +150,14 @@
         },
         "featured_collection_FPzgTg": {
           "type": "featured_collection",
+          "disabled": true,
           "settings": {
             "collection": "bottom-wear"
           }
         },
         "featured_collection_iGyHga": {
           "type": "featured_collection",
+          "disabled": true,
           "settings": {
             "collection": "kurti"
           }
@@ -176,7 +179,7 @@
         "heading_size": "h1",
         "heading_alignment": "heading_alignment_left",
         "image_ratio": "portrait",
-        "columns_desktop": 6,
+        "columns_desktop": 3,
         "color_scheme": "scheme-8",
         "show_view_all": false,
         "columns_mobile": "2",
