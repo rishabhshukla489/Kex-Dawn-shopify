@@ -38,6 +38,12 @@
             "collection": "tank-tops"
           }
         },
+        "featured_collection_Wc3zPc": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "crop-top"
+          }
+        },
         "featured_collection_C7nHPi": {
           "type": "featured_collection",
           "settings": {
@@ -62,24 +68,6 @@
             "collection": "sports-tshirts"
           }
         },
-        "featured_collection_GG3QKt": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "combo-packs"
-          }
-        },
-        "featured_collection_LUjq7F": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "leggings-combo"
-          }
-        },
-        "featured_collection_yz8fWE": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "camisole-combo"
-          }
-        },
         "featured_collection_TTgwwB": {
           "type": "featured_collection",
           "settings": {
@@ -102,13 +90,11 @@
       "block_order": [
         "featured_collection_yhUytL",
         "featured_collection_k9iUwx",
+        "featured_collection_Wc3zPc",
         "featured_collection_C7nHPi",
         "featured_collection_znN336",
         "featured_collection_m84PqM",
         "featured_collection_MHR49g",
-        "featured_collection_GG3QKt",
-        "featured_collection_LUjq7F",
-        "featured_collection_yz8fWE",
         "featured_collection_TTgwwB",
         "featured_collection_nPkECX",
         "featured_collection_4kLXi8"
