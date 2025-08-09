@@ -126,9 +126,10 @@
         "column_NiApVY": {
           "type": "column",
           "settings": {
-            "title": "Column",
+            "image": "shopify://shop_images/1_0f5508b9-844c-4834-ab66-df21a10c7fbc.png",
+            "title": "SPORTS",
             "text": "",
-            "link_label": "",
+            "link_label": "Black",
             "link": "shopify://collections/sports-tshirts"
           }
         },
@@ -165,6 +166,7 @@
         },
         "column_Rtf88x": {
           "type": "column",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/KES-TSRT-2133_4.jpg",
             "title": "TSHIRT",
