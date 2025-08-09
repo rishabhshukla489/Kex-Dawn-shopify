@@ -120,6 +120,102 @@
         "link": ""
       }
     },
+    "multicolumn_xYcnmf": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_NiApVY": {
+          "type": "column",
+          "settings": {
+            "title": "Column",
+            "text": "",
+            "link_label": "",
+            "link": "shopify://collections/sports-tshirts"
+          }
+        },
+        "column_tbQiAF": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/KES-TSRT-2128_1.jpg",
+            "title": "TSHIRT",
+            "text": "",
+            "link_label": "Blue",
+            "link": "shopify://collections/women-tshirt"
+          }
+        },
+        "column_f8cdJk": {
+          "type": "column",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/KES-VLP-2113_6.jpg",
+            "title": "PALAZZO",
+            "text": "",
+            "link_label": "Maroon",
+            "link": "shopify://products/kex-women-velvet-palazzo-maroon"
+          }
+        },
+        "column_RUmEXG": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/KES-RNTT-206_4.jpg",
+            "title": "TANK TOP",
+            "text": "",
+            "link_label": "Black",
+            "link": "shopify://products/kex-women-round-neck-tank-top-black"
+          }
+        },
+        "column_Rtf88x": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/KES-TSRT-2133_4.jpg",
+            "title": "TSHIRT",
+            "text": "",
+            "link_label": "White",
+            "link": "shopify://products/kex-men-cotton-white-solid-tshirt"
+          }
+        },
+        "column_F4W9KT": {
+          "type": "column",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/KES-KRT-2123-2126_2.jpg",
+            "title": "KURTI SET",
+            "text": "",
+            "link_label": "Yellow",
+            "link": "shopify://products/kex-women-chikan-kurti-yellow-solid-white-pant"
+          }
+        }
+      },
+      "block_order": [
+        "column_NiApVY",
+        "column_tbQiAF",
+        "column_f8cdJk",
+        "column_RUmEXG",
+        "column_Rtf88x",
+        "column_F4W9KT"
+      ],
+      "custom_css": [
+        "h2 {text-align: center;}",
+        "@media screen and (max-width: 749px) {h2 {text-align: center; font-size: 3.3rem; } .multicolumn__title {font-size: 1.4rem; text-align: center; } .multicolumn-card__info {font-size: 0.8em; } h3 {font-size: 1.2em; }}"
+      ],
+      "settings": {
+        "title": "Favourites",
+        "logo": "shopify://shop_images/Layer_2.png",
+        "subheading": "Beautifully Functional. Purposefully Designed. Consciously Crafted.",
+        "heading_size": "hxl",
+        "image_width": "full",
+        "image_ratio": "portrait",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "none",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "scheme-9",
+        "columns_mobile": "2",
+        "swipe_on_mobile": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "collection_list_M4LbtM": {
       "type": "collection-list",
       "blocks": {
@@ -131,7 +227,6 @@
         },
         "featured_collection_6AhL9J": {
           "type": "featured_collection",
-          "disabled": true,
           "settings": {
             "collection": "leggings"
           }
@@ -140,12 +235,6 @@
           "type": "featured_collection",
           "settings": {
             "collection": "camisoles"
-          }
-        },
-        "featured_collection_TJCaBj": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "combo-packs"
           }
         },
         "featured_collection_FPzgTg": {
@@ -167,7 +256,6 @@
         "featured_collection_i68AzQ",
         "featured_collection_6AhL9J",
         "featured_collection_cKAhfy",
-        "featured_collection_TJCaBj",
         "featured_collection_FPzgTg",
         "featured_collection_iGyHga"
       ],
@@ -289,92 +377,6 @@
         "mobile_content_alignment": "center",
         "stack_images_on_mobile": true,
         "show_text_below": false
-      }
-    },
-    "multicolumn_xYcnmf": {
-      "type": "multicolumn",
-      "blocks": {
-        "column_tbQiAF": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/KES-TSRT-2128_1.jpg",
-            "title": "TSHIRT",
-            "text": "",
-            "link_label": "Blue",
-            "link": "shopify://collections/women-tshirt"
-          }
-        },
-        "column_f8cdJk": {
-          "type": "column",
-          "disabled": true,
-          "settings": {
-            "image": "shopify://shop_images/KES-VLP-2113_6.jpg",
-            "title": "PALAZZO",
-            "text": "",
-            "link_label": "Maroon",
-            "link": "shopify://products/kex-women-velvet-palazzo-maroon"
-          }
-        },
-        "column_RUmEXG": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/KES-RNTT-206_4.jpg",
-            "title": "TANK TOP",
-            "text": "",
-            "link_label": "Black",
-            "link": "shopify://products/kex-women-round-neck-tank-top-black"
-          }
-        },
-        "column_Rtf88x": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/KES-TSRT-2133_4.jpg",
-            "title": "TSHIRT",
-            "text": "",
-            "link_label": "White",
-            "link": "shopify://products/kex-men-cotton-white-solid-tshirt"
-          }
-        },
-        "column_F4W9KT": {
-          "type": "column",
-          "disabled": true,
-          "settings": {
-            "image": "shopify://shop_images/KES-KRT-2123-2126_2.jpg",
-            "title": "KURTI SET",
-            "text": "",
-            "link_label": "Yellow",
-            "link": "shopify://products/kex-women-chikan-kurti-yellow-solid-white-pant"
-          }
-        }
-      },
-      "block_order": [
-        "column_tbQiAF",
-        "column_f8cdJk",
-        "column_RUmEXG",
-        "column_Rtf88x",
-        "column_F4W9KT"
-      ],
-      "custom_css": [
-        "h2 {text-align: center;}",
-        "@media screen and (max-width: 749px) {h2 {text-align: center; font-size: 3.3rem; } .multicolumn__title {font-size: 1.4rem; text-align: center; } .multicolumn-card__info {font-size: 0.8em; } h3 {font-size: 1.2em; }}"
-      ],
-      "settings": {
-        "title": "Favourites",
-        "logo": "shopify://shop_images/Layer_2.png",
-        "subheading": "Beautifully Functional. Purposefully Designed. Consciously Crafted.",
-        "heading_size": "hxl",
-        "image_width": "full",
-        "image_ratio": "portrait",
-        "columns_desktop": 3,
-        "column_alignment": "left",
-        "background_style": "none",
-        "button_label": "",
-        "button_link": "",
-        "color_scheme": "scheme-9",
-        "columns_mobile": "2",
-        "swipe_on_mobile": true,
-        "padding_top": 36,
-        "padding_bottom": 36
       }
     },
     "custom_liquid_FHDpUK": {
@@ -858,10 +860,10 @@
     "custom_liquid_whqYUE",
     "custom_liquid_MEzPVQ",
     "marquee_gePGpJ",
+    "multicolumn_xYcnmf",
     "collection_list_M4LbtM",
     "custom_collection_list_H79fF8",
     "image_banner_BWxL4R",
-    "multicolumn_xYcnmf",
     "custom_liquid_FHDpUK",
     "custom_image_section_xwRhkE",
     "svg_banner_NC6di3",
