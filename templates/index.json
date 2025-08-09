@@ -292,13 +292,13 @@
         },
         "featured_collection_FPzgTg": {
           "type": "featured_collection",
-          "disabled": true,
           "settings": {
             "collection": "bottom-wear"
           }
         },
         "featured_collection_iGyHga": {
           "type": "featured_collection",
+          "disabled": true,
           "settings": {
             "collection": "kurti"
           }
