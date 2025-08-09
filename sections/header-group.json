@@ -17,8 +17,8 @@
         "announcement-bar-0": {
           "type": "announcement",
           "settings": {
-            "text": "Get Early access to  launches.",
-            "link": ""
+            "text": "Free Return",
+            "link": "shopify://products/kex-men-polyester-half-sleevess-solid-black-tshirt"
           }
         },
         "announcement_HVidYr": {
@@ -50,7 +50,7 @@
       "type": "header",
       "custom_css": [
         "#HeaderMenu-sales {color: red;}",
-        "@media screen and (max-width: 749px) {img:{max-width: 0.5em; /* Adjust the max-width as needed */ height: auto; }}"
+        "@media screen and (max-width: 749px) {img: {max-width: 0.5em; /* Adjust the max-width as needed */ height: auto; }}"
       ],
       "settings": {
         "center-main-nav": true,
