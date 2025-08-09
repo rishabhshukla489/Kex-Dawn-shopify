@@ -28,6 +28,10 @@
           "type": "price",
           "settings": {}
         },
+        "judge_me_reviews_preview_badge_x6g6Cb": {
+          "type": "shopify://apps/judge-me-reviews/blocks/preview_badge/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {}
+        },
         "variant_picker": {
           "type": "variant_picker",
           "settings": {
@@ -55,22 +59,18 @@
           "settings": {
             "share_label": "Share"
           }
-        },
-        "judge_me_reviews_preview_badge_x6g6Cb": {
-          "type": "shopify://apps/judge-me-reviews/blocks/preview_badge/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
-          "settings": {}
         }
       },
       "block_order": [
         "vendor",
         "title",
         "price",
+        "judge_me_reviews_preview_badge_x6g6Cb",
         "variant_picker",
         "quantity_selector",
         "buy_buttons",
         "description",
-        "share",
-        "judge_me_reviews_preview_badge_x6g6Cb"
+        "share"
       ],
       "custom_css": [
         "@media screen and (max-width: 750px) {h1 {font-size: 1.2em; } .price-item, .product__description, .button {font-size: 0.9em; }}"
@@ -321,7 +321,7 @@
     "related-products": {
       "type": "related-products",
       "custom_css": [
-        "@media screen and (max-width: 750px) {.card__heading{font-size: 0.8em;} .price-item{font-size: 0.7em;}}"
+        "@media screen and (max-width: 750px) {.card__heading {font-size: 0.8em; } .price-item {font-size: 0.7em; }}"
       ],
       "settings": {
         "heading": "You may also like",
@@ -361,6 +361,21 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "1754738862693fdc45": {
+      "type": "apps",
+      "blocks": {
+        "judge_me_reviews_review_widget_4KDtwH": {
+          "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "judge_me_reviews_review_widget_4KDtwH"
+      ],
+      "settings": {
+        "include_margins": true
+      }
     }
   },
   "order": [
@@ -370,6 +385,7 @@
     "rich_text_B7FhjE",
     "ss_feature_1_MNtghw",
     "related-products",
-    "quick_links_custom_AtTatH"
+    "quick_links_custom_AtTatH",
+    "1754738862693fdc45"
   ]
 }
