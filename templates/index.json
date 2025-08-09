@@ -279,6 +279,7 @@
         },
         "featured_collection_6AhL9J": {
           "type": "featured_collection",
+          "disabled": true,
           "settings": {
             "collection": "leggings"
           }
@@ -298,7 +299,6 @@
         },
         "featured_collection_iGyHga": {
           "type": "featured_collection",
-          "disabled": true,
           "settings": {
             "collection": "kurti"
           }
