@@ -10,7 +10,7 @@
 {
   "current": {
     "logo": "shopify://shop_images/Layer_1.png",
-    "logo_width": 80,
+    "logo_width": 50,
     "favicon": "shopify://shop_images/kex_favicon.png",
     "type_header_font": "assistant_n4",
     "heading_scale": 150,
@@ -21,7 +21,7 @@
     "spacing_grid_horizontal": 8,
     "spacing_grid_vertical": 8,
     "animations_reveal_on_scroll": true,
-    "animations_hover_elements": "none",
+    "animations_hover_elements": "3d-lift",
     "buttons_border_thickness": 2,
     "buttons_border_opacity": 100,
     "buttons_radius": 40,
