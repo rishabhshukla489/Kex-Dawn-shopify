@@ -24,8 +24,8 @@
         "announcement_HVidYr": {
           "type": "announcement",
           "settings": {
-            "text": "Cash on Delivery (COD) Available",
-            "link": ""
+            "text": "Cash on Delivery",
+            "link": "shopify://products/kex-men-polyester-half-sleevess-solid-black-tshirt"
           }
         }
       },
