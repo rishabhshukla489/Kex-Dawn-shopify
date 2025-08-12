@@ -14,6 +14,13 @@
     "announcement-bar": {
       "type": "announcement-bar",
       "blocks": {
+        "announcement_edkFUt": {
+          "type": "announcement",
+          "settings": {
+            "text": "Free Home Delivery",
+            "link": "shopify://products/kex-men-polyester-half-sleevess-solid-black-tshirt"
+          }
+        },
         "announcement-bar-0": {
           "type": "announcement",
           "settings": {
@@ -30,6 +37,7 @@
         }
       },
       "block_order": [
+        "announcement_edkFUt",
         "announcement-bar-0",
         "announcement_HVidYr"
       ],
