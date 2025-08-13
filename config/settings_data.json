@@ -168,6 +168,11 @@
         "type": "shopify://apps/releasit-cod-form/blocks/app-embed/72faf214-4174-4fec-886b-0d0e8d3af9a2",
         "disabled": false,
         "settings": {}
+      },
+      "4493994212685255146": {
+        "type": "shopify://apps/hextom-whatsapp-sms-push/blocks/app-block/7861f6ce-2897-4f30-be3b-04c90bf56b8c",
+        "disabled": false,
+        "settings": {}
       }
     },
     "color_schemes": {
