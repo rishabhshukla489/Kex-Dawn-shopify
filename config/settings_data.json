@@ -145,39 +145,45 @@
     },
     "content_for_index": [],
     "blocks": {
-      "15683396631634586217": {
-        "type": "shopify://apps/inbox/blocks/chat/841fc607-4181-4ad1-842d-e24d7f8bad6b",
+      "14060646107696862457": {
+        "type": "shopify://apps/judge-me-reviews/blocks/judgeme_core/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+        "disabled": false,
+        "settings": {}
+      },
+      "6089946381803635929": {
+        "type": "shopify://apps/kwik-cod-checkout/blocks/app-embed/74f36c20-677c-4aa2-b179-1769aa61abaa",
         "disabled": false,
         "settings": {
+          "gkc_button_text": "Checkout Now",
+          "gkc_button_subtext": "",
+          "gkc_button_bg": "#000000",
+          "gkc_text_color": "#ffffff",
+          "gk_image": true
+        }
+      },
+      "13669795325273674392": {
+        "type": "shopify://apps/releasit-cod-form/blocks/app-embed/72faf214-4174-4fec-886b-0d0e8d3af9a2",
+        "disabled": true,
+        "settings": {}
+      },
+      "4493994212685255146": {
+        "type": "shopify://apps/hextom-whatsapp-sms-push/blocks/app-block/7861f6ce-2897-4f30-be3b-04c90bf56b8c",
+        "disabled": true,
+        "settings": {}
+      },
+      "15683396631634586217": {
+        "type": "shopify://apps/inbox/blocks/chat/841fc607-4181-4ad1-842d-e24d7f8bad6b",
+        "disabled": true,
+        "settings": {
           "button_color": "#fc6600",
-          "secondary_color": "#FFFFFF",
-          "ternary_color": "#6A6A6A",
+          "secondary_color": "#ffffff",
+          "ternary_color": "#6a6a6a",
           "button_icon": "hand_wave",
           "button_text": "chat_with_us",
           "button_horizontal_position": "bottom_right",
           "button_vertical_position": "lowest",
           "greeting_message": ""
         }
-      },
-      "14060646107696862457": {
-        "type": "shopify://apps/judge-me-reviews/blocks/judgeme_core/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
-        "disabled": false,
-        "settings": {}
-      },
-      "13669795325273674392": {
-        "type": "shopify://apps/releasit-cod-form/blocks/app-embed/72faf214-4174-4fec-886b-0d0e8d3af9a2",
-        "disabled": false,
-        "settings": {}
-      },
-      "4493994212685255146": {
-        "type": "shopify://apps/hextom-whatsapp-sms-push/blocks/app-block/7861f6ce-2897-4f30-be3b-04c90bf56b8c",
-        "disabled": false,
-        "settings": {}
-      },
-      "1626193551103621034": {
-        "type": "shopify://apps/cod-king/blocks/app-embed/99553eb5-bf07-4ce0-9263-7e5f10cab22c",
-        "disabled": false,
-        "settings": {}
       }
     },
     "color_schemes": {
