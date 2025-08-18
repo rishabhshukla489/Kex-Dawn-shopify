@@ -200,22 +200,22 @@
         "@media screen and (max-width: 749px) {h2 {text-align: center; font-size: 3.3rem; } .multicolumn__title {font-size: 1.4rem; text-align: center; } .multicolumn-card__info {font-size: 0.8em; } h3 {font-size: 1.2em; }}"
       ],
       "settings": {
-        "title": "Favourites",
+        "title": "SPORTS T-SHIRT",
         "logo": "shopify://shop_images/Layer_2.png",
-        "subheading": "Beautifully Functional. Purposefully Designed. Consciously Crafted.",
+        "subheading": "Have a break, have a Kex Men's Sports T-Shirt | Comfortable Running & Gym Clothes.",
         "heading_size": "hxl",
         "image_width": "full",
         "image_ratio": "portrait",
         "columns_desktop": 3,
         "column_alignment": "left",
         "background_style": "none",
-        "button_label": "",
-        "button_link": "",
+        "button_label": "Buy Now",
+        "button_link": "shopify://products/kex-men-polyester-half-sleevess-solid-black-tshirt",
         "color_scheme": "scheme-9",
-        "columns_mobile": "2",
+        "columns_mobile": "1",
         "swipe_on_mobile": true,
-        "padding_top": 36,
-        "padding_bottom": 36
+        "padding_top": 32,
+        "padding_bottom": 32
       }
     },
     "custom_collection_list_H79fF8": {
