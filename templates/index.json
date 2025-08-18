@@ -143,57 +143,21 @@
             "link": "shopify://products/kex-men-polyester-sleeveless-sports-tshirt"
           }
         },
-        "column_f8cdJk": {
-          "type": "column",
-          "disabled": true,
-          "settings": {
-            "image": "shopify://shop_images/KES-VLP-2113_6.jpg",
-            "title": "PALAZZO",
-            "text": "",
-            "link_label": "Maroon",
-            "link": "shopify://products/kex-women-velvet-palazzo-maroon"
-          }
-        },
         "column_RUmEXG": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/KES-RNTT-206_4.jpg",
-            "title": "TANK TOP",
-            "text": "",
-            "link_label": "Black",
-            "link": "shopify://products/kex-women-round-neck-tank-top-black"
-          }
-        },
-        "column_Rtf88x": {
-          "type": "column",
-          "disabled": true,
-          "settings": {
-            "image": "shopify://shop_images/KES-TSRT-2133_4.jpg",
-            "title": "TSHIRT",
+            "image": "shopify://shop_images/KES-STSRT-SL-2185_1.jpg",
+            "title": "T-SHIRT",
             "text": "",
             "link_label": "White",
-            "link": "shopify://products/kex-men-cotton-white-solid-tshirt"
-          }
-        },
-        "column_F4W9KT": {
-          "type": "column",
-          "disabled": true,
-          "settings": {
-            "image": "shopify://shop_images/KES-KRT-2123-2126_2.jpg",
-            "title": "KURTI SET",
-            "text": "",
-            "link_label": "Yellow",
-            "link": "shopify://products/kex-women-chikan-kurti-yellow-solid-white-pant"
+            "link": "shopify://products/kex-men-polyester-rounde-neck-half-sleeve-solid-white-tshirt"
           }
         }
       },
       "block_order": [
         "column_NiApVY",
         "column_tbQiAF",
-        "column_f8cdJk",
-        "column_RUmEXG",
-        "column_Rtf88x",
-        "column_F4W9KT"
+        "column_RUmEXG"
       ],
       "custom_css": [
         "h2 {text-align: center;}",
