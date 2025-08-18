@@ -379,10 +379,18 @@
       "settings": {
         "include_margins": true
       }
+    },
+    "1_image_section_gjxHVi": {
+      "type": "1-image-section",
+      "name": "Image Container",
+      "settings": {
+        "image": "shopify://shop_images/Brown_and_Black_Modern_Basketball_Tournament_Banner_2.png"
+      }
     }
   },
   "order": [
     "main",
+    "1_image_section_gjxHVi",
     "rich_text_V6ffxK",
     "ss_feature_1_QCHzmy",
     "rich_text_B7FhjE",
