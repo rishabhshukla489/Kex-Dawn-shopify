@@ -606,6 +606,7 @@
         "text_fqgqTk",
         "buttons_FUbmtV"
       ],
+      "disabled": true,
       "custom_css": [
         ".banner__media {border-radius: 50px;}",
         "@media screen and (max-width: 749px) {.banner__heading {font-size: 2.5em; word-wrap: break-word; overflow-wrap: break-word; } .banner__text {font-size: 1.25em; word-wrap: break-word; overflow-wrap: break-word; } .banner__media, img {border-radius: 30px; background-color: white; margin: 0; background-color: #f5f5f5; } .banner__media img {width: 100%; height: 100%; max-height: none; object-fit: cover; /* or 'cover' for full height coverage */ border-radius: 30px; }}"
@@ -749,6 +750,13 @@
         "placement": "bottom-left",
         "enable_shadow": true
       }
+    },
+    "1_image_section_BLqGUP": {
+      "type": "1-image-section",
+      "name": "Image Container",
+      "settings": {
+        "image": "shopify://shop_images/3_886013b6-0564-4a95-a286-009d4785cfd1.png"
+      }
     }
   },
   "order": [
@@ -767,6 +775,7 @@
     "multicolumn_8C9Q34",
     "multicolumn_xrJDbx",
     "ss_feature_1_RqLbgB",
+    "1_image_section_BLqGUP",
     "image_banner_hhFPbe",
     "17391197783f6b68af",
     "custom_image_section_74gVj8",
