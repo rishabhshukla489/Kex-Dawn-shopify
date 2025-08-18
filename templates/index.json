@@ -162,6 +162,22 @@
         "padding_bottom": 32
       }
     },
+    "video_XY8xCG": {
+      "type": "video",
+      "name": "t:sections.video.presets.name",
+      "settings": {
+        "heading": "",
+        "heading_size": "h2",
+        "enable_video_looping": true,
+        "video": "shopify://files/videos/Order Now (2).mp4",
+        "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+        "description": "",
+        "full_width": false,
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "collection_list_M4LbtM": {
       "type": "collection-list",
       "blocks": {
@@ -757,6 +773,7 @@
     "custom_liquid_MEzPVQ",
     "marquee_gePGpJ",
     "multicolumn_xYcnmf",
+    "video_XY8xCG",
     "collection_list_M4LbtM",
     "custom_liquid_FHDpUK",
     "custom_image_section_xwRhkE",
