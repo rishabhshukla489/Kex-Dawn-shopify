@@ -572,6 +572,13 @@
         "lazy": true
       }
     },
+    "1_image_section_BLqGUP": {
+      "type": "1-image-section",
+      "name": "Image Container",
+      "settings": {
+        "image": "shopify://shop_images/3_886013b6-0564-4a95-a286-009d4785cfd1.png"
+      }
+    },
     "image_banner_hhFPbe": {
       "type": "image-banner",
       "blocks": {
@@ -649,45 +656,6 @@
         "image": "shopify://shop_images/Screenshot_2025-01-30_at_3.22.39_AM.png"
       }
     },
-    "quick_links_custom_yT9iQF": {
-      "type": "quick-links-custom",
-      "blocks": {
-        "link_list_E8HEfc": {
-          "type": "link_list",
-          "settings": {
-            "subsection_title": "<h2>Men</h2>",
-            "menu": "men-menu"
-          }
-        },
-        "link_list_aJnx6C": {
-          "type": "link_list",
-          "settings": {
-            "subsection_title": "<h2>Women</h2>",
-            "menu": "women-menu"
-          }
-        },
-        "link_list_GhxkJL": {
-          "type": "link_list",
-          "settings": {
-            "subsection_title": "<h2>Combos</h2>",
-            "menu": "combo-menu"
-          }
-        }
-      },
-      "block_order": [
-        "link_list_E8HEfc",
-        "link_list_aJnx6C",
-        "link_list_GhxkJL"
-      ],
-      "custom_css": [
-        "@media screen and (max-width: 749px) {h1 {font-size: 1.75em; } h2 {font-size: 1.2em; } .quick-links__link-item {font-size: 0.7em; }}"
-      ],
-      "settings": {
-        "title": "<h1><strong>Quick </strong>Links</h1>",
-        "padding_top": 0,
-        "padding_bottom": 0
-      }
-    },
     "1739119267968034bc": {
       "type": "apps",
       "blocks": {
@@ -750,13 +718,6 @@
         "placement": "bottom-left",
         "enable_shadow": true
       }
-    },
-    "1_image_section_BLqGUP": {
-      "type": "1-image-section",
-      "name": "Image Container",
-      "settings": {
-        "image": "shopify://shop_images/3_886013b6-0564-4a95-a286-009d4785cfd1.png"
-      }
     }
   },
   "order": [
@@ -779,7 +740,6 @@
     "image_banner_hhFPbe",
     "17391197783f6b68af",
     "custom_image_section_74gVj8",
-    "quick_links_custom_yT9iQF",
     "1739119267968034bc",
     "ss_cookie_banner_TtzgRg"
   ]
