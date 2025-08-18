@@ -98,6 +98,46 @@
         "image": "shopify://shop_images/Brown_and_Black_Modern_Basketball_Tournament_Banner_2.png"
       }
     },
+    "collage_68HJyR": {
+      "type": "collage",
+      "blocks": {
+        "image_UwR4De": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/1_ff6cf435-358c-48c3-b0ad-0210a8426772.png"
+          }
+        },
+        "product_Cit49c": {
+          "type": "product",
+          "settings": {
+            "product": "kex-men-polyester-rounde-neck-half-sleeve-solid-white-tshirt",
+            "second_image": true
+          }
+        },
+        "collection_XxNRtq": {
+          "type": "collection",
+          "settings": {
+            "collection": "mens-t-shirt"
+          }
+        }
+      },
+      "block_order": [
+        "image_UwR4De",
+        "product_Cit49c",
+        "collection_XxNRtq"
+      ],
+      "name": "t:sections.collage.presets.name",
+      "settings": {
+        "heading": "Multimedia collage",
+        "heading_size": "h1",
+        "desktop_layout": "left",
+        "mobile_layout": "column",
+        "card_styles": "product-card-wrapper",
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "rich_text_V6ffxK": {
       "type": "rich-text",
       "blocks": {
@@ -387,58 +427,18 @@
       "settings": {
         "include_margins": true
       }
-    },
-    "collage_68HJyR": {
-      "type": "collage",
-      "blocks": {
-        "image_UwR4De": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/1_ff6cf435-358c-48c3-b0ad-0210a8426772.png"
-          }
-        },
-        "product_Cit49c": {
-          "type": "product",
-          "settings": {
-            "product": "kex-men-polyester-rounde-neck-half-sleeve-solid-white-tshirt",
-            "second_image": true
-          }
-        },
-        "collection_XxNRtq": {
-          "type": "collection",
-          "settings": {
-            "collection": "mens-t-shirt"
-          }
-        }
-      },
-      "block_order": [
-        "image_UwR4De",
-        "product_Cit49c",
-        "collection_XxNRtq"
-      ],
-      "name": "t:sections.collage.presets.name",
-      "settings": {
-        "heading": "Multimedia collage",
-        "heading_size": "h1",
-        "desktop_layout": "left",
-        "mobile_layout": "column",
-        "card_styles": "product-card-wrapper",
-        "color_scheme": "",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
     }
   },
   "order": [
     "main",
     "1_image_section_gjxHVi",
+    "collage_68HJyR",
     "rich_text_V6ffxK",
     "ss_feature_1_QCHzmy",
     "rich_text_B7FhjE",
     "ss_feature_1_MNtghw",
     "related-products",
     "quick_links_custom_AtTatH",
-    "1754738862693fdc45",
-    "collage_68HJyR"
+    "1754738862693fdc45"
   ]
 }
