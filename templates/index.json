@@ -12,25 +12,6 @@
     "slideshow_pxDALG": {
       "type": "slideshow",
       "blocks": {
-        "slide_QJRijR": {
-          "type": "slide",
-          "disabled": true,
-          "settings": {
-            "image": "shopify://shop_images/kex_summer_banner_1.png",
-            "heading": "Image slide",
-            "heading_size": "h1",
-            "subheading": "Tell your brand's story through images",
-            "button_label": "Button label",
-            "link": "",
-            "button_style_secondary": false,
-            "box_align": "middle-center",
-            "show_text_box": true,
-            "text_alignment": "center",
-            "image_overlay_opacity": 0,
-            "color_scheme": "scheme-1",
-            "text_alignment_mobile": "center"
-          }
-        },
         "slide_UJPCNq": {
           "type": "slide",
           "settings": {
@@ -52,7 +33,7 @@
         "slide_8ahAdB": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/kex_banner_2.png",
+            "image": "shopify://shop_images/Black_and_Green_Modern_Fitness_Gym_Instagram_Post.png",
             "heading": "",
             "heading_size": "hxxl",
             "subheading": "",
@@ -69,7 +50,6 @@
         }
       },
       "block_order": [
-        "slide_QJRijR",
         "slide_UJPCNq",
         "slide_8ahAdB"
       ],
@@ -725,62 +705,6 @@
         "include_margins": true
       }
     },
-    "slideshow_PWaNCM": {
-      "type": "slideshow",
-      "blocks": {
-        "slide_UQYJVa": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify://shop_images/Brown_and_Black_Modern_Basketball_Tournament_Banner_2.png",
-            "heading": "",
-            "heading_size": "hxl",
-            "subheading": "",
-            "button_label": "",
-            "link": "shopify://products/kex-men-polyester-half-sleevess-solid-black-tshirt",
-            "button_style_secondary": false,
-            "box_align": "bottom-center",
-            "show_text_box": false,
-            "text_alignment": "left",
-            "image_overlay_opacity": 0,
-            "color_scheme": "scheme-9",
-            "text_alignment_mobile": "center"
-          }
-        },
-        "slide_jykL7U": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify://shop_images/kex_banner_2.png",
-            "heading": "",
-            "heading_size": "hxxl",
-            "subheading": "",
-            "button_label": "",
-            "link": "shopify://collections/all",
-            "button_style_secondary": false,
-            "box_align": "bottom-right",
-            "show_text_box": false,
-            "text_alignment": "center",
-            "image_overlay_opacity": 0,
-            "color_scheme": "scheme-9",
-            "text_alignment_mobile": "center"
-          }
-        }
-      },
-      "block_order": [
-        "slide_UQYJVa",
-        "slide_jykL7U"
-      ],
-      "custom_css": [],
-      "settings": {
-        "layout": "full_bleed",
-        "slide_height": "adapt_image",
-        "slider_visual": "dots",
-        "auto_rotate": true,
-        "change_slides_speed": 7,
-        "image_behavior": "none",
-        "show_text_below": true,
-        "accessibility_info": ""
-      }
-    },
     "ss_cookie_banner_TtzgRg": {
       "type": "ss-cookie-banner",
       "blocks": {
@@ -847,7 +771,6 @@
     "custom_image_section_74gVj8",
     "quick_links_custom_yT9iQF",
     "1739119267968034bc",
-    "slideshow_PWaNCM",
     "ss_cookie_banner_TtzgRg"
   ]
 }
