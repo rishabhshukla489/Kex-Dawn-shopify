@@ -11,16 +11,6 @@
   "name": "t:sections.footer.name",
   "type": "footer",
   "sections": {
-    "custom_image_section_eJAjqM": {
-      "type": "custom-image-section",
-      "disabled": true,
-      "custom_css": [
-        ".image-container,.full-width-image {height: 800px;}"
-      ],
-      "settings": {
-        "image": "shopify://shop_images/Group_47692_b97529d4-ca49-46c7-860a-0d3b51a61587.png"
-      }
-    },
     "footer": {
       "type": "footer",
       "custom_css": [
@@ -43,7 +33,6 @@
     }
   },
   "order": [
-    "custom_image_section_eJAjqM",
     "footer"
   ]
 }
