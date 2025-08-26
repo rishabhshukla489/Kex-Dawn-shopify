@@ -164,6 +164,7 @@
     },
     "video_XY8xCG": {
       "type": "video",
+      "disabled": true,
       "name": "t:sections.video.presets.name",
       "settings": {
         "heading": "",
@@ -726,12 +727,12 @@
     "custom_liquid_MEzPVQ",
     "marquee_gePGpJ",
     "multicolumn_xYcnmf",
+    "svg_banner_NC6di3",
     "video_XY8xCG",
     "collection_list_M4LbtM",
     "custom_liquid_FHDpUK",
     "custom_image_section_xwRhkE",
     "image_banner_BWxL4R",
-    "svg_banner_NC6di3",
     "custom_image_section_84wjBx",
     "multicolumn_8C9Q34",
     "multicolumn_xrJDbx",
