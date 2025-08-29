@@ -33,7 +33,7 @@
         "slide_8ahAdB": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/KEX_7.svg",
+            "image": "shopify://shop_images/KEX_8.svg",
             "heading": "",
             "heading_size": "hxxl",
             "subheading": "",
@@ -160,6 +160,15 @@
         "swipe_on_mobile": true,
         "padding_top": 0,
         "padding_bottom": 0
+      }
+    },
+    "svg_banner_NC6di3": {
+      "type": "SVG-banner",
+      "settings": {
+        "text": "<p><strong>Keep it Clean</strong> | Do right by people | Keep it Clear |</p>",
+        "color_scheme": "scheme-8f6c687d-051e-4bd9-acb9-b3c51bfe8458",
+        "link": "",
+        "image": "shopify://shop_images/recyclable-bag.svg"
       }
     },
     "video_XY8xCG": {
@@ -291,15 +300,6 @@
         "mobile_content_alignment": "center",
         "stack_images_on_mobile": true,
         "show_text_below": false
-      }
-    },
-    "svg_banner_NC6di3": {
-      "type": "SVG-banner",
-      "settings": {
-        "text": "<p><strong>Keep it Clean</strong> | Do right by people | Keep it Clear |</p>",
-        "color_scheme": "scheme-8f6c687d-051e-4bd9-acb9-b3c51bfe8458",
-        "link": "",
-        "image": "shopify://shop_images/recyclable-bag.svg"
       }
     },
     "custom_image_section_84wjBx": {
