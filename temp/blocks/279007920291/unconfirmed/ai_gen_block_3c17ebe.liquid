@@ -1,6 +1,757 @@
+{% doc %}
+  @prompt
+    Create a modern homepage section for the Men category inspired by Jockey’s website.
+    The section should have:
+    
+    A dark gradient background (navy to black).
+    
+    Bold heading text: “SLIDE INTO THE COLORS OF JOCKEY” in uppercase white font.
+    
+    A toggle button for “Men” and “Women”, with “Men” selected by default.
+    
+    A horizontally scrollable carousel showing men’s products with images, product names, and color details below each image.
+    
+    Rounded card-style product containers with light gray or white backgrounds.
+    
+    Arrows on each side for horizontal navigation.
+    
+    Clean, modern typography and spacing similar to Jockey’s site.
+{% enddoc %}
+{% assign ai_gen_id = block.id | replace: '_', '' | downcase %}
+
+{% style %}
+  .ai-jockey-hero-{{ ai_gen_id }} {
+    background: linear-gradient(135deg, {{ block.settings.gradient_start }} 0%, {{ block.settings.gradient_end }} 100%);
+    padding: {{ block.settings.section_padding_top }}px 0 {{ block.settings.section_padding_bottom }}px;
+    overflow: hidden;
+  }
+
+  .ai-jockey-hero-container-{{ ai_gen_id }} {
+    max-width: {{ block.settings.container_width }}px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  .ai-jockey-hero-heading-{{ ai_gen_id }} {
+    color: {{ block.settings.heading_color }};
+    font-size: {{ block.settings.heading_size }}px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0 0 {{ block.settings.heading_spacing }}px;
+    letter-spacing: 1px;
+    line-height: 1.2;
+  }
+
+  .ai-jockey-hero-toggle-{{ ai_gen_id }} {
+    display: flex;
+    justify-content: center;
+    gap: 0;
+    margin-bottom: {{ block.settings.toggle_spacing }}px;
+  }
+
+  .ai-jockey-hero-toggle-btn-{{ ai_gen_id }} {
+    background: transparent;
+    color: {{ block.settings.toggle_inactive_color }};
+    border: 2px solid {{ block.settings.toggle_border_color }};
+    padding: 12px 40px;
+    font-size: {{ block.settings.toggle_font_size }}px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+
+  .ai-jockey-hero-toggle-btn-{{ ai_gen_id }}:first-child {
+    border-radius: {{ block.settings.toggle_radius }}px 0 0 {{ block.settings.toggle_radius }}px;
+    border-right: none;
+  }
+
+  .ai-jockey-hero-toggle-btn-{{ ai_gen_id }}:last-child {
+    border-radius: 0 {{ block.settings.toggle_radius }}px {{ block.settings.toggle_radius }}px 0;
+  }
+
+  .ai-jockey-hero-toggle-btn-{{ ai_gen_id }}.active {
+    background: {{ block.settings.toggle_active_bg }};
+    color: {{ block.settings.toggle_active_color }};
+    border-color: {{ block.settings.toggle_active_bg }};
+  }
+
+  .ai-jockey-hero-carousel-wrapper-{{ ai_gen_id }} {
+    position: relative;
+    padding: 0 60px;
+  }
+
+  .ai-jockey-hero-carousel-{{ ai_gen_id }} {
+    display: flex;
+    gap: {{ block.settings.product_gap }}px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    padding: 20px 0;
+  }
+
+  .ai-jockey-hero-carousel-{{ ai_gen_id }}::-webkit-scrollbar {
+    display: none;
+  }
+
+  .ai-jockey-hero-category-{{ ai_gen_id }} {
+    display: none;
+  }
+
+  .ai-jockey-hero-category-{{ ai_gen_id }}.active {
+    display: flex;
+  }
+
+  .ai-jockey-hero-product-card-{{ ai_gen_id }} {
+    flex: 0 0 {{ block.settings.card_width }}px;
+    background: {{ block.settings.card_bg_color }};
+    border-radius: {{ block.settings.card_radius }}px;
+    padding: {{ block.settings.card_padding }}px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .ai-jockey-hero-product-card-{{ ai_gen_id }}:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  }
+
+  .ai-jockey-hero-product-image-{{ ai_gen_id }} {
+    width: 100%;
+    aspect-ratio: 1;
+    border-radius: {{ block.settings.image_radius }}px;
+    overflow: hidden;
+    margin-bottom: 15px;
+  }
+
+  .ai-jockey-hero-product-image-{{ ai_gen_id }} img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .ai-jockey-hero-product-image-placeholder-{{ ai_gen_id }} {
+    width: 100%;
+    height: 100%;
+    background: #e0e0e0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .ai-jockey-hero-product-image-placeholder-{{ ai_gen_id }} svg {
+    width: 60%;
+    height: 60%;
+    opacity: 0.3;
+  }
+
+  .ai-jockey-hero-product-info-{{ ai_gen_id }} {
+    text-align: center;
+  }
+
+  .ai-jockey-hero-product-name-{{ ai_gen_id }} {
+    color: {{ block.settings.product_name_color }};
+    font-size: {{ block.settings.product_name_size }}px;
+    font-weight: 600;
+    margin: 0 0 8px;
+    line-height: 1.3;
+  }
+
+  .ai-jockey-hero-product-details-{{ ai_gen_id }} {
+    color: {{ block.settings.product_details_color }};
+    font-size: {{ block.settings.product_details_size }}px;
+    margin: 0;
+    line-height: 1.4;
+  }
+
+  .ai-jockey-hero-nav-btn-{{ ai_gen_id }} {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: {{ block.settings.nav_button_bg }};
+    color: {{ block.settings.nav_button_color }};
+    border: none;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease;
+    z-index: 2;
+  }
+
+  .ai-jockey-hero-nav-btn-{{ ai_gen_id }}:hover {
+    background: {{ block.settings.nav_button_hover_bg }};
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+  }
+
+  .ai-jockey-hero-nav-btn-{{ ai_gen_id }}.prev {
+    left: 0;
+  }
+
+  .ai-jockey-hero-nav-btn-{{ ai_gen_id }}.next {
+    right: 0;
+  }
+
+  .ai-jockey-hero-nav-btn-{{ ai_gen_id }} svg {
+    width: 20px;
+    height: 20px;
+  }
+
+  .ai-jockey-hero-empty-state-{{ ai_gen_id }} {
+    text-align: center;
+    padding: 60px 20px;
+    color: {{ block.settings.heading_color }};
+    opacity: 0.7;
+  }
+
+  .ai-jockey-hero-empty-state-{{ ai_gen_id }} p {
+    font-size: 16px;
+    margin: 10px 0 0;
+  }
+
+  @media screen and (max-width: 768px) {
+    .ai-jockey-hero-heading-{{ ai_gen_id }} {
+      font-size: calc({{ block.settings.heading_size }}px * 0.6);
+    }
+
+    .ai-jockey-hero-toggle-btn-{{ ai_gen_id }} {
+      padding: 10px 25px;
+      font-size: calc({{ block.settings.toggle_font_size }}px * 0.9);
+    }
+
+    .ai-jockey-hero-carousel-wrapper-{{ ai_gen_id }} {
+      padding: 0 50px;
+    }
+
+    .ai-jockey-hero-product-card-{{ ai_gen_id }} {
+      flex: 0 0 calc({{ block.settings.card_width }}px * 0.8);
+    }
+
+    .ai-jockey-hero-nav-btn-{{ ai_gen_id }} {
+      width: 38px;
+      height: 38px;
+    }
+
+    .ai-jockey-hero-nav-btn-{{ ai_gen_id }} svg {
+      width: 16px;
+      height: 16px;
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    .ai-jockey-hero-heading-{{ ai_gen_id }} {
+      font-size: calc({{ block.settings.heading_size }}px * 0.5);
+    }
+
+    .ai-jockey-hero-carousel-wrapper-{{ ai_gen_id }} {
+      padding: 0 40px;
+    }
+
+    .ai-jockey-hero-product-card-{{ ai_gen_id }} {
+      flex: 0 0 calc({{ block.settings.card_width }}px * 0.7);
+    }
+  }
+{% endstyle %}
+
+<jockey-hero-{{ ai_gen_id }} class="ai-jockey-hero-{{ ai_gen_id }}" {{ block.shopify_attributes }}>
+  <div class="ai-jockey-hero-container-{{ ai_gen_id }}">
+    {% if block.settings.heading != blank %}
+      <h2 class="ai-jockey-hero-heading-{{ ai_gen_id }}">{{ block.settings.heading }}</h2>
+    {% endif %}
+
+    <div class="ai-jockey-hero-toggle-{{ ai_gen_id }}">
+      <button
+        class="ai-jockey-hero-toggle-btn-{{ ai_gen_id }} active"
+        data-category="men"
+        aria-label="Show men's products"
+      >
+        {{ block.settings.men_label }}
+      </button>
+      <button
+        class="ai-jockey-hero-toggle-btn-{{ ai_gen_id }}"
+        data-category="women"
+        aria-label="Show women's products"
+      >
+        {{ block.settings.women_label }}
+      </button>
+    </div>
+
+    <div class="ai-jockey-hero-carousel-wrapper-{{ ai_gen_id }}">
+      <button
+        class="ai-jockey-hero-nav-btn-{{ ai_gen_id }} prev"
+        aria-label="Previous products"
+      >
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="15 18 9 12 15 6"></polyline>
+        </svg>
+      </button>
+
+      <div class="ai-jockey-hero-carousel-{{ ai_gen_id }} ai-jockey-hero-category-{{ ai_gen_id }} active" data-category="men">
+        {% if block.settings.men_products != blank %}
+          {% for product in block.settings.men_products %}
+            <div class="ai-jockey-hero-product-card-{{ ai_gen_id }}">
+              <div class="ai-jockey-hero-product-image-{{ ai_gen_id }}">
+                {% if product.featured_image %}
+                  <img
+                    src="{{ product.featured_image | image_url: width: 400 }}"
+                    alt="{{ product.featured_image.alt | escape }}"
+                    loading="lazy"
+                    width="400"
+                    height="400"
+                  >
+                {% else %}
+                  <div class="ai-jockey-hero-product-image-placeholder-{{ ai_gen_id }}">
+                    {{ 'product-1' | placeholder_svg_tag }}
+                  </div>
+                {% endif %}
+              </div>
+              <div class="ai-jockey-hero-product-info-{{ ai_gen_id }}">
+                <h3 class="ai-jockey-hero-product-name-{{ ai_gen_id }}">{{ product.title }}</h3>
+                <p class="ai-jockey-hero-product-details-{{ ai_gen_id }}">
+                  {% if product.variants.size > 1 %}
+                    {{ product.variants.size }} colors available
+                  {% else %}
+                    {{ product.price | money }}
+                  {% endif %}
+                </p>
+              </div>
+            </div>
+          {% endfor %}
+        {% else %}
+          <div class="ai-jockey-hero-empty-state-{{ ai_gen_id }}">
+            <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+              <circle cx="8.5" cy="8.5" r="1.5"></circle>
+              <polyline points="21 15 16 10 5 21"></polyline>
+            </svg>
+            <p>Add men's products to display them here</p>
+          </div>
+        {% endif %}
+      </div>
+
+      <div class="ai-jockey-hero-carousel-{{ ai_gen_id }} ai-jockey-hero-category-{{ ai_gen_id }}" data-category="women">
+        {% if block.settings.women_products != blank %}
+          {% for product in block.settings.women_products %}
+            <div class="ai-jockey-hero-product-card-{{ ai_gen_id }}">
+              <div class="ai-jockey-hero-product-image-{{ ai_gen_id }}">
+                {% if product.featured_image %}
+                  <img
+                    src="{{ product.featured_image | image_url: width: 400 }}"
+                    alt="{{ product.featured_image.alt | escape }}"
+                    loading="lazy"
+                    width="400"
+                    height="400"
+                  >
+                {% else %}
+                  <div class="ai-jockey-hero-product-image-placeholder-{{ ai_gen_id }}">
+                    {{ 'product-1' | placeholder_svg_tag }}
+                  </div>
+                {% endif %}
+              </div>
+              <div class="ai-jockey-hero-product-info-{{ ai_gen_id }}">
+                <h3 class="ai-jockey-hero-product-name-{{ ai_gen_id }}">{{ product.title }}</h3>
+                <p class="ai-jockey-hero-product-details-{{ ai_gen_id }}">
+                  {% if product.variants.size > 1 %}
+                    {{ product.variants.size }} colors available
+                  {% else %}
+                    {{ product.price | money }}
+                  {% endif %}
+                </p>
+              </div>
+            </div>
+          {% endfor %}
+        {% else %}
+          <div class="ai-jockey-hero-empty-state-{{ ai_gen_id }}">
+            <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+              <circle cx="8.5" cy="8.5" r="1.5"></circle>
+              <polyline points="21 15 16 10 5 21"></polyline>
+            </svg>
+            <p>Add women's products to display them here</p>
+          </div>
+        {% endif %}
+      </div>
+
+      <button
+        class="ai-jockey-hero-nav-btn-{{ ai_gen_id }} next"
+        aria-label="Next products"
+      >
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="9 18 15 12 9 6"></polyline>
+        </svg>
+      </button>
+    </div>
+  </div>
+</jockey-hero-{{ ai_gen_id }}>
+
+<script>
+  (function() {
+    class JockeyHero{{ ai_gen_id }} extends HTMLElement {
+      constructor() {
+        super();
+        this.currentCategory = 'men';
+      }
+
+      connectedCallback() {
+        this.toggleButtons = this.querySelectorAll('.ai-jockey-hero-toggle-btn-{{ ai_gen_id }}');
+        this.categories = this.querySelectorAll('.ai-jockey-hero-category-{{ ai_gen_id }}');
+        this.prevButton = this.querySelector('.ai-jockey-hero-nav-btn-{{ ai_gen_id }}.prev');
+        this.nextButton = this.querySelector('.ai-jockey-hero-nav-btn-{{ ai_gen_id }}.next');
+
+        this.setupToggle();
+        this.setupNavigation();
+      }
+
+      setupToggle() {
+        this.toggleButtons.forEach(button => {
+          button.addEventListener('click', () => {
+            const category = button.getAttribute('data-category');
+            
+            this.toggleButtons.forEach(btn => btn.classList.remove('active'));
+            button.classList.add('active');
+
+            this.categories.forEach(cat => {
+              if (cat.getAttribute('data-category') === category) {
+                cat.classList.add('active');
+                this.currentCategory = category;
+              } else {
+                cat.classList.remove('active');
+              }
+            });
+          });
+        });
+      }
+
+      setupNavigation() {
+        this.prevButton.addEventListener('click', () => {
+          const activeCarousel = this.querySelector('.ai-jockey-hero-category-{{ ai_gen_id }}.active');
+          if (activeCarousel) {
+            activeCarousel.scrollBy({
+              left: -300,
+              behavior: 'smooth'
+            });
+          }
+        });
+
+        this.nextButton.addEventListener('click', () => {
+          const activeCarousel = this.querySelector('.ai-jockey-hero-category-{{ ai_gen_id }}.active');
+          if (activeCarousel) {
+            activeCarousel.scrollBy({
+              left: 300,
+              behavior: 'smooth'
+            });
+          }
+        });
+      }
+    }
+
+    customElements.define('jockey-hero-{{ ai_gen_id }}', JockeyHero{{ ai_gen_id }});
+  })();
+</script>
+
 {% schema %}
- {
-   "name": "AI_Block",
-   "tag": "shopify-ai-generated-block"
- }
+{
+  "name": "Jockey hero section",
+  "tag": null,
+  "settings": [
+    {
+      "type": "header",
+      "content": "Content"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "SLIDE INTO THE COLORS OF JOCKEY"
+    },
+    {
+      "type": "text",
+      "id": "men_label",
+      "label": "Men button label",
+      "default": "Men"
+    },
+    {
+      "type": "text",
+      "id": "women_label",
+      "label": "Women button label",
+      "default": "Women"
+    },
+    {
+      "type": "product_list",
+      "id": "men_products",
+      "label": "Men's products",
+      "limit": 12
+    },
+    {
+      "type": "product_list",
+      "id": "women_products",
+      "label": "Women's products",
+      "limit": 12
+    },
+    {
+      "type": "header",
+      "content": "Background"
+    },
+    {
+      "type": "color",
+      "id": "gradient_start",
+      "label": "Gradient start color",
+      "default": "#1a2332"
+    },
+    {
+      "type": "color",
+      "id": "gradient_end",
+      "label": "Gradient end color",
+      "default": "#000000"
+    },
+    {
+      "type": "header",
+      "content": "Heading style"
+    },
+    {
+      "type": "color",
+      "id": "heading_color",
+      "label": "Color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "range",
+      "id": "heading_size",
+      "min": 20,
+      "max": 80,
+      "step": 2,
+      "unit": "px",
+      "label": "Size",
+      "default": 48
+    },
+    {
+      "type": "range",
+      "id": "heading_spacing",
+      "min": 20,
+      "max": 80,
+      "step": 4,
+      "unit": "px",
+      "label": "Bottom spacing",
+      "default": 40
+    },
+    {
+      "type": "header",
+      "content": "Toggle buttons"
+    },
+    {
+      "type": "color",
+      "id": "toggle_active_bg",
+      "label": "Active background",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "toggle_active_color",
+      "label": "Active text color",
+      "default": "#000000"
+    },
+    {
+      "type": "color",
+      "id": "toggle_inactive_color",
+      "label": "Inactive text color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "toggle_border_color",
+      "label": "Border color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "range",
+      "id": "toggle_font_size",
+      "min": 12,
+      "max": 24,
+      "step": 1,
+      "unit": "px",
+      "label": "Font size",
+      "default": 16
+    },
+    {
+      "type": "range",
+      "id": "toggle_radius",
+      "min": 0,
+      "max": 40,
+      "step": 2,
+      "unit": "px",
+      "label": "Border radius",
+      "default": 30
+    },
+    {
+      "type": "range",
+      "id": "toggle_spacing",
+      "min": 20,
+      "max": 80,
+      "step": 4,
+      "unit": "px",
+      "label": "Bottom spacing",
+      "default": 40
+    },
+    {
+      "type": "header",
+      "content": "Product cards"
+    },
+    {
+      "type": "color",
+      "id": "card_bg_color",
+      "label": "Background color",
+      "default": "#f5f5f5"
+    },
+    {
+      "type": "range",
+      "id": "card_width",
+      "min": 200,
+      "max": 400,
+      "step": 10,
+      "unit": "px",
+      "label": "Card width",
+      "default": 280
+    },
+    {
+      "type": "range",
+      "id": "card_padding",
+      "min": 10,
+      "max": 40,
+      "step": 2,
+      "unit": "px",
+      "label": "Card padding",
+      "default": 20
+    },
+    {
+      "type": "range",
+      "id": "card_radius",
+      "min": 0,
+      "max": 40,
+      "step": 2,
+      "unit": "px",
+      "label": "Card border radius",
+      "default": 16
+    },
+    {
+      "type": "range",
+      "id": "image_radius",
+      "min": 0,
+      "max": 40,
+      "step": 2,
+      "unit": "px",
+      "label": "Image border radius",
+      "default": 12
+    },
+    {
+      "type": "range",
+      "id": "product_gap",
+      "min": 10,
+      "max": 40,
+      "step": 2,
+      "unit": "px",
+      "label": "Gap between cards",
+      "default": 20
+    },
+    {
+      "type": "color",
+      "id": "product_name_color",
+      "label": "Product name color",
+      "default": "#000000"
+    },
+    {
+      "type": "range",
+      "id": "product_name_size",
+      "min": 12,
+      "max": 24,
+      "step": 1,
+      "unit": "px",
+      "label": "Product name size",
+      "default": 16
+    },
+    {
+      "type": "color",
+      "id": "product_details_color",
+      "label": "Product details color",
+      "default": "#666666"
+    },
+    {
+      "type": "range",
+      "id": "product_details_size",
+      "min": 10,
+      "max": 20,
+      "step": 1,
+      "unit": "px",
+      "label": "Product details size",
+      "default": 14
+    },
+    {
+      "type": "header",
+      "content": "Navigation arrows"
+    },
+    {
+      "type": "color",
+      "id": "nav_button_bg",
+      "label": "Background color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "nav_button_hover_bg",
+      "label": "Hover background color",
+      "default": "#f0f0f0"
+    },
+    {
+      "type": "color",
+      "id": "nav_button_color",
+      "label": "Icon color",
+      "default": "#000000"
+    },
+    {
+      "type": "header",
+      "content": "Layout"
+    },
+    {
+      "type": "range",
+      "id": "container_width",
+      "min": 1000,
+      "max": 1600,
+      "step": 50,
+      "unit": "px",
+      "label": "Container width",
+      "default": 1400
+    },
+    {
+      "type": "range",
+      "id": "section_padding_top",
+      "min": 20,
+      "max": 120,
+      "step": 4,
+      "unit": "px",
+      "label": "Top padding",
+      "default": 60
+    },
+    {
+      "type": "range",
+      "id": "section_padding_bottom",
+      "min": 20,
+      "max": 120,
+      "step": 4,
+      "unit": "px",
+      "label": "Bottom padding",
+      "default": 60
+    }
+  ],
+  "presets": [
+    {
+      "name": "Jockey hero section"
+    }
+  ]
+}
 {% endschema %}
