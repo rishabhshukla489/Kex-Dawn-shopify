@@ -1,6 +1,187 @@
+{% doc %}
+  @prompt
+    Create a thin announcement bar at the top of the website with a light gray background, center-aligned text, and a small blue dot separator. The text should read “Reduced prices effective across website as per From 1st November Kex Winter Sales start upto 70% off. T&C Apply.” Use modern sans-serif font and make the date clickable in blue.
+{% enddoc %}
+{% assign ai_gen_id = block.id | replace: '_', '' | downcase %}
+
+{% style %}
+  .ai-announcement-bar-{{ ai_gen_id }} {
+    background-color: {{ block.settings.background_color }};
+    padding: {{ block.settings.bar_height }}px 20px;
+    text-align: center;
+    width: 100%;
+  }
+
+  .ai-announcement-bar-content-{{ ai_gen_id }} {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    flex-wrap: wrap;
+    max-width: 100%;
+  }
+
+  .ai-announcement-bar-text-{{ ai_gen_id }} {
+    color: {{ block.settings.text_color }};
+    font-size: {{ block.settings.font_size }}px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    margin: 0;
+    line-height: 1.4;
+  }
+
+  .ai-announcement-bar-link-{{ ai_gen_id }} {
+    color: {{ block.settings.link_color }};
+    text-decoration: none;
+    font-weight: 500;
+  }
+
+  .ai-announcement-bar-link-{{ ai_gen_id }}:hover {
+    text-decoration: underline;
+  }
+
+  .ai-announcement-bar-separator-{{ ai_gen_id }} {
+    width: {{ block.settings.separator_size }}px;
+    height: {{ block.settings.separator_size }}px;
+    background-color: {{ block.settings.separator_color }};
+    border-radius: 50%;
+    display: inline-block;
+    flex-shrink: 0;
+  }
+
+  @media screen and (max-width: 749px) {
+    .ai-announcement-bar-text-{{ ai_gen_id }} {
+      font-size: {{ block.settings.font_size | times: 0.9 }}px;
+    }
+  }
+{% endstyle %}
+
+<div class="ai-announcement-bar-{{ ai_gen_id }}" {{ block.shopify_attributes }}>
+  <div class="ai-announcement-bar-content-{{ ai_gen_id }}">
+    <p class="ai-announcement-bar-text-{{ ai_gen_id }}">
+      {{ block.settings.text_before }}
+    </p>
+    {% if block.settings.show_separator %}
+      <span class="ai-announcement-bar-separator-{{ ai_gen_id }}"></span>
+    {% endif %}
+    {% if block.settings.link_text != blank and block.settings.link_url != blank %}
+      <a href="{{ block.settings.link_url }}" class="ai-announcement-bar-link-{{ ai_gen_id }}">
+        {{ block.settings.link_text }}
+      </a>
+    {% elsif block.settings.link_text != blank %}
+      <span class="ai-announcement-bar-text-{{ ai_gen_id }}">{{ block.settings.link_text }}</span>
+    {% endif %}
+    {% if block.settings.text_after != blank %}
+      <p class="ai-announcement-bar-text-{{ ai_gen_id }}">
+        {{ block.settings.text_after }}
+      </p>
+    {% endif %}
+  </div>
+</div>
+
 {% schema %}
- {
-   "name": "AI_Block",
-   "tag": "shopify-ai-generated-block"
- }
+{
+  "name": "Announcement bar",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Content"
+    },
+    {
+      "type": "text",
+      "id": "text_before",
+      "label": "Text before link",
+      "default": "Reduced prices effective across website as per"
+    },
+    {
+      "type": "text",
+      "id": "link_text",
+      "label": "Link text",
+      "default": "From 1st November"
+    },
+    {
+      "type": "url",
+      "id": "link_url",
+      "label": "Link URL"
+    },
+    {
+      "type": "text",
+      "id": "text_after",
+      "label": "Text after link",
+      "default": "Kex Winter Sales start upto 70% off. T&C Apply."
+    },
+    {
+      "type": "header",
+      "content": "Style"
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background color",
+      "default": "#e8e8e8"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Text color",
+      "default": "#2e3742"
+    },
+    {
+      "type": "color",
+      "id": "link_color",
+      "label": "Link color",
+      "default": "#334fb4"
+    },
+    {
+      "type": "range",
+      "id": "font_size",
+      "min": 10,
+      "max": 20,
+      "step": 1,
+      "unit": "px",
+      "label": "Font size",
+      "default": 13
+    },
+    {
+      "type": "range",
+      "id": "bar_height",
+      "min": 8,
+      "max": 24,
+      "step": 2,
+      "unit": "px",
+      "label": "Vertical padding",
+      "default": 10
+    },
+    {
+      "type": "header",
+      "content": "Separator"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_separator",
+      "label": "Show separator",
+      "default": true
+    },
+    {
+      "type": "color",
+      "id": "separator_color",
+      "label": "Separator color",
+      "default": "#334fb4"
+    },
+    {
+      "type": "range",
+      "id": "separator_size",
+      "min": 3,
+      "max": 10,
+      "step": 1,
+      "unit": "px",
+      "label": "Separator size",
+      "default": 5
+    }
+  ],
+  "presets": [
+    {
+      "name": "Announcement bar"
+    }
+  ]
+}
 {% endschema %}
