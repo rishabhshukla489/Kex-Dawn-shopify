@@ -9,6 +9,92 @@
  */
 {
   "sections": {
+    "slideshow_pxDALG": {
+      "type": "slideshow",
+      "blocks": {
+        "slide_UJPCNq": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/kex_summer_banner_1.png",
+            "heading": "",
+            "heading_size": "hxl",
+            "subheading": "",
+            "button_label": "",
+            "link": "shopify://collections",
+            "button_style_secondary": false,
+            "box_align": "bottom-center",
+            "show_text_box": false,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "scheme-9",
+            "text_alignment_mobile": "center"
+          }
+        },
+        "slide_8ahAdB": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/KEX_8.svg",
+            "heading": "",
+            "heading_size": "hxxl",
+            "subheading": "",
+            "button_label": "",
+            "link": "shopify://collections/all",
+            "button_style_secondary": false,
+            "box_align": "bottom-right",
+            "show_text_box": false,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "scheme-9",
+            "text_alignment_mobile": "center"
+          }
+        }
+      },
+      "block_order": [
+        "slide_UJPCNq",
+        "slide_8ahAdB"
+      ],
+      "custom_css": [
+        ".slideshow__controls {display: none;}",
+        "@media screen and (max-width: 749px) {.slideshow {width: 100%; overflow: hidden; } .slideshow__slide {/* height: 50vh; max-height: none; */ padding: 10px; margin: 0 auto; height: 100%; } .slideshow__media img {width: 100%; height: 100%; object-fit: cover; } .slideshow__text-wrapper {text-align: center; } .slideshow__text h2 {font-size: 2.6em; } .slideshow__text p {font-size: 0.7em; }}"
+      ],
+      "settings": {
+        "layout": "full_bleed",
+        "slide_height": "adapt_image",
+        "slider_visual": "dots",
+        "auto_rotate": true,
+        "change_slides_speed": 5,
+        "image_behavior": "none",
+        "show_text_below": false,
+        "accessibility_info": "Slideshow about our brand"
+      }
+    },
+    "176185190977d3f61e": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_abd3721_pKExpq": {
+          "type": "ai_gen_block_abd3721",
+          "settings": {
+            "text_before": "Reduced prices effective across website as per",
+            "link_text": "From 1st November",
+            "link_url": "shopify://collections",
+            "text_after": "Kex Winter Sales start upto 70% off. T&C Apply.",
+            "background_color": "#e8e8e8",
+            "text_color": "#2e3742",
+            "link_color": "#334fb4",
+            "font_size": 13,
+            "bar_height": 10,
+            "show_separator": true,
+            "separator_color": "#334fb4",
+            "separator_size": 5
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_abd3721_pKExpq"
+      ],
+      "settings": {}
+    },
     "1761847510e3338245": {
       "type": "_blocks",
       "blocks": {
@@ -104,64 +190,48 @@
       ],
       "settings": {}
     },
-    "slideshow_pxDALG": {
-      "type": "slideshow",
+    "17618510542d0bd07e": {
+      "type": "_blocks",
       "blocks": {
-        "slide_UJPCNq": {
-          "type": "slide",
+        "ai_gen_block_b50e0bd_BHaUmN": {
+          "type": "ai_gen_block_b50e0bd",
           "settings": {
-            "image": "shopify://shop_images/kex_summer_banner_1.png",
-            "heading": "",
-            "heading_size": "hxl",
-            "subheading": "",
-            "button_label": "",
-            "link": "shopify://collections",
-            "button_style_secondary": false,
-            "box_align": "bottom-center",
-            "show_text_box": false,
-            "text_alignment": "center",
-            "image_overlay_opacity": 0,
-            "color_scheme": "scheme-9",
-            "text_alignment_mobile": "center"
-          }
-        },
-        "slide_8ahAdB": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify://shop_images/KEX_8.svg",
-            "heading": "",
-            "heading_size": "hxxl",
-            "subheading": "",
-            "button_label": "",
-            "link": "shopify://collections/all",
-            "button_style_secondary": false,
-            "box_align": "bottom-right",
-            "show_text_box": false,
-            "text_alignment": "center",
-            "image_overlay_opacity": 0,
-            "color_scheme": "scheme-9",
-            "text_alignment_mobile": "center"
-          }
+            "section_height": 650,
+            "background_color": "#1a1a1a",
+            "heading": "Winter Collection",
+            "heading_font": "serif",
+            "heading_size": 72,
+            "heading_color": "#ffffff",
+            "letter_spacing": 1,
+            "text_transform": "none",
+            "subheading": "Discover timeless elegance and modern sophistication",
+            "subheading_size": 18,
+            "subheading_color": "#d4d4d4",
+            "text_alignment": "flex-start",
+            "spacing": 30,
+            "button_text": "Shop All",
+            "button_link": "shopify://collections/cotton-sweatshirt",
+            "button_font_size": 14,
+            "button_padding_vertical": 16,
+            "button_padding_horizontal": 50,
+            "button_bg_color": "#ffffff",
+            "button_text_color": "#000000",
+            "button_border_width": 2,
+            "button_border_color": "#ffffff",
+            "button_border_radius": 0,
+            "button_hover_bg_color": "#000000",
+            "button_hover_text_color": "#ffffff",
+            "button_hover_border_color": "#000000",
+            "image": "shopify://shop_images/Screenshot_2025-01-30_at_3.20.57_AM.png",
+            "image_position": "center"
+          },
+          "blocks": {}
         }
       },
       "block_order": [
-        "slide_UJPCNq",
-        "slide_8ahAdB"
+        "ai_gen_block_b50e0bd_BHaUmN"
       ],
-      "custom_css": [
-        ".slideshow__controls {display: none;}",
-        "@media screen and (max-width: 749px) {.slideshow {width: 100%; overflow: hidden; } .slideshow__slide {/* height: 50vh; max-height: none; */ padding: 10px; margin: 0 auto; height: 100%; } .slideshow__media img {width: 100%; height: 100%; object-fit: cover; } .slideshow__text-wrapper {text-align: center; } .slideshow__text h2 {font-size: 2.6em; } .slideshow__text p {font-size: 0.7em; }}"
-      ],
-      "settings": {
-        "layout": "full_bleed",
-        "slide_height": "adapt_image",
-        "slider_visual": "dots",
-        "auto_rotate": true,
-        "change_slides_speed": 5,
-        "image_behavior": "none",
-        "show_text_below": false,
-        "accessibility_info": "Slideshow about our brand"
-      }
+      "settings": {}
     },
     "custom_liquid_whqYUE": {
       "type": "custom-liquid",
@@ -184,660 +254,21 @@
         "padding_bottom": 0
       }
     },
-    "marquee_gePGpJ": {
-      "type": "marquee",
-      "custom_css": [
-        ".custom-marquee {}"
-      ],
-      "settings": {
-        "text": "NEW COLLECTION | NEW COLLECTION | NEW COLLECTION | NEW COLLECTION | NEW COLLECTION | NEW COLLECTION | NEW COLLECTION | NEW COLLECTION | NEW COLLECTION |",
-        "color_scheme": "scheme-e94787f9-cfbc-4b8f-94d5-4601a837f560",
-        "link": ""
-      }
-    },
-    "multicolumn_xYcnmf": {
-      "type": "multicolumn",
-      "blocks": {
-        "column_NiApVY": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/1_0f5508b9-844c-4834-ab66-df21a10c7fbc.png",
-            "title": "SPORTS",
-            "text": "",
-            "link_label": "Black",
-            "link": "shopify://collections/sports-tshirts"
-          }
-        },
-        "column_tbQiAF": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/1_403eb742-0431-4d1a-ac01-bf58c400118b.png",
-            "title": "SLEEVELESS",
-            "text": "",
-            "link_label": "Grey",
-            "link": "shopify://products/kex-men-polyester-sleeveless-sports-tshirt"
-          }
-        },
-        "column_RUmEXG": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/KES-STSRT-SL-2185_1.jpg",
-            "title": "T-SHIRT",
-            "text": "",
-            "link_label": "White",
-            "link": "shopify://products/kex-men-polyester-rounde-neck-half-sleeve-solid-white-tshirt"
-          }
-        }
-      },
-      "block_order": [
-        "column_NiApVY",
-        "column_tbQiAF",
-        "column_RUmEXG"
-      ],
-      "custom_css": [
-        "h2 {text-align: center;}",
-        "@media screen and (max-width: 749px) {h2 {text-align: center; font-size: 3.3rem; } .multicolumn__title {font-size: 1.4rem; text-align: center; } .multicolumn-card__info {font-size: 0.8em; } h3 {font-size: 1.2em; }}"
-      ],
-      "settings": {
-        "title": "SPORTS T-SHIRT",
-        "logo": "shopify://shop_images/Layer_2.png",
-        "subheading": "Have a break, have a Kex Men's Sports T-Shirt | Comfortable Running & Gym Clothes.",
-        "heading_size": "hxl",
-        "image_width": "full",
-        "image_ratio": "portrait",
-        "columns_desktop": 3,
-        "column_alignment": "left",
-        "background_style": "none",
-        "button_label": "",
-        "button_link": "",
-        "color_scheme": "scheme-9",
-        "columns_mobile": "1",
-        "swipe_on_mobile": true,
-        "padding_top": 0,
-        "padding_bottom": 0
-      }
-    },
-    "svg_banner_NC6di3": {
-      "type": "SVG-banner",
-      "settings": {
-        "text": "<p><strong>Keep it Clean</strong> | Do right by people | Keep it Clear |</p>",
-        "color_scheme": "scheme-8f6c687d-051e-4bd9-acb9-b3c51bfe8458",
-        "link": "",
-        "image": "shopify://shop_images/recyclable-bag.svg"
-      }
-    },
-    "video_XY8xCG": {
-      "type": "video",
-      "disabled": true,
-      "name": "t:sections.video.presets.name",
-      "settings": {
-        "heading": "",
-        "heading_size": "h2",
-        "enable_video_looping": true,
-        "video": "shopify://files/videos/Order Now (2).mp4",
-        "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
-        "description": "",
-        "full_width": true,
-        "color_scheme": "",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
-    "collection_list_M4LbtM": {
-      "type": "collection-list",
-      "blocks": {
-        "featured_collection_i68AzQ": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "tank-tops"
-          }
-        },
-        "featured_collection_cKAhfy": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "camisoles"
-          }
-        },
-        "featured_collection_FPzgTg": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "women-tshirt"
-          }
-        }
-      },
-      "block_order": [
-        "featured_collection_i68AzQ",
-        "featured_collection_cKAhfy",
-        "featured_collection_FPzgTg"
-      ],
-      "custom_css": [
-        "@media screen and (max-width: 749px) {.collection-list-title {font-size: 2.2em; } .card__heading {font-size: 0.9em; }}"
-      ],
-      "settings": {
-        "title": "Shop by <strong>Category</strong>",
-        "heading_size": "h1",
-        "heading_alignment": "heading_alignment_left",
-        "image_ratio": "portrait",
-        "columns_desktop": 3,
-        "color_scheme": "scheme-8",
-        "show_view_all": false,
-        "columns_mobile": "2",
-        "swipe_on_mobile": true,
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
-    "custom_liquid_FHDpUK": {
-      "type": "custom-liquid",
-      "disabled": true,
-      "settings": {
-        "custom_liquid": "<div style=\"overflow: hidden; width: 100%; padding: 10px 0;\">\n  <div class=\"scroll-container\">\n    <span class=\"scroll-text\">Keep it Clean</span>\n    <img src=\"https://cdn.shopify.com/s/files/1/0684/0120/1315/files/recyclable-bag.svg?v=1738069085\" alt=\"Icon\" class=\"scroll-icon\">\n    <span class=\"scroll-text\">Do right by people</span>\n    <img src=\"https://cdn.shopify.com/s/files/1/0684/0120/1315/files/recyclable-bag.svg?v=1738069085\" alt=\"Icon\" class=\"scroll-icon\">\n    <span class=\"scroll-text\">Keep it on</span>\n\n    <!-- Duplicate content to create seamless scroll -->\n    <span class=\"scroll-text\">Keep it Clean</span>\n    <img src=\"https://cdn.shopify.com/s/files/1/0684/0120/1315/files/recyclable-bag.svg?v=1738069085\" alt=\"Icon\" class=\"scroll-icon\">\n    <span class=\"scroll-text\">Do right by people</span>\n    <img src=\"https://cdn.shopify.com/s/files/1/0684/0120/1315/files/recyclable-bag.svg?v=1738069085\" alt=\"Icon\" class=\"scroll-icon\">\n    <span class=\"scroll-text\">Keep it on</span>\n  </div>\n</div>\n\n<style>\n  @keyframes scroll-left {\n    0% {\n      transform: translateX(0);\n    }\n    100% {\n      transform: translateX(-20%);\n    }\n  }\n\n  .scroll-container {\n    display: flex;\n    align-items: center;\n    animation: scroll-left 15s linear infinite;\n    white-space: nowrap;\n    width: max-content; /* Adapts the width to content */\n  }\n\n  .scroll-text {\n    font-weight: 900;\n    font-size: 56px;\n    padding: 5px 10px;\n    white-space: nowrap;\n  }\n\n  .scroll-icon {\n    height: 80px;\n    margin: 0 10px;\n  }\n\n  @media (max-width: 768px) {\n    .scroll-text {\n      font-size: 36px; /* Adjust font size for mobile */\n    }\n\n    .scroll-icon {\n      height: 60px; /* Adjust icon size for mobile */\n    }\n\n    .scroll-container {\n      animation-duration: 20s; /* Adjust animation speed for mobile */\n    }\n  }\n</style>",
-        "color_scheme": "scheme-8f6c687d-051e-4bd9-acb9-b3c51bfe8458",
-        "padding_top": 0,
-        "padding_bottom": 0
-      }
-    },
-    "custom_image_section_xwRhkE": {
-      "type": "custom-image-section",
-      "disabled": true,
-      "settings": {
-        "image": "shopify://shop_images/Screenshot_2025-01-30_at_3.27.44_AM.png"
-      }
-    },
-    "image_banner_BWxL4R": {
-      "type": "image-banner",
-      "blocks": {
-        "heading_CdmAzr": {
-          "type": "heading",
-          "settings": {
-            "heading": "The Ultimate Comfort",
-            "heading_size": "h1"
-          }
-        },
-        "text_D4nNMK": {
-          "type": "text",
-          "settings": {
-            "text": "Pioneering in comfortable high quality everyday apparel",
-            "text_style": "subtitle"
-          }
-        },
-        "buttons_geqjxR": {
-          "type": "buttons",
-          "settings": {
-            "button_label_1": "LEARN MORE",
-            "button_link_1": "shopify://collections/winter-wear",
-            "button_style_secondary_1": false,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
-          }
-        }
-      },
-      "block_order": [
-        "heading_CdmAzr",
-        "text_D4nNMK",
-        "buttons_geqjxR"
-      ],
-      "custom_css": [
-        ".banner__media,img {border-radius: 90px; background-color: white; padding: 40px; margin: 0; background-color: #f5f5f5;}",
-        ".banner {background-color: #f5f5f5;}",
-        "@media screen and (max-width: 749px) {.banner__heading {font-size: 1.5em; word-wrap: break-word; overflow-wrap: break-word; } .banner__text {font-size: 1em; word-wrap: break-word; overflow-wrap: break-word; } .banner__media, img {border-radius: 50px; background-color: white; padding: 20px; margin: 0; background-color: #f5f5f5; }}"
-      ],
-      "settings": {
-        "image": "shopify://shop_images/abs-workout-tire.jpg",
-        "image_overlay_opacity": 0,
-        "image_height": "small",
-        "desktop_content_position": "middle-center",
-        "show_text_box": false,
-        "desktop_content_alignment": "center",
-        "color_scheme": "scheme-7a743403-3230-4bd2-bbe6-79674ff85238",
-        "image_behavior": "none",
-        "mobile_content_alignment": "center",
-        "stack_images_on_mobile": true,
-        "show_text_below": false
-      }
-    },
     "custom_image_section_84wjBx": {
       "type": "custom-image-section",
       "disabled": true,
       "settings": {
         "image": "shopify://shop_images/Untitled.png"
       }
-    },
-    "multicolumn_8C9Q34": {
-      "type": "multicolumn",
-      "blocks": {
-        "column_e6TCcE": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/Group_2.png",
-            "title": "Locally Owned",
-            "text": "<p>We have local business and sell best quality clothes</p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column_3MXxVT": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/Vector-1.png",
-            "title": "Fast Delivery",
-            "text": "<p>We provide fast delivery to our customers</p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column_dCy8nD": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/Group_2.png",
-            "title": "Easy Return",
-            "text": "<p>We provide easy return policy</p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column_D8eFHA": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/Vector_2.png",
-            "title": "Online Support",
-            "text": "<p>We give 24/7 online support</p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column_cqqJC6": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/Vector.png",
-            "title": "Best Offers",
-            "text": "<p>We give best offers to our customers</p>",
-            "link_label": "",
-            "link": ""
-          }
-        }
-      },
-      "block_order": [
-        "column_e6TCcE",
-        "column_3MXxVT",
-        "column_dCy8nD",
-        "column_D8eFHA",
-        "column_cqqJC6"
-      ],
-      "disabled": true,
-      "custom_css": [
-        "img {height: 50px;}",
-        ".multicolumn-card__info {font-size: 19px;}",
-        ".inline-richtext {font-size: 25px; font-weight: bold;}"
-      ],
-      "settings": {
-        "title": "",
-        "subheading": "",
-        "heading_size": "h2",
-        "image_width": "third",
-        "image_ratio": "adapt",
-        "columns_desktop": 5,
-        "column_alignment": "center",
-        "background_style": "none",
-        "button_label": "",
-        "button_link": "",
-        "color_scheme": "scheme-1",
-        "columns_mobile": "2",
-        "swipe_on_mobile": true,
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
-    "multicolumn_xrJDbx": {
-      "type": "multicolumn",
-      "blocks": {
-        "column_aLLXRg": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/KES-TSRT-2130_4.jpg",
-            "title": "",
-            "text": "",
-            "link_label": "WOMEN TSHIRTS",
-            "link": "shopify://collections/women-tshirt"
-          }
-        },
-        "column_aqHgrQ": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/KES-SCC-2029-2030_5.jpg",
-            "title": "",
-            "text": "",
-            "link_label": "CAMISOLES",
-            "link": "shopify://collections/camisoles"
-          }
-        },
-        "column_9jy337": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/KES-RNTT-208_4.jpg",
-            "title": "",
-            "text": "",
-            "link_label": "TANK TOPS",
-            "link": "shopify://collections/tank-tops"
-          }
-        },
-        "column_9RVaPR": {
-          "type": "column",
-          "disabled": true,
-          "settings": {
-            "image": "shopify://shop_images/KES-KRT-2123_1.jpg",
-            "title": "",
-            "text": "",
-            "link_label": "KURTI",
-            "link": "shopify://collections/kurti"
-          }
-        }
-      },
-      "block_order": [
-        "column_aLLXRg",
-        "column_aqHgrQ",
-        "column_9jy337",
-        "column_9RVaPR"
-      ],
-      "custom_css": [
-        "h2 {text-align: center;}",
-        "@media screen and (max-width: 749px) {h2 {text-align: center; font-size: 2em; }}"
-      ],
-      "settings": {
-        "title": "Popular <strong>Categories</strong>",
-        "subheading": "",
-        "heading_size": "h1",
-        "image_width": "full",
-        "image_ratio": "portrait",
-        "columns_desktop": 3,
-        "column_alignment": "center",
-        "background_style": "none",
-        "button_label": "",
-        "button_link": "",
-        "color_scheme": "scheme-1",
-        "columns_mobile": "1",
-        "swipe_on_mobile": true,
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
-    "ss_feature_1_RqLbgB": {
-      "type": "ss-feature-1",
-      "blocks": {
-        "image_kdzP87": {
-          "type": "image",
-          "settings": {
-            "feature_title": "Locally Owned",
-            "feature_text": "<p>We have local business and sell best quality clothes</p>",
-            "feature_image": "shopify://shop_images/Group.png",
-            "feature_url": "",
-            "hide_image": false
-          }
-        },
-        "image_cRHaGh": {
-          "type": "image",
-          "settings": {
-            "feature_title": "Fast Delivery",
-            "feature_text": "<p>We provide fast delivery to our customers</p>",
-            "feature_image": "shopify://shop_images/Vector-1.png",
-            "feature_url": "https://section.store/",
-            "hide_image": false
-          }
-        },
-        "image_rjN6YH": {
-          "type": "image",
-          "settings": {
-            "feature_title": "Easy Return",
-            "feature_text": "<p>We provide easy return policy</p>",
-            "feature_image": "shopify://shop_images/Group_2.png",
-            "feature_url": "",
-            "hide_image": false
-          }
-        },
-        "image_36nb8J": {
-          "type": "image",
-          "settings": {
-            "feature_title": "Online Support",
-            "feature_text": "<p>We give 24/7 online support</p>",
-            "feature_image": "shopify://shop_images/Vector_2.png",
-            "feature_url": "",
-            "hide_image": false
-          }
-        },
-        "image_PPBNV4": {
-          "type": "image",
-          "settings": {
-            "feature_title": "Best Offers",
-            "feature_text": "<p>We give best offers to our customers</p>",
-            "feature_image": "shopify://shop_images/Vector_4.png",
-            "feature_url": "",
-            "hide_image": false
-          }
-        }
-      },
-      "block_order": [
-        "image_kdzP87",
-        "image_cRHaGh",
-        "image_rjN6YH",
-        "image_36nb8J",
-        "image_PPBNV4"
-      ],
-      "settings": {
-        "feature_row": 5,
-        "feature_row_mobile": 2,
-        "feature_gap": 20,
-        "feature_gap_mobile": 20,
-        "feature_padding_horizontal": 0,
-        "feature_padding_vertical": 26,
-        "feature_radius": 16,
-        "feature_border_thickness": 0,
-        "feature_shadow": false,
-        "feature_heading_custom": false,
-        "feature_heading_font": "josefin_sans_n4",
-        "feature_heading_size": 24,
-        "feature_heading_size_mobile": 20,
-        "feature_heading_height": 130,
-        "feature_heading_mt": 8,
-        "feature_text_custom": false,
-        "feature_text_font": "josefin_sans_n4",
-        "feature_text_size": 18,
-        "feature_text_size_mobile": 16,
-        "feature_text_height": 180,
-        "feature_text_mt": 4,
-        "feature_icon_size": 42,
-        "feature_icon_size_mobile": 38,
-        "feature_bg": "#ffffff",
-        "feature_border_color": "#000000",
-        "feature_shadow_color": "#000000",
-        "feature_heading_color": "#2e3742",
-        "feature_text_color": "#2e3742",
-        "feature_icon_color": "#fc6600",
-        "background_color": "#ffffff",
-        "background_gradient": "",
-        "border_color": "#000000",
-        "margin_top": 0,
-        "margin_bottom": 0,
-        "padding_top": 16,
-        "padding_bottom": 16,
-        "padding_horizontal": 5,
-        "padding_horizontal_mobile": 1.5,
-        "full_width": false,
-        "content_width": 120,
-        "border_thickness": 0,
-        "lazy": true
-      }
-    },
-    "1_image_section_BLqGUP": {
-      "type": "1-image-section",
-      "name": "Image Container",
-      "settings": {
-        "image": "shopify://shop_images/3_886013b6-0564-4a95-a286-009d4785cfd1.png"
-      }
-    },
-    "image_banner_hhFPbe": {
-      "type": "image-banner",
-      "blocks": {
-        "heading_AGtDtF": {
-          "type": "heading",
-          "settings": {
-            "heading": "",
-            "heading_size": "hxxl"
-          }
-        },
-        "text_fqgqTk": {
-          "type": "text",
-          "settings": {
-            "text": "",
-            "text_style": "subtitle"
-          }
-        },
-        "buttons_FUbmtV": {
-          "type": "buttons",
-          "settings": {
-            "button_label_1": "",
-            "button_link_1": "shopify://collections",
-            "button_style_secondary_1": false,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
-          }
-        }
-      },
-      "block_order": [
-        "heading_AGtDtF",
-        "text_fqgqTk",
-        "buttons_FUbmtV"
-      ],
-      "disabled": true,
-      "custom_css": [
-        ".banner__media {border-radius: 50px;}",
-        "@media screen and (max-width: 749px) {.banner__heading {font-size: 2.5em; word-wrap: break-word; overflow-wrap: break-word; } .banner__text {font-size: 1.25em; word-wrap: break-word; overflow-wrap: break-word; } .banner__media, img {border-radius: 30px; background-color: white; margin: 0; background-color: #f5f5f5; } .banner__media img {width: 100%; height: 100%; max-height: none; object-fit: cover; /* or 'cover' for full height coverage */ border-radius: 30px; }}"
-      ],
-      "settings": {
-        "image": "shopify://shop_images/20250526_1939_Sunkissed_Summer_Fashion_simple_compose_01jw6epp87fc79wjdqtxqprm3e.png",
-        "image_overlay_opacity": 0,
-        "image_height": "adapt",
-        "desktop_content_position": "bottom-right",
-        "show_text_box": false,
-        "desktop_content_alignment": "left",
-        "color_scheme": "scheme-d740678e-b2db-488e-b188-c7e902e83c4b",
-        "image_behavior": "none",
-        "mobile_content_alignment": "center",
-        "stack_images_on_mobile": true,
-        "show_text_below": false
-      }
-    },
-    "17391197783f6b68af": {
-      "type": "apps",
-      "blocks": {
-        "judge_me_reviews_featured_carousel_ezfhKJ": {
-          "type": "shopify://apps/judge-me-reviews/blocks/featured_carousel/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
-          "settings": {
-            "maxwidth": 1080
-          }
-        }
-      },
-      "block_order": [
-        "judge_me_reviews_featured_carousel_ezfhKJ"
-      ],
-      "settings": {
-        "include_margins": true
-      }
-    },
-    "custom_image_section_74gVj8": {
-      "type": "custom-image-section",
-      "disabled": true,
-      "settings": {
-        "image": "shopify://shop_images/Screenshot_2025-01-30_at_3.22.39_AM.png"
-      }
-    },
-    "1739119267968034bc": {
-      "type": "apps",
-      "blocks": {
-        "judge_me_reviews_featured_carousel_cg7kVh": {
-          "type": "shopify://apps/judge-me-reviews/blocks/featured_carousel/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
-          "settings": {
-            "maxwidth": 1080
-          }
-        }
-      },
-      "block_order": [
-        "judge_me_reviews_featured_carousel_cg7kVh"
-      ],
-      "disabled": true,
-      "settings": {
-        "include_margins": true
-      }
-    },
-    "ss_cookie_banner_TtzgRg": {
-      "type": "ss-cookie-banner",
-      "blocks": {
-        "accept_button_y4wArY": {
-          "type": "accept_button",
-          "settings": {
-            "button_text": "Accept",
-            "button_color": "#fc6600",
-            "button_text_color": "#ffffff",
-            "button_border_color": "#000000",
-            "button_border_width": 0,
-            "button_border_radius": 24
-          }
-        },
-        "decline_button_qEMKnB": {
-          "type": "decline_button",
-          "settings": {
-            "redirect_url": "",
-            "button_text": "Decline",
-            "button_color": "#ffffff",
-            "button_text_color": "#000000",
-            "button_border_color": "#000000",
-            "button_border_width": 1,
-            "button_border_radius": 24
-          }
-        }
-      },
-      "block_order": [
-        "accept_button_y4wArY",
-        "decline_button_qEMKnB"
-      ],
-      "disabled": true,
-      "settings": {
-        "text_color": "#000000",
-        "text_size": 15,
-        "text": "<p>🍪 We use cookies to ensure the best possible user experience. Please agree to our cookies policy by clicking 'Accept'.</p>",
-        "max_width": 320,
-        "background_color": "#ffffff",
-        "border_radius": 24,
-        "vertical_padding": 20,
-        "horizontal_padding": 20,
-        "placement": "bottom-left",
-        "enable_shadow": true
-      }
     }
   },
   "order": [
     "slideshow_pxDALG",
+    "176185190977d3f61e",
+    "1761847510e3338245",
+    "17618510542d0bd07e",
     "custom_liquid_whqYUE",
     "custom_liquid_MEzPVQ",
-    "1761847510e3338245",
-    "marquee_gePGpJ",
-    "multicolumn_xYcnmf",
-    "svg_banner_NC6di3",
-    "video_XY8xCG",
-    "collection_list_M4LbtM",
-    "custom_liquid_FHDpUK",
-    "custom_image_section_xwRhkE",
-    "image_banner_BWxL4R",
-    "custom_image_section_84wjBx",
-    "multicolumn_8C9Q34",
-    "multicolumn_xrJDbx",
-    "ss_feature_1_RqLbgB",
-    "1_image_section_BLqGUP",
-    "image_banner_hhFPbe",
-    "17391197783f6b68af",
-    "custom_image_section_74gVj8",
-    "1739119267968034bc",
-    "ss_cookie_banner_TtzgRg"
+    "custom_image_section_84wjBx"
   ]
 }
