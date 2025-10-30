@@ -1,6 +1,1059 @@
+{% doc %}
+  @prompt
+    “Create a homepage section similar to Jockey’s ‘On-Trend Picks’.
+    Include 5–7 sliding cards in one row with smooth auto-scroll and arrows on both sides.
+    Each card should have:
+    
+    A background image (product image or gradient color)
+    
+    Bold heading (like ‘PANTS ON POINT’)
+    
+    Subheading or tagline (e.g., ‘Comfort you can count on’)
+    
+    A call-to-action button (‘Explore Now’)
+    
+    The design should have rounded card corners, clean typography, and pastel background colors (light blue, pink, beige).
+    Use minimal shadows for depth and ensure it looks modern and mobile-responsive.
+    The section title should be ‘ON-TREND PICKS’ with a subtitle ‘Explore Our Promising Line-Up’ centered above the slider.”
+{% enddoc %}
+{% assign ai_gen_id = block.id | replace: '_', '' | downcase %}
+
+{% style %}
+  .ai-trend-picks-{{ ai_gen_id }} {
+    padding: {{ block.settings.section_padding_top }}px 0 {{ block.settings.section_padding_bottom }}px;
+    background-color: {{ block.settings.section_bg_color }};
+  }
+
+  .ai-trend-picks-container-{{ ai_gen_id }} {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  .ai-trend-picks-header-{{ ai_gen_id }} {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  .ai-trend-picks-title-{{ ai_gen_id }} {
+    font-size: {{ block.settings.title_size }}px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin: 0 0 10px;
+    color: {{ block.settings.title_color }};
+    text-transform: uppercase;
+  }
+
+  .ai-trend-picks-subtitle-{{ ai_gen_id }} {
+    font-size: {{ block.settings.subtitle_size }}px;
+    color: {{ block.settings.subtitle_color }};
+    margin: 0;
+  }
+
+  .ai-trend-picks-slider-wrapper-{{ ai_gen_id }} {
+    position: relative;
+    padding: 0 60px;
+  }
+
+  .ai-trend-picks-slider-{{ ai_gen_id }} {
+    overflow: hidden;
+    position: relative;
+  }
+
+  .ai-trend-picks-track-{{ ai_gen_id }} {
+    display: flex;
+    gap: {{ block.settings.card_gap }}px;
+    transition: transform 0.5s ease;
+  }
+
+  .ai-trend-picks-card-{{ ai_gen_id }} {
+    flex: 0 0 auto;
+    width: {{ block.settings.card_width }}px;
+    background-color: {{ block.settings.card_bg_color }};
+    border-radius: {{ block.settings.card_border_radius }}px;
+    overflow: hidden;
+    box-shadow: 0 {{ block.settings.card_shadow_y }}px {{ block.settings.card_shadow_blur }}px rgba(0, 0, 0, {{ block.settings.card_shadow_opacity }});
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+  }
+
+  .ai-trend-picks-card-{{ ai_gen_id }}:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+  }
+
+  .ai-trend-picks-card-image-wrapper-{{ ai_gen_id }} {
+    position: relative;
+    width: 100%;
+    height: {{ block.settings.card_image_height }}px;
+    overflow: hidden;
+  }
+
+  .ai-trend-picks-card-image-{{ ai_gen_id }} {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .ai-trend-picks-card-image-placeholder-{{ ai_gen_id }} {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .ai-trend-picks-card-image-placeholder-{{ ai_gen_id }} svg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .ai-trend-picks-card-content-{{ ai_gen_id }} {
+    padding: 24px 20px;
+    text-align: center;
+  }
+
+  .ai-trend-picks-card-heading-{{ ai_gen_id }} {
+    font-size: {{ block.settings.card_heading_size }}px;
+    font-weight: 700;
+    margin: 0 0 8px;
+    color: {{ block.settings.card_heading_color }};
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+
+  .ai-trend-picks-card-tagline-{{ ai_gen_id }} {
+    font-size: {{ block.settings.card_tagline_size }}px;
+    color: {{ block.settings.card_tagline_color }};
+    margin: 0 0 20px;
+    line-height: 1.4;
+  }
+
+  .ai-trend-picks-card-button-{{ ai_gen_id }} {
+    display: inline-block;
+    padding: 12px 28px;
+    background-color: {{ block.settings.button_bg_color }};
+    color: {{ block.settings.button_text_color }};
+    text-decoration: none;
+    border-radius: {{ block.settings.button_border_radius }}px;
+    font-size: {{ block.settings.button_text_size }}px;
+    font-weight: 600;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+
+  .ai-trend-picks-card-button-{{ ai_gen_id }}:hover {
+    background-color: {{ block.settings.button_hover_bg_color }};
+    transform: scale(1.05);
+  }
+
+  .ai-trend-picks-arrow-{{ ai_gen_id }} {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 48px;
+    height: 48px;
+    background-color: {{ block.settings.arrow_bg_color }};
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  }
+
+  .ai-trend-picks-arrow-{{ ai_gen_id }}:hover {
+    background-color: {{ block.settings.arrow_hover_bg_color }};
+    transform: translateY(-50%) scale(1.1);
+  }
+
+  .ai-trend-picks-arrow-{{ ai_gen_id }}:disabled {
+    opacity: 0.3;
+    cursor: not-allowed;
+  }
+
+  .ai-trend-picks-arrow-{{ ai_gen_id }}:disabled:hover {
+    transform: translateY(-50%) scale(1);
+  }
+
+  .ai-trend-picks-arrow-left-{{ ai_gen_id }} {
+    left: 0;
+  }
+
+  .ai-trend-picks-arrow-right-{{ ai_gen_id }} {
+    right: 0;
+  }
+
+  .ai-trend-picks-arrow-{{ ai_gen_id }} svg {
+    width: 24px;
+    height: 24px;
+    stroke: {{ block.settings.arrow_icon_color }};
+  }
+
+  @media screen and (max-width: 989px) {
+    .ai-trend-picks-card-{{ ai_gen_id }} {
+      width: 280px;
+    }
+
+    .ai-trend-picks-slider-wrapper-{{ ai_gen_id }} {
+      padding: 0 50px;
+    }
+
+    .ai-trend-picks-arrow-{{ ai_gen_id }} {
+      width: 40px;
+      height: 40px;
+    }
+
+    .ai-trend-picks-arrow-{{ ai_gen_id }} svg {
+      width: 20px;
+      height: 20px;
+    }
+  }
+
+  @media screen and (max-width: 749px) {
+    .ai-trend-picks-card-{{ ai_gen_id }} {
+      width: 240px;
+    }
+
+    .ai-trend-picks-card-image-wrapper-{{ ai_gen_id }} {
+      height: 200px;
+    }
+
+    .ai-trend-picks-slider-wrapper-{{ ai_gen_id }} {
+      padding: 0 45px;
+    }
+
+    .ai-trend-picks-title-{{ ai_gen_id }} {
+      font-size: {{ block.settings.title_size | times: 0.8 }}px;
+    }
+
+    .ai-trend-picks-subtitle-{{ ai_gen_id }} {
+      font-size: {{ block.settings.subtitle_size | times: 0.9 }}px;
+    }
+
+    .ai-trend-picks-card-heading-{{ ai_gen_id }} {
+      font-size: {{ block.settings.card_heading_size | times: 0.9 }}px;
+    }
+
+    .ai-trend-picks-card-content-{{ ai_gen_id }} {
+      padding: 20px 16px;
+    }
+  }
+{% endstyle %}
+
+<on-trend-picks-{{ ai_gen_id }} class="ai-trend-picks-{{ ai_gen_id }}" {{ block.shopify_attributes }}>
+  <div class="ai-trend-picks-container-{{ ai_gen_id }}">
+    <div class="ai-trend-picks-header-{{ ai_gen_id }}">
+      <h2 class="ai-trend-picks-title-{{ ai_gen_id }}">{{ block.settings.section_title }}</h2>
+      <p class="ai-trend-picks-subtitle-{{ ai_gen_id }}">{{ block.settings.section_subtitle }}</p>
+    </div>
+
+    <div class="ai-trend-picks-slider-wrapper-{{ ai_gen_id }}">
+      <button
+        class="ai-trend-picks-arrow-{{ ai_gen_id }} ai-trend-picks-arrow-left-{{ ai_gen_id }}"
+        aria-label="Previous slide"
+        data-direction="prev"
+      >
+        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M15 18L9 12L15 6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </button>
+
+      <div class="ai-trend-picks-slider-{{ ai_gen_id }}">
+        <div class="ai-trend-picks-track-{{ ai_gen_id }}">
+          {% for i in (1..7) %}
+            {% liquid
+              assign card_enabled_key = 'card_' | append: i | append: '_enabled'
+              assign card_image_key = 'card_' | append: i | append: '_image'
+              assign card_bg_key = 'card_' | append: i | append: '_bg_color'
+              assign card_heading_key = 'card_' | append: i | append: '_heading'
+              assign card_tagline_key = 'card_' | append: i | append: '_tagline'
+              assign card_button_text_key = 'card_' | append: i | append: '_button_text'
+              assign card_link_key = 'card_' | append: i | append: '_link'
+
+              assign card_enabled = block.settings[card_enabled_key]
+              assign card_image = block.settings[card_image_key]
+              assign card_bg = block.settings[card_bg_key]
+              assign card_heading = block.settings[card_heading_key]
+              assign card_tagline = block.settings[card_tagline_key]
+              assign card_button_text = block.settings[card_button_text_key]
+              assign card_link = block.settings[card_link_key]
+            %}
+
+            {% if card_enabled %}
+              <div class="ai-trend-picks-card-{{ ai_gen_id }}" style="background-color: {{ card_bg }};">
+                <div class="ai-trend-picks-card-image-wrapper-{{ ai_gen_id }}">
+                  {% if card_image %}
+                    <img
+                      src="{{ card_image | image_url: width: 600 }}"
+                      alt="{{ card_image.alt | escape }}"
+                      class="ai-trend-picks-card-image-{{ ai_gen_id }}"
+                      loading="lazy"
+                      width="600"
+                      height="{{ block.settings.card_image_height }}"
+                    >
+                  {% else %}
+                    <div class="ai-trend-picks-card-image-placeholder-{{ ai_gen_id }}">
+                      {{ 'product-1' | placeholder_svg_tag }}
+                    </div>
+                  {% endif %}
+                </div>
+
+                <div class="ai-trend-picks-card-content-{{ ai_gen_id }}">
+                  {% if card_heading != blank %}
+                    <h3 class="ai-trend-picks-card-heading-{{ ai_gen_id }}">{{ card_heading }}</h3>
+                  {% endif %}
+
+                  {% if card_tagline != blank %}
+                    <p class="ai-trend-picks-card-tagline-{{ ai_gen_id }}">{{ card_tagline }}</p>
+                  {% endif %}
+
+                  {% if card_link != blank and card_button_text != blank %}
+                    <a href="{{ card_link }}" class="ai-trend-picks-card-button-{{ ai_gen_id }}">
+                      {{ card_button_text }}
+                    </a>
+                  {% endif %}
+                </div>
+              </div>
+            {% endif %}
+          {% endfor %}
+        </div>
+      </div>
+
+      <button
+        class="ai-trend-picks-arrow-{{ ai_gen_id }} ai-trend-picks-arrow-right-{{ ai_gen_id }}"
+        aria-label="Next slide"
+        data-direction="next"
+      >
+        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M9 18L15 12L9 6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </button>
+    </div>
+  </div>
+</on-trend-picks-{{ ai_gen_id }}>
+
+<script>
+  (function() {
+    class OnTrendPicks{{ ai_gen_id }} extends HTMLElement {
+      constructor() {
+        super();
+        this.currentIndex = 0;
+        this.autoScrollInterval = null;
+        this.isAutoScrollEnabled = {{ block.settings.enable_auto_scroll | json }};
+        this.autoScrollDelay = {{ block.settings.auto_scroll_delay }} * 1000;
+      }
+
+      connectedCallback() {
+        this.slider = this.querySelector('.ai-trend-picks-slider-{{ ai_gen_id }}');
+        this.track = this.querySelector('.ai-trend-picks-track-{{ ai_gen_id }}');
+        this.cards = this.querySelectorAll('.ai-trend-picks-card-{{ ai_gen_id }}');
+        this.prevButton = this.querySelector('.ai-trend-picks-arrow-left-{{ ai_gen_id }}');
+        this.nextButton = this.querySelector('.ai-trend-picks-arrow-right-{{ ai_gen_id }}');
+
+        if (this.cards.length === 0) return;
+
+        this.setupEventListeners();
+        this.updateSlider();
+
+        if (this.isAutoScrollEnabled) {
+          this.startAutoScroll();
+        }
+      }
+
+      setupEventListeners() {
+        this.prevButton.addEventListener('click', () => this.navigate('prev'));
+        this.nextButton.addEventListener('click', () => this.navigate('next'));
+
+        this.slider.addEventListener('mouseenter', () => this.stopAutoScroll());
+        this.slider.addEventListener('mouseleave', () => {
+          if (this.isAutoScrollEnabled) {
+            this.startAutoScroll();
+          }
+        });
+
+        window.addEventListener('resize', () => this.updateSlider());
+      }
+
+      navigate(direction) {
+        const visibleCards = this.getVisibleCardsCount();
+        const maxIndex = Math.max(0, this.cards.length - visibleCards);
+
+        if (direction === 'next') {
+          this.currentIndex = Math.min(this.currentIndex + 1, maxIndex);
+        } else {
+          this.currentIndex = Math.max(this.currentIndex - 1, 0);
+        }
+
+        this.updateSlider();
+        this.resetAutoScroll();
+      }
+
+      getVisibleCardsCount() {
+        const sliderWidth = this.slider.offsetWidth;
+        const cardWidth = {{ block.settings.card_width }};
+        const gap = {{ block.settings.card_gap }};
+
+        if (window.innerWidth <= 749) {
+          return Math.floor(sliderWidth / (240 + gap));
+        } else if (window.innerWidth <= 989) {
+          return Math.floor(sliderWidth / (280 + gap));
+        } else {
+          return Math.floor(sliderWidth / (cardWidth + gap));
+        }
+      }
+
+      updateSlider() {
+        const cardWidth = this.cards[0].offsetWidth;
+        const gap = {{ block.settings.card_gap }};
+        const offset = this.currentIndex * (cardWidth + gap);
+
+        this.track.style.transform = `translateX(-${offset}px)`;
+
+        const visibleCards = this.getVisibleCardsCount();
+        const maxIndex = Math.max(0, this.cards.length - visibleCards);
+
+        this.prevButton.disabled = this.currentIndex === 0;
+        this.nextButton.disabled = this.currentIndex >= maxIndex;
+      }
+
+      startAutoScroll() {
+        this.stopAutoScroll();
+        this.autoScrollInterval = setInterval(() => {
+          const visibleCards = this.getVisibleCardsCount();
+          const maxIndex = Math.max(0, this.cards.length - visibleCards);
+
+          if (this.currentIndex >= maxIndex) {
+            this.currentIndex = 0;
+          } else {
+            this.currentIndex++;
+          }
+
+          this.updateSlider();
+        }, this.autoScrollDelay);
+      }
+
+      stopAutoScroll() {
+        if (this.autoScrollInterval) {
+          clearInterval(this.autoScrollInterval);
+          this.autoScrollInterval = null;
+        }
+      }
+
+      resetAutoScroll() {
+        if (this.isAutoScrollEnabled) {
+          this.stopAutoScroll();
+          this.startAutoScroll();
+        }
+      }
+
+      disconnectedCallback() {
+        this.stopAutoScroll();
+      }
+    }
+
+    customElements.define('on-trend-picks-{{ ai_gen_id }}', OnTrendPicks{{ ai_gen_id }});
+  })();
+</script>
+
 {% schema %}
- {
-   "name": "AI_Block",
-   "tag": "shopify-ai-generated-block"
- }
+{
+  "name": "On-trend picks",
+  "tag": null,
+  "settings": [
+    {
+      "type": "header",
+      "content": "Section"
+    },
+    {
+      "type": "text",
+      "id": "section_title",
+      "label": "Title",
+      "default": "ON-TREND PICKS"
+    },
+    {
+      "type": "text",
+      "id": "section_subtitle",
+      "label": "Subtitle",
+      "default": "Explore Our Promising Line-Up"
+    },
+    {
+      "type": "color",
+      "id": "section_bg_color",
+      "label": "Background color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "range",
+      "id": "section_padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Padding top",
+      "default": 60
+    },
+    {
+      "type": "range",
+      "id": "section_padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Padding bottom",
+      "default": 60
+    },
+    {
+      "type": "header",
+      "content": "Title style"
+    },
+    {
+      "type": "range",
+      "id": "title_size",
+      "min": 16,
+      "max": 48,
+      "step": 2,
+      "unit": "px",
+      "label": "Title size",
+      "default": 32
+    },
+    {
+      "type": "color",
+      "id": "title_color",
+      "label": "Title color",
+      "default": "#000000"
+    },
+    {
+      "type": "range",
+      "id": "subtitle_size",
+      "min": 12,
+      "max": 24,
+      "step": 1,
+      "unit": "px",
+      "label": "Subtitle size",
+      "default": 16
+    },
+    {
+      "type": "color",
+      "id": "subtitle_color",
+      "label": "Subtitle color",
+      "default": "#666666"
+    },
+    {
+      "type": "header",
+      "content": "Slider settings"
+    },
+    {
+      "type": "checkbox",
+      "id": "enable_auto_scroll",
+      "label": "Enable auto-scroll",
+      "default": true
+    },
+    {
+      "type": "range",
+      "id": "auto_scroll_delay",
+      "min": 2,
+      "max": 10,
+      "step": 1,
+      "unit": "s",
+      "label": "Auto-scroll delay",
+      "default": 4
+    },
+    {
+      "type": "range",
+      "id": "card_width",
+      "min": 200,
+      "max": 400,
+      "step": 10,
+      "unit": "px",
+      "label": "Card width",
+      "default": 320
+    },
+    {
+      "type": "range",
+      "id": "card_gap",
+      "min": 8,
+      "max": 40,
+      "step": 4,
+      "unit": "px",
+      "label": "Gap between cards",
+      "default": 20
+    },
+    {
+      "type": "header",
+      "content": "Card style"
+    },
+    {
+      "type": "color",
+      "id": "card_bg_color",
+      "label": "Default background",
+      "default": "#f8f9fa"
+    },
+    {
+      "type": "range",
+      "id": "card_border_radius",
+      "min": 0,
+      "max": 40,
+      "step": 2,
+      "unit": "px",
+      "label": "Border radius",
+      "default": 20
+    },
+    {
+      "type": "range",
+      "id": "card_image_height",
+      "min": 150,
+      "max": 400,
+      "step": 10,
+      "unit": "px",
+      "label": "Image height",
+      "default": 280
+    },
+    {
+      "type": "range",
+      "id": "card_shadow_y",
+      "min": 0,
+      "max": 20,
+      "step": 2,
+      "unit": "px",
+      "label": "Shadow vertical offset",
+      "default": 4
+    },
+    {
+      "type": "range",
+      "id": "card_shadow_blur",
+      "min": 0,
+      "max": 40,
+      "step": 4,
+      "unit": "px",
+      "label": "Shadow blur",
+      "default": 12
+    },
+    {
+      "type": "range",
+      "id": "card_shadow_opacity",
+      "min": 0,
+      "max": 0.5,
+      "step": 0.1,
+      "label": "Shadow opacity",
+      "default": 0.1
+    },
+    {
+      "type": "header",
+      "content": "Card text"
+    },
+    {
+      "type": "range",
+      "id": "card_heading_size",
+      "min": 14,
+      "max": 32,
+      "step": 2,
+      "unit": "px",
+      "label": "Heading size",
+      "default": 20
+    },
+    {
+      "type": "color",
+      "id": "card_heading_color",
+      "label": "Heading color",
+      "default": "#000000"
+    },
+    {
+      "type": "range",
+      "id": "card_tagline_size",
+      "min": 12,
+      "max": 20,
+      "step": 1,
+      "unit": "px",
+      "label": "Tagline size",
+      "default": 14
+    },
+    {
+      "type": "color",
+      "id": "card_tagline_color",
+      "label": "Tagline color",
+      "default": "#666666"
+    },
+    {
+      "type": "header",
+      "content": "Button style"
+    },
+    {
+      "type": "color",
+      "id": "button_bg_color",
+      "label": "Background color",
+      "default": "#000000"
+    },
+    {
+      "type": "color",
+      "id": "button_hover_bg_color",
+      "label": "Hover background",
+      "default": "#333333"
+    },
+    {
+      "type": "color",
+      "id": "button_text_color",
+      "label": "Text color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "range",
+      "id": "button_text_size",
+      "min": 12,
+      "max": 18,
+      "step": 1,
+      "unit": "px",
+      "label": "Text size",
+      "default": 14
+    },
+    {
+      "type": "range",
+      "id": "button_border_radius",
+      "min": 0,
+      "max": 40,
+      "step": 2,
+      "unit": "px",
+      "label": "Border radius",
+      "default": 24
+    },
+    {
+      "type": "header",
+      "content": "Navigation arrows"
+    },
+    {
+      "type": "color",
+      "id": "arrow_bg_color",
+      "label": "Background color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "arrow_hover_bg_color",
+      "label": "Hover background",
+      "default": "#f0f0f0"
+    },
+    {
+      "type": "color",
+      "id": "arrow_icon_color",
+      "label": "Icon color",
+      "default": "#000000"
+    },
+    {
+      "type": "header",
+      "content": "Card 1"
+    },
+    {
+      "type": "checkbox",
+      "id": "card_1_enabled",
+      "label": "Enable card 1",
+      "default": true
+    },
+    {
+      "type": "image_picker",
+      "id": "card_1_image",
+      "label": "Image"
+    },
+    {
+      "type": "color",
+      "id": "card_1_bg_color",
+      "label": "Background color",
+      "default": "#e3f2fd"
+    },
+    {
+      "type": "text",
+      "id": "card_1_heading",
+      "label": "Heading",
+      "default": "PANTS ON POINT"
+    },
+    {
+      "type": "text",
+      "id": "card_1_tagline",
+      "label": "Tagline",
+      "default": "Comfort you can count on"
+    },
+    {
+      "type": "text",
+      "id": "card_1_button_text",
+      "label": "Button text",
+      "default": "Explore Now"
+    },
+    {
+      "type": "url",
+      "id": "card_1_link",
+      "label": "Link"
+    },
+    {
+      "type": "header",
+      "content": "Card 2"
+    },
+    {
+      "type": "checkbox",
+      "id": "card_2_enabled",
+      "label": "Enable card 2",
+      "default": true
+    },
+    {
+      "type": "image_picker",
+      "id": "card_2_image",
+      "label": "Image"
+    },
+    {
+      "type": "color",
+      "id": "card_2_bg_color",
+      "label": "Background color",
+      "default": "#fce4ec"
+    },
+    {
+      "type": "text",
+      "id": "card_2_heading",
+      "label": "Heading",
+      "default": "SUMMER ESSENTIALS"
+    },
+    {
+      "type": "text",
+      "id": "card_2_tagline",
+      "label": "Tagline",
+      "default": "Stay cool and stylish"
+    },
+    {
+      "type": "text",
+      "id": "card_2_button_text",
+      "label": "Button text",
+      "default": "Explore Now"
+    },
+    {
+      "type": "url",
+      "id": "card_2_link",
+      "label": "Link"
+    },
+    {
+      "type": "header",
+      "content": "Card 3"
+    },
+    {
+      "type": "checkbox",
+      "id": "card_3_enabled",
+      "label": "Enable card 3",
+      "default": true
+    },
+    {
+      "type": "image_picker",
+      "id": "card_3_image",
+      "label": "Image"
+    },
+    {
+      "type": "color",
+      "id": "card_3_bg_color",
+      "label": "Background color",
+      "default": "#fff3e0"
+    },
+    {
+      "type": "text",
+      "id": "card_3_heading",
+      "label": "Heading",
+      "default": "ACTIVE WEAR"
+    },
+    {
+      "type": "text",
+      "id": "card_3_tagline",
+      "label": "Tagline",
+      "default": "Move with confidence"
+    },
+    {
+      "type": "text",
+      "id": "card_3_button_text",
+      "label": "Button text",
+      "default": "Explore Now"
+    },
+    {
+      "type": "url",
+      "id": "card_3_link",
+      "label": "Link"
+    },
+    {
+      "type": "header",
+      "content": "Card 4"
+    },
+    {
+      "type": "checkbox",
+      "id": "card_4_enabled",
+      "label": "Enable card 4",
+      "default": true
+    },
+    {
+      "type": "image_picker",
+      "id": "card_4_image",
+      "label": "Image"
+    },
+    {
+      "type": "color",
+      "id": "card_4_bg_color",
+      "label": "Background color",
+      "default": "#f3e5f5"
+    },
+    {
+      "type": "text",
+      "id": "card_4_heading",
+      "label": "Heading",
+      "default": "CLASSIC COLLECTION"
+    },
+    {
+      "type": "text",
+      "id": "card_4_tagline",
+      "label": "Tagline",
+      "default": "Timeless style"
+    },
+    {
+      "type": "text",
+      "id": "card_4_button_text",
+      "label": "Button text",
+      "default": "Explore Now"
+    },
+    {
+      "type": "url",
+      "id": "card_4_link",
+      "label": "Link"
+    },
+    {
+      "type": "header",
+      "content": "Card 5"
+    },
+    {
+      "type": "checkbox",
+      "id": "card_5_enabled",
+      "label": "Enable card 5",
+      "default": true
+    },
+    {
+      "type": "image_picker",
+      "id": "card_5_image",
+      "label": "Image"
+    },
+    {
+      "type": "color",
+      "id": "card_5_bg_color",
+      "label": "Background color",
+      "default": "#e8f5e9"
+    },
+    {
+      "type": "text",
+      "id": "card_5_heading",
+      "label": "Heading",
+      "default": "FRESH ARRIVALS"
+    },
+    {
+      "type": "text",
+      "id": "card_5_tagline",
+      "label": "Tagline",
+      "default": "New season trends"
+    },
+    {
+      "type": "text",
+      "id": "card_5_button_text",
+      "label": "Button text",
+      "default": "Explore Now"
+    },
+    {
+      "type": "url",
+      "id": "card_5_link",
+      "label": "Link"
+    },
+    {
+      "type": "header",
+      "content": "Card 6"
+    },
+    {
+      "type": "checkbox",
+      "id": "card_6_enabled",
+      "label": "Enable card 6",
+      "default": true
+    },
+    {
+      "type": "image_picker",
+      "id": "card_6_image",
+      "label": "Image"
+    },
+    {
+      "type": "color",
+      "id": "card_6_bg_color",
+      "label": "Background color",
+      "default": "#fff9c4"
+    },
+    {
+      "type": "text",
+      "id": "card_6_heading",
+      "label": "Heading",
+      "default": "PREMIUM BASICS"
+    },
+    {
+      "type": "text",
+      "id": "card_6_tagline",
+      "label": "Tagline",
+      "default": "Everyday essentials"
+    },
+    {
+      "type": "text",
+      "id": "card_6_button_text",
+      "label": "Button text",
+      "default": "Explore Now"
+    },
+    {
+      "type": "url",
+      "id": "card_6_link",
+      "label": "Link"
+    },
+    {
+      "type": "header",
+      "content": "Card 7"
+    },
+    {
+      "type": "checkbox",
+      "id": "card_7_enabled",
+      "label": "Enable card 7",
+      "default": true
+    },
+    {
+      "type": "image_picker",
+      "id": "card_7_image",
+      "label": "Image"
+    },
+    {
+      "type": "color",
+      "id": "card_7_bg_color",
+      "label": "Background color",
+      "default": "#ffebee"
+    },
+    {
+      "type": "text",
+      "id": "card_7_heading",
+      "label": "Heading",
+      "default": "TRENDING NOW"
+    },
+    {
+      "type": "text",
+      "id": "card_7_tagline",
+      "label": "Tagline",
+      "default": "What's hot this season"
+    },
+    {
+      "type": "text",
+      "id": "card_7_button_text",
+      "label": "Button text",
+      "default": "Explore Now"
+    },
+    {
+      "type": "url",
+      "id": "card_7_link",
+      "label": "Link"
+    }
+  ],
+  "presets": [
+    {
+      "name": "On-trend picks"
+    }
+  ]
+}
 {% endschema %}
