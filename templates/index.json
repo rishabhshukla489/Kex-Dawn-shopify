@@ -120,7 +120,7 @@
             "arrow_color": "#000000",
             "arrow_hover_bg": "#000000",
             "arrow_hover_color": "#ffffff",
-            "enable_autoplay": false,
+            "enable_autoplay": true,
             "autoplay_speed": 5,
             "background_color": "#ffffff",
             "container_width": 1200,
